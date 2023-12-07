@@ -6,9 +6,10 @@ import { imagetools } from 'vite-imagetools'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
-    react(),
     compression({ algorithm: 'brotliCompress'}),
-    imagetools()],
+    imagetools(),
+    react()
+  ],
   server: {
     port: 3000
   },
