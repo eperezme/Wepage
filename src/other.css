@@ -64,6 +64,11 @@
 
 
 /* IMAGE */
+img {
+  overflow-clip-margin: content-box;
+  overflow: clip;
+}
+
 .image-fade {
   mask-image: radial-gradient(ellipse at center, var(--bgColor-default) 0%, var(--bgColor-default) 25%, transparent 70%, transparent 100%);
 }
@@ -85,3 +90,5 @@
   0% { transform: rotate(360deg); }
   100% { transform: rotate(0deg); }
 }
+
+
