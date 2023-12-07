@@ -7,7 +7,7 @@ import { imagetools } from 'vite-imagetools'
 export default defineConfig({
   plugins: [
     react(),
-    compression({ algorithm: 'brotliCompress', exclude: [/\.(br)$/, /\.(gz)$/], deleteOriginalAssets: true }),
+    compression({ algorithm: 'brotliCompress'}),
     imagetools()],
   server: {
     port: 3000
