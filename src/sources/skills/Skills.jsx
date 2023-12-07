@@ -4,8 +4,11 @@ import React from 'react'
 import './Skills.css'
 
 // Images
-import IMG2 from '../../assets/wood.jpg'
-import IMG3 from '../../assets/mev.jpg'
+import IMG2 from '../../assets/wood.jpg?w=300;400;500;600;700;800;900;1000;1200;1500;1800;2000&format=webp&as=srcset';
+import IMG2_fall from '../../assets/wood.jpg'
+
+import IMG3 from '../../assets/mev.jpg?w=300;400;500;600;700;800;900;1000;1200;1500;1800;2000&format=webp&as=srcset';
+import IMG3_fall from '../../assets/mev.jpg'
 import IMG4 from '../../assets/graphs/diabplot.png'
 import IMG5 from '../../assets/graphs/surv2.png'
 import IMG6 from '../../assets/graphs/lambda.png'
@@ -38,7 +41,9 @@ function Skills() {
   </div>
   {/* 1st Image center */}
   <div className="js-build-in-trigger build-in-animate">
-    <img aria-hidden="true" width={2496} height={1302} loading='lazy' decoding='async' className='width-full d-block height-auto position-relative z-1 rounded-3 border js-build-in-item build-in-slideX-right build-in-animate' src={IMG2} alt="" />
+    <picture>
+      <source srcSet={IMG2} type='image/webp'/>
+      <img aria-hidden="true" width={2496} height={1302} loading='lazy' decoding='async' className='width-full d-block height-auto position-relative z-1 rounded-3 border js-build-in-item build-in-slideX-right build-in-animate' src={IMG2_fall} alt="" /></picture>
   </div>
   <div className='d-flex js-build-in-trigger position-relative build-in-animate'>
   <img alt="" aria-hidden="true" width="584" height="584" className="animation-rotate position-absolute height-auto d-none d-md-block col-7 events-none home-shape-rotate" style={{bottom: "-50%", right: "-20%", animationDuration: "300s"}} loading="lazy" decoding="async" src="https://github.githubassets.com/assets/shape-1-c219318e479a.svg"/>
@@ -63,7 +68,9 @@ function Skills() {
           <div className="js-build-in-item build-in-slideX-right overflow-hidden rounded-3 position-relative z-1 d-none d-md-block build-in-animate" style={{maxWidth: "480px", marginTop: "-100%", transitionDelay: "100ms",}}>
             {/* Lateral image */}
             {/* [ ] REPLACE IMAGE */}
-            <img src={IMG3} loading="lazy" width="960" height="1222" alt="" decoding="async" className="rounded-3 width-full d-block height-auto"/>
+            <picture>
+              <source srcSet={IMG3} type='image/webp'/>
+              <img src={IMG3_fall} loading="lazy" width="960" height="1222" alt="" decoding="async" className="rounded-3 width-full d-block height-auto"/></picture>
           </div>
           <div className='js-build-in-item build-in-slideX-right overflow-hidden rounded-3 position-absolute right-3 bottom-3 bottom-sm-0 z-1 d-md-none build-in-animate style={{bottom: "-300px", right: "-200px", transitionDelay: "300ms",}} '>
           <img alt="" aria-hidden="true" width="1000" height="1000" className="width-full d-block height-auto" loading="lazy" decoding="async" src="https://github.githubassets.com/assets/bg-glow-purple-6e9a6a96cb04.png"></img>
