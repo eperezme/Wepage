@@ -1,0 +1,207 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Mona Sans","Mona Sans Header Fallback",-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-feature-settings: unset;
+  /* font-size: var(--body-font-size, 14px); */
+  line-height: 1.5;
+  word-wrap: break-word;
+  word-break: keep-all;
+	background: var(--color-bg);
+}
+
+
+:root{
+  /* COLORS */
+  --color-bg: rgb(13, 17, 23);
+  --color-bg-secondary: rgb(22, 27, 34);
+  --color-text: #ffffff;
+  --color-text-secondary: rgb(125, 133, 144);
+  --color-text-tertiary: rgb(110, 118, 129);
+  --color-green:rgba(63, 185, 80, 1);
+  --color-blue: rgba(51, 179, 174, 1);
+  --color-pink: rgba(247, 120, 186, 1);
+  --color-purple: rgba(124, 114, 255, 1);
+  --color-figure: rgba(255, 255, 255, 1);
+
+  --borderColor-default: rgb(125, 133, 144);
+  --color-border-default: rgb(48, 54, 61);
+
+  --container-width-lg: 75%;
+	--container-width-md: 86%;
+	--container-width-sm: 90%;
+
+  --border-radius: 0.75rem;
+  --border-radoius-md: 0.375rem;
+  --border-radius-sm: 0.1875rem;
+
+
+
+  /* ============== COPYPASTE ================ */
+  -webkit-text-size-adjust: 100%;
+--base-size-4: 0.25rem;
+--base-size-8: 0.5rem;
+--base-size-12: 0.75rem;
+--base-size-16: 1rem;
+--base-size-20: 1.25rem;
+--base-size-24: 1.5rem;
+--base-size-28: 1.75rem;
+--base-size-32: 2rem;
+--base-size-36: 2.25rem;
+--base-size-40: 2.5rem;
+--base-size-44: 2.75rem;
+--base-size-48: 3rem;
+--base-size-64: 4rem;
+--base-size-80: 5rem;
+--base-size-96: 6rem;
+--base-size-112: 7rem;
+--base-size-128: 8rem;
+--base-text-weight-light: 300;
+--base-text-weight-normal: 400;
+--base-text-weight-medium: 500;
+--base-text-weight-semibold: 600;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+.position-relative {
+	position: relative !important;
+}
+
+.position-absolute {
+	position: absolute !important;
+}
+
+.top-0 {
+	top: 0 !important;
+}
+
+.height-auto {
+	height: auto !important;
+}
+.container-xl {
+	max-width: 1280px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.events-none{
+	pointer-events: none;
+}
+
+/* ================ GENERAL STYLES ============= */
+.container {
+	width: var(--container-width-lg);
+	margin: 0 auto;
+}
+.mb-n3 {
+	margin-bottom: calc(-1*var(--base-size-16, 16px)) !important;
+}
+.width-full {
+	width: 100% !important;
+}
+.px-3 {
+	padding-right: var(--base-size-16, 16px) !important;
+	padding-left: var(--base-size-16, 16px) !important;
+}
+/* ================ TYPOGRAPHY ============= */
+h1 {
+  font-weight: 600;
+  color: var(--color-text);
+	font-size: 1.2em;
+}
+
+h2{
+  font-weight: 500;
+}
+
+h3{
+  font-weight: 400;
+}
+
+em {
+  font-style: normal;
+  font-weight: 500 !important;
+  font-size: 20px !important;
+  line-height: 28px !important;
+  color: var(--color-text);
+}
+
+.title{
+	font-weight: 600;
+	color: var(--color-text);
+	font-size: 1.2em;
+}
+
+
+
+/* ================ IMAGES ============= */
+img {
+	border-style: none;
+}
+/* ================ CARDS ============= */
+
+
+.vcard-container{
+  display: grid;
+  grid-template-rows: 1fr;
+  gap: 2rem;
+}
+
+.vcard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: var(--color-bg-secondary);
+  border: var(--borderWidth-thin, 1px) solid var(--color-border-default);
+  border-radius:  var(--border-radius, 8px);
+}
+
+.vcard > img {
+  border-radius: var(--border-radius);
+  align-self: flex-end;
+}
+
+.vcard > p {
+  padding: 2.5rem;
+  color: var(--color-text-secondary);
+  text-align: left;
+  font-weight: 500 !important;
+  font-size: 20px !important;
+  line-height: 28px !important;
+}
+
+/* ============= MEDIA QUERIES ============ */
+
+@media screen and (min-width: 1012px) {
+  .vcard > p {
+    padding-top: var(--base-size-64, 64px); 
+    padding-bottom: var(--base-size-64, 64px);
+    padding-right: var(--base-size-128, 128px);
+    padding-left: var(--base-size-64, 64px);
+}
+}
+@media screen and (min-width: 768px) {
+  
+  .vcard-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+  
+
+}
+
+@media sceen and (min-width: 544px) {
+  .vcard > p {
+    padding: 2.5rem;
+  }
+}
+

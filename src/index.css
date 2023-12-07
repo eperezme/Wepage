@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  
+}
+
+
+
+
+
+/* ================ CARDS ============= */
+
+
+.vcard-container{
+  display: grid;
+  grid-template-rows: 1fr;
+  gap: 2rem;
+}
+
+.vcard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: var(--color-bg-secondary);
+  border: var(--borderWidth-thin, 1px) solid var(--color-border-default);
+  border-radius:  var(--border-radius, 8px);
+}
+
+.vcard > img {
+  border-radius: var(--border-radius);
+  align-self: flex-end;
+}
+
+.vcard > p {
+  padding: 2.5rem;
+  color: var(--color-text-secondary);
+  text-align: left;
+  font-weight: 500 !important;
+  font-size: 20px !important;
+  line-height: 28px !important;
+}
+
+.hcard {
+  transform: perspective(700px) rotateX('0.93deg') rotateY(0.13deg);
+}
+
+.git-branch-vertical-blue {
+  background: var(--github-com-linear-black-keppel-keppel-black, linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, #33B3AE 33.33%, #33B3AE 66.67%, rgba(0, 0, 0, 0.00) 100%));
+}
+
+/* ============= MEDIA QUERIES ============ */
+
+@media screen and (min-width: 1012px) {
+  .vcard > p {
+    padding-top: var(--base-size-64, 64px); 
+    padding-bottom: var(--base-size-64, 64px);
+    padding-right: var(--base-size-128, 128px);
+    padding-left: var(--base-size-64, 64px);
+}
+}
+@media screen and (min-width: 768px) {
+  
+  .vcard-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+
+
+}
+
+@media sceen and (min-width: 544px) {
+  .vcard > p {
+    padding: 2.5rem;
+  }
+}
+

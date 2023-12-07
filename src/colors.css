@@ -1,0 +1,81 @@
+:root {
+  /* COLORS */
+  /* Background */
+  --bgColor-muted: rgb(22, 27, 34);
+  --bgColor-default: rgb(13, 17, 23);
+  
+  --color-bg: rgb(13, 17, 23);
+  --color-bg-secondary: rgb(22, 27, 34);
+  
+  /* Foreground */
+  --fgColor-default: #ffffff;
+  --fgColor-muted: rgb(125, 133, 144);
+  
+  /* Text */
+  --color-text: #ffffff;
+  --color-text-secondary: rgb(125, 133, 144);
+  --color-text-tertiary: rgb(110, 118, 129);
+  --color-green: rgba(63, 185, 80, 1);
+  --color-blue: rgba(51, 179, 174, 1);
+  --color-pink: rgba(247, 120, 186, 1);
+  --color-purple: rgba(124, 114, 255, 1);
+  --color-figure: rgba(255, 255, 255, 1);
+
+  /* Border */
+  --borderColor-default: rgb(48, 54, 61);
+  --color-border-default: rgb(48, 54, 61);
+  --color-mktg-btn-shadow-outline: rgba(255, 255, 255, 0.25) 0 0 0 1px inset;
+  --color-marketing-icon-primary: var(--color-scale-blue-2);
+  --color-marketing-icon-secondary: var(--color-scale-blue-5);
+
+  /* Button */
+  --color-mktg-btn-bg: #f6f8fa;
+  --color-mktg-btn-shadow-focus: rgba(255, 255, 255, 0.25) 0 0 0 4px;
+  --color-mktg-btn-shadow-hover: 0 4px 7px rgba(0, 0, 0, 0.15), 0 100px 80px rgba(255, 255, 255, 0.02), 0 42px 33px rgba(255, 255, 255, 0.024), 0 22px 18px rgba(255, 255, 255, 0.028), 0 12px 10px rgba(255, 255, 255, 0.034), 0 7px 5px rgba(255, 255, 255, 0.04), 0 3px 2px rgba(255, 255, 255, 0.07);
+  --color-mktg-btn-shadow-hover-muted: white 0 0 0 2px inset;
+}
+
+.home-campaign-hero,
+.color-header {
+  --mktg-accent-primary: #7c72ff;
+  --mktg-accent-secondary: #7c72ff;
+}
+
+
+.color-skills {
+  --mktg-accent-primary: #3fb950;
+  --mktg-accent-secondary: #3fb950;
+}
+
+.color-experience {
+  --mktg-accent-primary: #33b3ae;
+  --mktg-accent-secondary: #33b3ae;
+}
+
+.color-projects {
+  --mktg-accent-primary: #f778ba;
+  --mktg-accent-secondary: #f778ba;
+}
+
+.text-accent-primary {
+  color: var(--mktg-accent-primary);
+}
+
+.text-gradient-mktg {
+  background: -webkit-linear-gradient(-70deg, var(--mktg-accent-primary, #9867f0) 0%, var(--mktg-accent-secondary, #ed4e50) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
+
+.feature-card-mktg .color-fg-muted {
+  color: rgba(235, 245, 255, .5) !important;
+}
+
+.home-campaign-enterprise {
+  box-shadow: #bc8cff 0 0 0 1px inset;
+}
+
+

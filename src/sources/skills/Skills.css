@@ -1,0 +1,10 @@
+div > .mb-md-5 {
+  margin-bottom: var(--base-size-32, 32px) !important;
+}
+
+@media screen and (min-width: 768px) {
+  div > .mb-md-5 {
+    margin-bottom: var(--base-size-32, 32px) !important;
+  }
+  
+}
