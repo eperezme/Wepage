@@ -7,43 +7,23 @@ import React, { useEffect, useRef } from 'react';
 // ==== .js-build-in-trigger ==== 
 // ==== .js-build-in-item ==== This are individual elements that are animated
 
-
-
-
-function ObserveComponent() {
-  const ref = useRef();
+function Oberve() {
 
   useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          // Add your "in viewport" code here
-          console.log('Element is in the viewport!');
-        } else {
-          // Add your "out of viewport" code here
-          console.log('Element is out of the viewport!');
-        }
-      },
-      {
-        root: null,
-        rootMargin: '0px',
-        threshold: 0.5
-      }
-    );
+    const targetTrigger = document.querySelectorAll('.js-build-in-item');
 
-    if (ref.current) {
-      observer.observe(ref.current);
-    }
+    const observer = new IntersectionObserver((entries) => {
+      console.log(entries);
+    });
 
-    // Cleanup function to unobserve the element when the component unmounts
-    return () => {
-      if (ref.current) {
-        observer.unobserve(ref.current);
-      }
-    };
-  }, []); // Empty dependency array ensures this runs once on mount and unmount
+    targetSections.forEach((section) => {
+      observer.observe(section);
+    });
+  }, []);
 
-  return <div ref={ref}>Hello, world!</div>;
+  return (
+    // ...
+  );
 }
 
-export default ObserveComponent;
+export default Oberve;

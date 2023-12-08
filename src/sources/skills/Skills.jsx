@@ -19,6 +19,7 @@ import IMG6_fall from '../../assets/graphs/lambda.png'
 function Skills() {
   return (
     <div className='color-skills js-section overflow-hidden px-3 pb-8 pt-5'>
+          <script type="module" defer src="animation.js"></script>
       {/* SKILLS */}
       <div className='container-xl'>
   {/* Title */}
@@ -30,7 +31,7 @@ function Skills() {
       </svg>
       <span className='position-absolute left-0 top-0 height-full width-full home-campaign-glowing-icon-glow circle z-n1' style={{backgroundColor: "var(--mktg-accent-primary)", filter: "blur(18px)"}}></span>
       </div>
-      <div className='home-campaign-git-line height-full rounded js-build-in-item build-in-scale-top build-in-animate' style={{background: "linear-gradient(rgb(63, 185, 80), rgb(46, 160, 67), transparent)", transitionDelay: "500ms"}}></div>
+      <div className='home-campaign-git-line height-full rounded js-build-in-item build-in-scale-top' style={{background: "linear-gradient(rgb(63, 185, 80), rgb(46, 160, 67), transparent)", transitionDelay: "500ms"}}></div>
     </div>
     <div className="col-11 col-lg-8 ml-2 ml-md-0 mb-6 mb-md-10">
       <h2 className="h5-mktg mb-4 text-medium js-build-in-item build-in-slideX-left build-in-animate" style={{transitionDelay: "200ms"}}>About Me</h2>

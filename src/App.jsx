@@ -7,6 +7,7 @@ import './App.css'
 import './colors.css'
 import './typography.css'
 import './other.css'
+import './animations.css'
 // import {ThemeProvider, BaseStyles} from '@primer/react'
 import '@primer/css/utilities/index.scss'
 import '@primer/css/core/index.scss'
@@ -19,6 +20,7 @@ import Skills from './sources/skills/Skills.jsx'
 import Experience from './sources/experience/Experience.jsx'
 import Projects from './sources/projects/Projects.jsx'
 import Contact from './sources/contact/Contact.jsx'
+
 
 
 
