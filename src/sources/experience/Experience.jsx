@@ -6,7 +6,7 @@ import './Experience.css'
 // IMG
 import IMG7 from '../../assets/graphs/box.png?w=300;400;500;600;700;800;900;1000;1200;1500;1800;2000&format=webp&as=srcset'
 import IMG7_fall from '../../assets/graphs/box.png'
-import PORTAL from '../../assets/portal.png'
+import PORTAL from '../../assets/portal.png?w=300;400;500;600;700;800;900;1000;1200;1500;1800;2000&format=webp&as=srcset'
 import PORTAL_fall from '../../assets/portal.png'
 
 function Experience() {
@@ -66,7 +66,10 @@ function Experience() {
                 <div className="position-relative">
                   <div className="d-flex flex-column position-relative">
                     <div className="js-build-in-item build-in-slideX-right border overflow-hidden rounded-2 position-relative left-6 z-1 build-in-animate" style={{maxWidth: "541px", marginTop: "-30%", transitionDelay: "100ms"}}>
-                    <img src={IMG7} alt="" loading="lazy" decoding="async" width="1084" height="600" className="rounded-2 width-full height-auto d-block"/>
+                    <picture>
+                      <source srcSet={IMG7} type='image/webp'/>
+                      <img src={IMG7_fall} alt="" loading="lazy" decoding="async" width="1084" height="600" className="rounded-2 width-full height-auto d-block"/>
+                    </picture>
                     </div>
                     <img alt="" aria-hidden="true" width="1000" height="1000" className="position-absolute d-none d-md-block events-none js-build-in-item build-in-fade build-in-animate" style={{bottom: "-160px", right: "-220px", transitionDelay: "200ms"}} loading="lazy" decoding="async" src="https://github.githubassets.com/assets/bg-glow-blue-036b8dc2d1ce.png"></img>
                   </div>
