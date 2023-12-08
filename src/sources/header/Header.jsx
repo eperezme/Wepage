@@ -3,7 +3,7 @@ import Typewriter from '../../functions/typewrite.jsx'
 
 
 // IMAGES
-import IMG1 from '../../assets/principal.png??w=300;400;500;600;700;800;900;1000;1200;1500;1800;2000&format=webp&as=srcset';
+import IMG1 from '../../assets/principal.png?w=300;400;500;600;700;800;900;1000;1200;1500;1800;2000&format=webp&as=srcset';
 import IMG1_fall from '../../assets/principal.png'
 
 
@@ -21,7 +21,7 @@ const Header = () => {
           {/* [x] Fix image */}
           <picture>
             <source srcSet={IMG1} type='image/webp'/>
-            <img alt="" aria-hidden="true" width="2236" height="1630" className="image-fade top-0 position-absolute height-auto events-none d-none d-sm-block" style={{width: "min(1118px, max(100vh, 100vw))", left: "40%", overflowX: "hidden", overflowY: "visible"}} src={IMG1_fall}/></picture>
+            <img alt="" aria-hidden="true" className="image-fade top-0 position-absolute height-auto events-none d-none d-sm-block" style={{left: "40%", overflowX: "hidden", overflowY: "visible"}} src={IMG1_fall}/></picture>
         </div>
         <div className="overflow-hidden color-header home-campaign-hero">
           <div className="position-relative pt-3 pt-sm-8 pt-lg-12 container-xl js-build-in-trigger build-in-animate">

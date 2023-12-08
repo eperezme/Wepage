@@ -4,8 +4,10 @@ import React from 'react'
 import './Experience.css'
 
 // IMG
-import IMG7 from '../../assets/graphs/box.png'
+import IMG7 from '../../assets/graphs/box.png?w=300;400;500;600;700;800;900;1000;1200;1500;1800;2000&format=webp&as=srcset'
+import IMG7_fall from '../../assets/graphs/box.png'
 import PORTAL from '../../assets/portal.png'
+import PORTAL_fall from '../../assets/portal.png'
 
 function Experience() {
   return (
@@ -100,13 +102,7 @@ function Experience() {
               </div>
               <div className="overflow-hidden col-md-6 rounded-right-3">
                 <picture>
-                {/* <source srcSet="https://github.githubassets.com/assets/illu-code-scanning-fc9dfb212aa3.png?width=1288&amp;format=webpll 1288w,
-                                https://github.githubassets.com/assets/illu-code-scanning-fc9dfb212aa3.png?width=1030&amp;format=webpll 1030w,
-                                https://github.githubassets.com/assets/illu-code-scanning-fc9dfb212aa3.png?width=772&amp;format=webpll 772w,
-                                https://github.githubassets.com/assets/illu-code-scanning-fc9dfb212aa3.png?width=644&amp;format=webpll 644w,
-                                https://github.githubassets.com/assets/illu-code-scanning-fc9dfb212aa3.png?width=515&amp;format=webpll 515w,
-                                https://github.githubassets.com/assets/illu-code-scanning-fc9dfb212aa3.png?width=257&amp;format=webpll 257w" 
-                sizes="(max-width: 768px) 90vw, (max-width: 1280px) 50vw, 644px" type="image/webp"/> */}
+                <source srcSet={PORTAL} type='image/webp'/>
                 {/* Image */}
                 <img className="width-full d-block height-auto js-build-in-item build-in-scale-fade build-in-animate" width="1288" height="992" loading="lazy" decoding="async" alt="" aria-hidden="true" src={PORTAL}></img>
                 </picture>
@@ -134,12 +130,7 @@ function Experience() {
                 </div>
                 <div className="overflow-hidden rounded-bottom-3">
                   <picture>
-                  {/* <source srcSet="https://github.githubassets.com/assets/illu-dependabot-d98c73cc6724.png?width=1208&amp;format=webpll 1208w,
-                  https://github.githubassets.com/assets/illu-dependabot-d98c73cc6724.png?width=966&amp;format=webpll 966w,
-                  https://github.githubassets.com/assets/illu-dependabot-d98c73cc6724.png?width=724&amp;format=webpll 724w,
-                  https://github.githubassets.com/assets/illu-dependabot-d98c73cc6724.png?width=604&amp;format=webpll 604w,
-                  https://github.githubassets.com/assets/illu-dependabot-d98c73cc6724.png?width=483&amp;format=webpll 483w,
-                  https://github.githubassets.com/assets/illu-dependabot-d98c73cc6724.png?width=241&amp;format=webpll 241w" sizes="(max-width: 768px) 90vw, (max-width: 1280px) 50vw, 604px" type="image/webp"/> */}
+                  <source srcSet={PORTAL} type='image/webp'/>
                   <img className="rounded-3 width-full d-block height-auto js-build-in-item build-in-scale-fade build-in-animate" width="1208" height="764" loading="lazy" decoding="async" alt="" aria-hidden="true" src={PORTAL}/>
                   </picture>
                 </div>
@@ -164,7 +155,7 @@ function Experience() {
       </div>
       <div className="overflow-hidden rounded-bottom-3">
         <picture>
-          {/* <source srcSet="https://github.githubassets.com/assets/illu-secret-scanning-2-88fb429376d6.png?width=1208&amp;format=webpll 1208w,https://github.githubassets.com/assets/illu-secret-scanning-2-88fb429376d6.png?width=966&amp;format=webpll 966w,https://github.githubassets.com/assets/illu-secret-scanning-2-88fb429376d6.png?width=724&amp;format=webpll 724w,https://github.githubassets.com/assets/illu-secret-scanning-2-88fb429376d6.png?width=604&amp;format=webpll 604w,https://github.githubassets.com/assets/illu-secret-scanning-2-88fb429376d6.png?width=483&amp;format=webpll 483w,https://github.githubassets.com/assets/illu-secret-scanning-2-88fb429376d6.png?width=241&amp;format=webpll 241w" sizes="(max-width: 768px) 90vw, (max-width: 1280px) 50vw, 604px" type="image/webp"/> */}
+        <source srcSet={PORTAL} type='image/webp'/>
           <img className="rounded-3 width-full d-block height-auto js-build-in-item build-in-scale-fade build-in-animate" width="1208" height="804" loading="lazy" decoding="async" alt="" aria-hidden="true" src={PORTAL}/>
           </picture></div>
       

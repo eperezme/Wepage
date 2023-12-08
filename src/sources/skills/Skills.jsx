@@ -4,14 +4,16 @@ import React from 'react'
 import './Skills.css'
 
 // Images
-import IMG2 from '../../assets/wood.jpg?w=300;400;500;600;700;800;900;1000;1200;1500;1800;2000&format=webp&as=srcset';
+import IMG2 from '../../assets/wood.jpg?w=300;400;500;600;700;800;900;1000;1200;1500&format=webp&as=srcset';
 import IMG2_fall from '../../assets/wood.jpg'
-
 import IMG3 from '../../assets/mev.jpg?w=300;400;500;600;700;800;900;1000;1200;1500;1800;2000&format=webp&as=srcset';
 import IMG3_fall from '../../assets/mev.jpg'
-import IMG4 from '../../assets/graphs/diabplot.png'
-import IMG5 from '../../assets/graphs/surv2.png'
-import IMG6 from '../../assets/graphs/lambda.png'
+import IMG4 from '../../assets/graphs/diabplot.png?w=300;400;500;600;700;800;900;1000;1200;1500;1800;2000&format=webp&as=srcset'
+import IMG4_fall from '../../assets/graphs/diabplot.png'
+import IMG5 from '../../assets/graphs/surv2.png?w=300;400;500;600;700;800;900;1000;1200;1500;1800;2000&format=webp&as=srcset'
+import IMG5_fall from '../../assets/graphs/surv2.png'
+import IMG6 from '../../assets/graphs/lambda.png?w=300;400;500;600;700;800;900;1000;1200;1500;1800;2000&format=webp&as=srcset'
+import IMG6_fall from '../../assets/graphs/lambda.png'
 
 
 function Skills() {
@@ -42,8 +44,9 @@ function Skills() {
   {/* 1st Image center */}
   <div className="js-build-in-trigger build-in-animate">
     <picture>
-      <source srcSet={IMG2} type='image/webp'/>
-      <img aria-hidden="true" width={2496} height={1302} loading='lazy' decoding='async' className='width-full d-block height-auto position-relative z-1 rounded-3 border js-build-in-item build-in-slideX-right build-in-animate' src={IMG2_fall} alt="" /></picture>
+      <source srcSet={IMG2} type='image/webp' sizes=''/>
+      <img aria-hidden="true" loading='lazy' decoding='async' className='width-full d-block height-auto position-relative z-1 rounded-3 border js-build-in-item build-in-slideX-right build-in-animate' src={IMG2_fall} alt="" />
+      </picture>
   </div>
   <div className='d-flex js-build-in-trigger position-relative build-in-animate'>
   <img alt="" aria-hidden="true" width="584" height="584" className="animation-rotate position-absolute height-auto d-none d-md-block col-7 events-none home-shape-rotate" style={{bottom: "-50%", right: "-20%", animationDuration: "300s"}} loading="lazy" decoding="async" src="https://github.githubassets.com/assets/shape-1-c219318e479a.svg"/>
@@ -108,7 +111,8 @@ function Skills() {
         <div className="overflow-hidden col-md-6 rounded-right-3">
           {/* IMG */}
           <picture>
-          <img className="rounded-3 width-full d-block height-auto" width="1306" height="992" loading="lazy" decoding="async" alt="" aria-hidden="true" src={IMG4}/>
+            <source srcSet={IMG4} type='image/webp'/>
+          <img className="rounded-3 width-full d-block height-auto" width="1306" loading="lazy" decoding="async" alt="" aria-hidden="true" src={IMG4_fall}/>
           </picture>
         </div>
         <div className="position-absolute bottom-0 right-0 events-none z-n1" style={{transform: "translate(165px, 81.92px)",}}></div>
@@ -133,7 +137,8 @@ function Skills() {
           <div className="overflow-hidden rounded-bottom-3">
             {/* IMG */}
             <picture>
-            <img className="width-full d-block height-auto rounded-3 js-build-in-item build-in-scale-fade build-in-animate" width="1209" height="890" loading="lazy" decoding="async" alt="" aria-hidden="true" src={IMG5}/>
+              <source src={IMG5} type='image/webp'/>
+            <img className="width-full d-block height-auto rounded-3 js-build-in-item build-in-scale-fade build-in-animate" loading="lazy" decoding="async" alt="" aria-hidden="true" src={IMG5_fall}/>
             </picture>
           </div>
           <div className="position-absolute bottom-0 right-0 events-none z-n1"></div>
@@ -156,7 +161,8 @@ function Skills() {
           <div className="overflow-hidden rounded-bottom-3">
             {/* IMG */}
             <picture>
-            <img className="width-full d-block height-auto js-build-in-item build-in-scale-fade build-in-animate rounded-3" width="1209" height="890" loading="lazy" decoding="async" alt="" aria-hidden="true" src={IMG6}/>
+              <source src={IMG6} type='image/webp'/>
+            <img className="width-full d-block height-auto js-build-in-item build-in-scale-fade build-in-animate rounded-3" loading="lazy" decoding="async" alt="" aria-hidden="true" src={IMG6_fall}/>
             </picture>
           </div>
           <div className="position-absolute bottom-0 right-0 events-none z-n1"></div>
