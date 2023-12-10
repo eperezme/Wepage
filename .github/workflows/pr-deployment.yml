@@ -8,15 +8,16 @@ on:
 jobs:
   deploy-check:
     runs-on: ubuntu-latest
-
+    environment:
+      name: test
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-
-      - name: Set up Node.js
-        uses: actions/setup-node@v2
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Set up Node
+        uses: actions/setup-node@v3
         with:
-          node-version: 14
+          node-version: 18
+          cache: 'npm'
 
       - name: Install dependencies
         run: npm install
