@@ -1,0 +1,87 @@
+/* FILEPATH: /c:/Users/eduar/Desktop/eperezme.github.io/src/animations.css */
+
+/* Animation for scaling from top */
+.build-in-scale-top {
+  transition: transform .7s cubic-bezier(0.16, 1, 0.3, 1);
+  transform: scaleY(0);
+  transform-origin: 0 0;
+}
+
+.build-in-scale-top.build-in-animate {
+  transform: scaleY(1);
+}
+
+/* Animation for sliding from left */
+.build-in-slideX-left {
+  opacity: 0;
+  transition: opacity .6s cubic-bezier(0.16, 1, 0.3, 1),transform .6s cubic-bezier(0.16, 1, 0.3, 1);
+  transform: translateX(-15px);
+}
+
+.build-in-slideX-left.build-in-animate {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Animation for sliding from right */
+.build-in-slideX-right {
+  opacity: 0;
+  transition: opacity .6s cubic-bezier(0.16, 1, 0.3, 1),transform .6s cubic-bezier(0.16, 1, 0.3, 1);
+  transform: translateX(15px);
+}
+
+.build-in-slideX-right.build-in-animate {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.build-in-slideY {
+  opacity: 0;
+  transition: opacity .6s cubic-bezier(0.16, 1, 0.3, 1),transform .6s cubic-bezier(0.16, 1, 0.3, 1);
+  transform: translateY(15px);
+}
+
+.build-in-slideY.build-in-animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Animation for fading in */
+.build-in-fade {
+  opacity: 0;
+  transition: opacity .6s cubic-bezier(0.16, 1, 0.3, 1),transform .6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.build-in-fade.build-in-animate {
+  opacity: 1;
+}
+
+/* Animation for scaling and fading in */
+.build-in-scale-fade {
+  opacity: 0;
+  transition: opacity .7s cubic-bezier(0.16, 1, 0.3, 1),transform .7s cubic-bezier(0.16, 1, 0.3, 1);
+  transform: scale(0.96);
+}
+
+.build-in-scale-fade.build-in-animate {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Animation for hovering on card-skew */
+card-skew:hover [data-target="card-skew.shine"] {
+  opacity: .85;
+}
+
+/* Animation for card-skew shine effect */
+[data-target="card-skew.shine"] {
+  width: 650px;
+  height: 650px;
+  background-color: var(--mktg-accent-primary);
+  filter: blur(180px);
+  border-radius: 300px;
+  opacity: 0;
+  transition: opacity 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+  mix-blend-mode: soft-light;
+  will-change: transform;
+}

@@ -7,6 +7,7 @@ import './App.css'
 import './colors.css'
 import './typography.css'
 import './other.css'
+import './animations.css'
 // import {ThemeProvider, BaseStyles} from '@primer/react'
 import '@primer/css/utilities/index.scss'
 import '@primer/css/core/index.scss'
@@ -21,6 +22,8 @@ import Projects from './sources/projects/Projects.jsx'
 import Contact from './sources/contact/Contact.jsx'
 
 
+// import IntersectionObserverComponent from './functions/observer_old.jsx'
+import BuildInAnimation from './functions/observer.jsx'
 
 
 function App() {
@@ -30,12 +33,16 @@ function App() {
       <div className="overflow-x-clip page-responsive header-overlay home-campaign env-production logged-in color-bg-default">
         <div className='font-mktg'>
 
+        {/* <IntersectionObserverComponent> */}
+          <BuildInAnimation/>
           <Header/>
           <Skills/>
           <Experience/>
           <Projects/>
           <Contact/>
 
+
+        {/* </IntersectionObserverComponent> */}
         </div>
       </div>
     </>
