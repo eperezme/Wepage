@@ -27,7 +27,7 @@ jobs:
 
       - name: Deployment Check
         run: |
-          if npm run build; then
+          if [ $? -eq 0 ]; then
             echo "Deployment check passed. Ready to merge."
           else
             echo "Deployment check failed. There are errors in the build."
