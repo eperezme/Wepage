@@ -19,7 +19,6 @@ import IMG6_fall from '../../assets/graphs/lambda.png'
 function Skills() {
   return (
     <div className='color-skills js-section overflow-hidden px-3 pb-8 pt-5'>
-          <script type="module" defer src="animation.js"></script>
       {/* SKILLS */}
       <div className='container-xl'>
   {/* Title */}
