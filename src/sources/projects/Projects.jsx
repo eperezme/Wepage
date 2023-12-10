@@ -27,7 +27,9 @@ function Projects() {
               Stuff I made for fun
             </h2>
           </div>
-          <img alt="" aria-hidden="true" width="502" height="735" className="animation-rotate position-absolute height-auto d-none d-md-block col-5 events-none js-build-in-item build-in-fade" style={{top: "-9%", right: "-12%", transitionDelay: "400ms",}} loading="lazy" decoding="async" src="https://github.githubassets.com/assets/shape-3-9e542b5c31b8.svg"></img>
+          {/* Rotating image */}
+          {/* [ ] FIX OVERFLOW */}
+          <img alt="" aria-hidden="true" width="502" height="735" className="overflow animation-rotate position-absolute height-auto d-none d-md-block col-5 events-none js-build-in-item build-in-fade" style={{top: "-9%", right: "-12%", transitionDelay: "400ms",}} loading="lazy" decoding="async" src="https://github.githubassets.com/assets/shape-3-9e542b5c31b8.svg"></img>
         </div>
         {/* IMAGEN CENTRAL */}
         <picture>

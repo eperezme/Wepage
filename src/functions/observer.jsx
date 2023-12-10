@@ -1,46 +1,64 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect } from 'react';
 
-const IntersectionObserverComponent = ({ children }) => {
+const BuildInAnimation = () => {
+  const r = "build-in-animate";
+  const n = "build-in-reduced";
+  const o = 30;
+  const a = 0;
+  const l = 0;
+
   useEffect(() => {
-    // Find all elements with the class 'js-build-in-trigger'
-    const triggerElements = document.querySelectorAll('.js-build-in-trigger');
-
-    // Loop through each trigger element and create a separate Intersection Observer for each
-    triggerElements.forEach((triggerElement) => {
-      const triggerObserver = new IntersectionObserver(
-        (entries) => {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-              // If the trigger element is at least half in the viewport, add animation class
-              triggerElement.classList.add('build-in-animate');
-              const itemsInTrigger = triggerElement.querySelectorAll('.js-build-in-item');
-              itemsInTrigger.forEach((item) => item.classList.add('build-in-animate'));
-            } else if (entry.boundingClientRect.top > window.innerHeight && entry.isIntersecting === false) {
-              // If the trigger element is scrolled above the viewport, remove animation class
-              triggerElement.classList.remove('build-in-animate');
-              const itemsInTrigger = triggerElement.querySelectorAll('.js-build-in-item');
-              itemsInTrigger.forEach((item) => item.classList.remove('build-in-animate'));
+    const handleIntersection = (entries) => {
+      for (let entry of entries) {
+        if (entry.target.classList.toggle(r, entry.isIntersecting)) {
+          if (entry.target.classList.contains("js-build-in-trigger")) {
+            for (let item of entry.target.querySelectorAll(".js-build-in-item")) {
+              item.classList.toggle(r, entry.isIntersecting);
             }
-          });
-        },
-        
-      );
+          }
+        }
+      }
+    };
 
-      // Find all elements with the class 'js-build-in-item' inside the current trigger element
-      const animateElements = triggerElement.querySelectorAll('.js-build-in-item');
-
-      // Observe each 'js-build-in-item' element using the triggerObserver
-      animateElements.forEach((el) => triggerObserver.observe(el));
-
-      // Clean up the observer when the trigger element is removed from the DOM
-      return () => {
-        animateElements.forEach((el) => triggerObserver.unobserve(el));
-        triggerObserver.disconnect();
-      };
+    const intersectionObserver = new IntersectionObserver(handleIntersection, {
+      rootMargin: `-${a}% 0% -${o}% 0%`,
+      threshold: l
     });
-  }, []); // Empty dependency array to ensure useEffect runs only once when the component mounts
 
-  return <div>{children}</div>;
+    document.querySelectorAll(".js-build-in-trigger[data-build-in-stagger], .js-build-in-group[data-build-in-stagger]").forEach((trigger) => {
+      const stagger = parseInt(trigger.getAttribute("data-build-in-stagger"));
+      const items = trigger.querySelectorAll(".js-build-in-item");
+      items.forEach((item, index) => {
+        item.style.transitionDelay = `${index * stagger}ms`;
+      });
+    });
+
+    document.querySelectorAll(".js-build-in-trigger, .js-build-in-item").forEach((element) => {
+      intersectionObserver.observe(element);
+    });
+
+    return () => {
+      intersectionObserver.disconnect();
+    };
+  }, [a, o, l, r]);
+
+  const isReducedMotion = (element) => {
+    const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+    const buildNonDecorative = element.getAttribute("data-build-non-decorative") || "false";
+    return prefersReducedMotion.matches && buildNonDecorative === "false";
+  };
+
+  const addClasses = (element) => {
+    element.classList.add(n);
+    element.classList.add(r);
+    const items = element.querySelectorAll(".js-build-in-item, .js-type-in-item");
+    items.forEach((item) => {
+      item.classList.add(n);
+      item.classList.add(r);
+    });
+  };
+
+  return null; // or return any JSX if needed
 };
 
-export default IntersectionObserverComponent;
+export default BuildInAnimation;
