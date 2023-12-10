@@ -1,0 +1,34 @@
+name: PR Deployment
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  deploy-check:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: 14
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build
+        run: npm run build
+
+      - name: Deployment Check
+        run: |
+          if npm run build; then
+            echo "Deployment check passed. Ready to merge."
+          else
+            echo "Deployment check failed. There are errors in the build."
+            exit 1
+          fi
