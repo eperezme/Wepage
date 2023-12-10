@@ -24,7 +24,7 @@ const Header = () => {
             <img alt="" aria-hidden="true" className="image-fade top-0 position-absolute height-auto events-none d-none d-sm-block" style={{left: "40%", overflowX: "hidden", overflowY: "visible"}} src={IMG1_fall}/></picture>
         </div>
         <div className="overflow-hidden color-header home-campaign-hero">
-          <div className="position-relative pt-3 pt-sm-8 pt-lg-12 container-xl js-build-in-trigger build-in-animate">
+          <div className="position-relative pt-3 pt-sm-8 pt-lg-12 container-xl js-build-in-trigger">
             <div className="d-flex pt-sm-9">
               <div className='col-1 d-flex flex-column events-none position-relative'>
                 <div className="mx-auto">
@@ -55,7 +55,7 @@ const Header = () => {
                     {/* [ ] href to contact me section*/}
                     <a href="#contact" className="btn-mktg home-campaing-enterprise btn-muted-mktg" data-test-selector="start-trial-button">Contact Me</a>
                   </div>
-                  <div className="my-8 my-md-10 build-in-animate col-12"></div>
+                  <div className="my-8 my-md-10 col-12"></div>
                   </div>
                 </div>
               </div>

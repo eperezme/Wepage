@@ -1,31 +1,44 @@
 import React, { useEffect, useRef } from 'react';
 
-
-
 const IntersectionObserverComponent = ({ children }) => {
-  const observerRef = useRef(null);
+  const triggerObserverRef = useRef(null);
 
   useEffect(() => {
-    const observerCallback = (entries) => {
+    // Callback function for the Intersection Observer
+    const triggerObserverCallback = (entries) => {
       entries.forEach((entry) => {
-        // Check if the bottom of the element is above the viewport
+        const triggerElement = entry.target.closest('.js-build-in-trigger');
+
         if (entry.isIntersecting) {
-          entry.target.classList.add('build-in-animate');
+          // If the trigger element is in the viewport, add animation class
+          if (triggerElement) {
+            triggerElement.classList.add('build-in-animate');
+            const itemsInTrigger = triggerElement.querySelectorAll('.js-build-in-item');
+            itemsInTrigger.forEach((item) => item.classList.add('build-in-animate'));
+          }
         } else if (entry.boundingClientRect.top > 0) {
-          entry.target.classList.remove('build-in-animate');
+          // If the trigger element is scrolled above the viewport, remove animation class
+          if (triggerElement) {
+            triggerElement.classList.remove('build-in-animate');
+            const itemsInTrigger = triggerElement.querySelectorAll('.js-build-in-item');
+            itemsInTrigger.forEach((item) => item.classList.remove('build-in-animate'));
+          }
         }
       });
     };
 
-    // That should threshold the js-build-in-trigger element
-    observerRef.current = new IntersectionObserver(observerCallback, { threshold: 0.5 });
+    // Create the Intersection Observer for the trigger element
+    triggerObserverRef.current = new IntersectionObserver(triggerObserverCallback, { threshold: 0.5 });
 
+    // Find all elements with the class 'js-build-in-item'
     const animateElements = document.querySelectorAll('.js-build-in-item');
-    animateElements.forEach((el) => observerRef.current.observe(el));
+
+    // Observe each 'js-build-in-item' element using the triggerObserver
+    animateElements.forEach((el) => triggerObserverRef.current.observe(el));
 
     // Clean up the observer when the component unmounts
     return () => {
-      animateElements.forEach((el) => observerRef.current.unobserve(el));
+      animateElements.forEach((el) => triggerObserverRef.current.unobserve(el));
     };
   }, []); // Empty dependency array to ensure useEffect runs only once when the component mounts
 
