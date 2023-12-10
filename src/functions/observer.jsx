@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect } from 'react';
 
 // There is only one class that triggers the animation 
 // ==== .build-in-animate ====
@@ -7,23 +7,31 @@ import React, { useEffect, useRef } from 'react';
 // ==== .js-build-in-trigger ==== 
 // ==== .js-build-in-item ==== This are individual elements that are animated
 
-function Oberve() {
-
+const IntersectionObserverComponent = ({ children }) => {
   useEffect(() => {
-    const targetTrigger = document.querySelectorAll('.js-build-in-item');
+    const observerCallback = (entries) => {
+      entries.forEach((entry) => {
+        console.log(entry);
+        if (entry.isIntersecting) {
+          entry.target.classList.add('build-in-animate');
+        } else {
+          entry.target.classList.remove('build-in-animate');
+        }
+      });
+    };
 
-    const observer = new IntersectionObserver((entries) => {
-      console.log(entries);
-    });
+    const observer = new IntersectionObserver(observerCallback, { threshold: 0.5 });
 
-    targetSections.forEach((section) => {
-      observer.observe(section);
-    });
-  }, []);
+    const animateElements = document.querySelectorAll('.js-build-in-item');
+    animateElements.forEach((el) => observer.observe(el));
 
-  return (
-    // ...
-  );
-}
+    // Clean up the observer when the component unmounts
+    return () => {
+      animateElements.forEach((el) => observer.unobserve(el));
+    };
+  }, []); // Empty dependency array to ensure useEffect runs only once when the component mounts
 
-export default Oberve;
+  return <div>{children}</div>;
+};
+
+export default IntersectionObserverComponent;

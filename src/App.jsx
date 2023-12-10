@@ -22,7 +22,7 @@ import Projects from './sources/projects/Projects.jsx'
 import Contact from './sources/contact/Contact.jsx'
 
 
-
+import IntersectionObserverComponent from './functions/observer.jsx'
 
 
 function App() {
@@ -32,12 +32,15 @@ function App() {
       <div className="overflow-x-clip page-responsive header-overlay home-campaign env-production logged-in color-bg-default">
         <div className='font-mktg'>
 
+        <IntersectionObserverComponent>
           <Header/>
           <Skills/>
           <Experience/>
           <Projects/>
           <Contact/>
 
+
+        </IntersectionObserverComponent>
         </div>
       </div>
     </>
