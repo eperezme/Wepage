@@ -24,17 +24,20 @@ import Contact from './sources/contact/Contact.jsx'
 
 // import IntersectionObserverComponent from './functions/observer_old.jsx'
 import BuildInAnimation from './functions/observer.jsx'
-
+// import "./functions/mouse-hover.js"
+import MouseTracker from './functions/mouse-hover.jsx'
 
 function App() {
 
   return (
     <>
+      <source defer src="./functions/mouse-hover.js"></source>
       <div className="overflow-x-clip page-responsive header-overlay home-campaign env-production logged-in color-bg-default">
         <div className='font-mktg'>
 
         {/* <IntersectionObserverComponent> */}
           <BuildInAnimation/>
+          <MouseTracker/>
           <Header/>
           <Skills/>
           <Experience/>

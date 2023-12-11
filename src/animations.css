@@ -85,3 +85,25 @@ card-skew:hover [data-target="card-skew.shine"] {
   mix-blend-mode: soft-light;
   will-change: transform;
 }
+
+.card{
+  background-color: var(--mktg-accent-primary);
+  border: var(--border-width-default) solid var(--mktg-accent-primary);
+  border-radius: var(--border-radius-default);
+  cursor: pointer;
+  height: 260px;
+  position: relative;
+  width: 300px;
+}
+
+.card::before{
+  background: radial-gradient(800px circle at var(--mouse-x) var(--mouse-y), var(--mktg-accent-primary), transparent 40%);
+  border-radius: inherit;
+  content: "";
+  height: 100%;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  z-index: 2;
+}
