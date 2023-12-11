@@ -63,7 +63,7 @@ function Projects() {
                     <source srcSet={PORTAL} type='image/webp'/>
                     <img src={PORTAL} alt="" loading="lazy" decoding="async" width="1190" height="964" className="width-full height-auto d-block"/></picture>
                     </div>
-                    <img alt="" aria-hidden="true" width="1000" height="1000" className="position-absolute d-none d-md-block events-none js-build-in-item build-in-fade" style={{bottom: "-300px", right: "-240px", transitionDelay: "200ms",}} loading="lazy" decoding="async" src="https://github.githubassets.com/assets/bg-glow-purple-6e9a6a96cb04.png"></img>
+                    <img alt="" aria-hidden="true" width="1000" height="1000" className="position-absolute d-none d-md-block events-none js-build-in-item build-in-fade card" style={{bottom: "var(--mouse-y)", right: "var(--mouse-x)", transitionDelay: "200ms",}} loading="lazy" decoding="async" src="https://github.githubassets.com/assets/bg-glow-purple-6e9a6a96cb04.png"></img>
                   </div>
                 </div>
               </div>
