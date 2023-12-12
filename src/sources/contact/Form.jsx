@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import emailjs from '@emailjs/browser';
 
 const Form = () => {
@@ -6,12 +6,17 @@ const Form = () => {
   const [email, setEmail] = useState('');
   const [subject, setSubject] = useState('');
   const [message, setMessage] = useState('');
+  const [isFormValid, setIsFormValid] = useState(false);
+  const [errorMessage, setErrorMessage] = useState('');
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    if (message.trim() === '') {
-      return; // Do not send the message if it is empty
+    if (!isFormValid) {
+      const errorMessage = 'Please fill in all fields.'; // Set error message if any field is empty
+      setErrorMessage(errorMessage); // Update the state
+      alert(errorMessage); // Display error message in a popup alert
+      return;
     }
 
     // Replace with your own emailjs service ID, template ID, and public key
@@ -27,21 +32,24 @@ const Form = () => {
     }, publicKey)
       .then((response) => {
         console.log('Email sent successfully!', response.status, response.text);
-        // Reset form fields
+        // Reset form fields and error message
         setName('');
         setEmail('');
         setSubject('');
         setMessage('');
+        alert('Email sent successfully!');
       })
       .catch((error) => {
         console.error('Error sending email:', error);
       });
   };
 
-  return (
+  useEffect(() => {
+    setIsFormValid(name.trim() !== '' && email.trim() !== '' && subject.trim() !== '' && message.trim() !== '');
+  }, [name, email, subject, message]);
 
+  return (
     <form onSubmit={handleSubmit} className="col-md-11 col-lg-9">
-      
       <div className="form-group">
         <label className='form'>
           <h4>Name</h4>
@@ -69,7 +77,6 @@ const Form = () => {
           <textarea className='form-control' value={message} onChange={(e) => setMessage(e.target.value)} placeholder="Enter your message" />
         </label>
       </div>
-
 
       <div className="d-flex flex-column flex-md-row mt-3 pb-2">
         <button type="submit" className="btn-mktg">Submit
