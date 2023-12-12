@@ -124,7 +124,7 @@ function Experience() {
           {/* Left Card */}
           <div className="col-md-6 d-flex">
             <Tilt>
-              <card-skew class="overflow-hidden rounded-3 mb-3 mb-md-5" data-catalyst data-perspective="700" style={{transform: "perspective(700px) rotateX(-0.03deg) rotateY(-0.03deg)"}}>
+              <card-skew class="height-full overflow-hidden rounded-3 mb-3 mb-md-5" data-catalyst data-perspective="700" style={{transform: "perspective(700px) rotateX(-0.03deg) rotateY(-0.03deg)"}}>
                 <div className="feature-card-mktg d-md-flex rounded-3 color-bg-subtle border position-relative flex-justify-between z-1 height-full flex-column" data-target="card-skew.bounding">
                   <div className="d-md-flex flex-column flex-1 p-5 p-sm-6 py-lg-8 pl-lg-8 pr-lg-12 flex-justify-start">
                     <p className="f2-mktg text-medium color-fg-muted mb-4">
@@ -151,7 +151,7 @@ function Experience() {
           {/* Right Card */}
           <div className="col-md-6 d-flex">
         <Tilt>
-          <card-skew class="overflow-hidden rounded-3 mb-3 mb-md-5" data-catalyst data-perspective="700" style={{transform: "perspective(700px) rotateX(-0.81deg) rotateY(0.23deg)"}}>
+          <card-skew class="height-full overflow-hidden rounded-3 mb-3 mb-md-5" data-catalyst data-perspective="700" style={{transform: "perspective(700px) rotateX(-0.81deg) rotateY(0.23deg)"}}>
               <div className="feature-card-mktg d-md-flex rounded-3 color-bg-subtle border position-relative flex-justify-between z-1 height-full flex-column" data-target="card-skew.bounding">
                 <div className="d-md-flex flex-column flex-1 p-5 p-sm-6 py-lg-8 pl-lg-8 pr-lg-12 flex-justify-start">
           <p className="f2-mktg text-medium color-fg-muted mb-4"><em>Lore Ipsum </em>
