@@ -10,6 +10,10 @@ const Form = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
+    if (message.trim() === '') {
+      return; // Do not send the message if it is empty
+    }
+
     // Replace with your own emailjs service ID, template ID, and public key
     const serviceId = 'service_5shgyrp';
     const templateId = 'template_06nu5j3';
