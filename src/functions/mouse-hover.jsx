@@ -10,9 +10,12 @@ const MouseTracker = () => {
 
     target.style.setProperty("--mouse-x", `${x}px`);
     target.style.setProperty("--mouse-y", `${y}px`);
+
+    console.log({x, y});
   };
 
   return null;
 };
 
 export default MouseTracker;
+

@@ -73,7 +73,7 @@ function Skills() {
             {/* [ ] REPLACE IMAGE */}
             <picture>
               <source srcSet={IMG3} type='image/webp'/>
-              <img src={IMG3_fall} loading="lazy" width="960" height="1222" alt="" decoding="async" className="rounded-3 width-full d-block height-auto"/></picture>
+              <img src={IMG3_fall} loading="lazy" alt="" decoding="async" className="rounded-3 width-full d-block height-auto"/></picture>
           </div>
           <div className='js-build-in-item build-in-slideX-right overflow-hidden rounded-3 position-absolute right-3 bottom-3 bottom-sm-0 z-1 d-md-none style={{bottom: "-300px", right: "-200px", transitionDelay: "300ms",}} '>
           <img alt="" aria-hidden="true" width="1000" height="1000" className="width-full d-block height-auto" loading="lazy" decoding="async" src="https://github.githubassets.com/assets/bg-glow-purple-6e9a6a96cb04.png"></img>
@@ -97,8 +97,8 @@ function Skills() {
   </div>
   {/* CARD CENTRAL 1 */}
   <div className="position-relative z-1 mb-md-5">
-    <card-skew className="overflow-hidden rounded-1 mb-3 mb-md-5">
-      <div className="feature-card-mktg d-md-flex rounded-3 color-bg-subtle border position-relative flex-justify-between z-1 height-full flex-row">
+    <card-skew class="overflow-hidden rounded-1 mb-3 mb-md-5" data-catalyst data-perspective="700">
+      <div className="feature-card-mktg d-md-flex rounded-3 color-bg-subtle border position-relative flex-justify-between z-1 height-full flex-row" data-target="card-skew.bounding">
         <div className="d-md-flex flex-column flex-1 p-5 p-sm-6 py-lg-8 pl-lg-8 pr-lg-12 col-md-6 flex-justify-between">
           <p className="f2-mktg text-medium color-fg-muted mb-4">
             <em>Lorem ipsum </em>
@@ -112,10 +112,10 @@ function Skills() {
           {/* IMG */}
           <picture>
             <source srcSet={IMG4} type='image/webp'/>
-          <img className="rounded-3 width-full d-block height-auto" width="1306" loading="lazy" decoding="async" alt="" aria-hidden="true" src={IMG4_fall}/>
+          <img className="rounded-3 width-full d-block height-auto" loading="lazy" decoding="async" alt="" aria-hidden="true" src={IMG4_fall}/>
           </picture>
         </div>
-        <div className="position-absolute bottom-0 right-0 events-none z-n1" style={{transform: "translate(165px, 81.92px)",}}></div>
+        <div data-target="card-skew.shine" className="position-absolute events-none z-n1"></div>
       </div>
     </card-skew>
   </div>
@@ -123,8 +123,8 @@ function Skills() {
   <div className="d-flex flex-column flex-md-row gutter js-build-in-trigger">
     {/* C1 */}
     <div className="col-md-6 d-flex">
-      <card-skew className="overflow-hidden rounded-3 mb-3 mb-md-5">
-        <div className="feature-card-mktg d-md-flex rounded-3 color-bg-subtle border position-relative flex-justify-between z-1 height-full flex-column">
+      <card-skew class="overflow-hidden rounded-3 mb-3 mb-md-5" data-catalyst data-perspective="700">
+        <div className="feature-card-mktg d-md-flex rounded-3 color-bg-subtle border position-relative flex-justify-between z-1 height-full flex-column" data-target="card-skew.bounding">
           <div className="d-md-flex flex-column flex-1 p-5 p-sm-6 py-lg-8 pl-lg-8 pr-lg-12 flex-justify-start">
             <p className="f2-mktg text-medium color-fg-muted mb-4">
               <em>Lorem ipsum </em>
@@ -141,14 +141,14 @@ function Skills() {
             <img className="width-full d-block height-auto rounded-3 js-build-in-item build-in-scale-fade" loading="lazy" decoding="async" alt="" aria-hidden="true" src={IMG5_fall}/>
             </picture>
           </div>
-          <div className="position-absolute bottom-0 right-0 events-none z-n1"></div>
+          <div data-target="card-skew.shine" className="position-absolute bottom-0 right-0 events-none z-n1"></div>
         </div>
       </card-skew>
     </div>
     {/* C2 */}
     <div className="col-md-6 d-flex">
-    <card-skew className="overflow-hidden rounded-3 mb-3 mb-md-5">
-        <div className="feature-card-mktg d-md-flex rounded-3 color-bg-subtle border position-relative flex-justify-between z-1 height-full flex-column">
+    <card-skew class="overflow-hidden rounded-3 mb-3 mb-md-5" data-catalyst data-perspective="700">
+        <div className="feature-card-mktg d-md-flex rounded-3 color-bg-subtle border position-relative flex-justify-between z-1 height-full flex-column" data-target="card-skew.bounding">
           <div className="d-md-flex flex-column flex-1 p-5 p-sm-6 py-lg-8 pl-lg-8 pr-lg-12 flex-justify-start">
             <p className="f2-mktg text-medium color-fg-muted mb-4">
               <em>Lorem ipsum </em>
@@ -165,7 +165,7 @@ function Skills() {
             <img className="width-full d-block height-auto js-build-in-item build-in-scale-fade rounded-3" loading="lazy" decoding="async" alt="" aria-hidden="true" src={IMG6_fall}/>
             </picture>
           </div>
-          <div className="position-absolute bottom-0 right-0 events-none z-n1"></div>
+          <div data-target="card-skew.shine" className="position-absolute bottom-0 right-0 events-none z-n1"></div>
         </div>
       </card-skew>
     </div>

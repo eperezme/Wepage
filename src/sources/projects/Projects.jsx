@@ -31,10 +31,14 @@ function Projects() {
           {/* [ ] FIX OVERFLOW */}
           <img alt="" aria-hidden="true" width="502" height="735" className="overflow animation-rotate position-absolute height-auto d-none d-md-block col-5 events-none js-build-in-item build-in-fade" style={{top: "-9%", right: "-12%", transitionDelay: "400ms",}} loading="lazy" decoding="async" src="https://github.githubassets.com/assets/shape-3-9e542b5c31b8.svg"></img>
         </div>
+        
+        
         {/* IMAGEN CENTRAL */}
+
+
         <picture>
         <source srcSet={PORTAL} type='image/webp'/>
-        <img className="position-relative z-1 width-full height-auto d-block rounded-3 border box-shadow-card-dark-mktg" width="2498" height="1450" loading="lazy" decoding="async" alt="Illustration of project table view with cards grouped by 'Feature planning' phase." src={PORTAL}></img>
+        <img className="position-relative z-1 width-full height-auto d-block rounded-3 border box-shadow-card-dark-mktg" loading="lazy" decoding="async" alt="Illustration of project table view with cards grouped by 'Feature planning' phase." src={PORTAL}></img>
         </picture>
         <div className="d-flex position-relative">
           <div className="col-1 d-flex flex-column flex-items-center position-relative js-build-in-trigger">
@@ -61,9 +65,9 @@ function Projects() {
                     <div className="js-build-in-item build-in-slideY border box-shadow-mktg-xl overflow-hidden rounded-2 position-relative left-4 z-1" style={{maxWidth: "595px", marginTop: "-50%", transitionDelay: "100ms"}}>
                     <picture>
                     <source srcSet={PORTAL} type='image/webp'/>
-                    <img src={PORTAL} alt="" loading="lazy" decoding="async" width="1190" height="964" className="width-full height-auto d-block"/></picture>
+                    <img src={PORTAL} alt="" loading="lazy" decoding="async" className="width-full height-auto d-block"/></picture>
                     </div>
-                    <img alt="" aria-hidden="true" width="1000" height="1000" className="position-absolute d-none d-md-block events-none js-build-in-item build-in-fade card" style={{bottom: "var(--mouse-y)", right: "var(--mouse-x)", transitionDelay: "200ms",}} loading="lazy" decoding="async" src="https://github.githubassets.com/assets/bg-glow-purple-6e9a6a96cb04.png"></img>
+                    <img alt="" aria-hidden="true" width="1000" height="1000" className="position-absolute d-none d-md-block events-none js-build-in-item build-in-fade" style={{bottom: "var(--mouse-y)", right: "var(--mouse-x)", transitionDelay: "200ms",}} loading="lazy" decoding="async" src="https://github.githubassets.com/assets/bg-glow-purple-6e9a6a96cb04.png"></img>
                   </div>
                 </div>
               </div>
@@ -81,12 +85,17 @@ function Projects() {
             </div>
           </div>
         </div>
+
+
+
         {/* CARDS */}
         <div className="d-flex flex-column flex-md-row gutter js-build-in-trigger mb-3 mb-md-5">
+
+
           {/* Left Card */}
           <div className="position-relative z-1 col-md-6 d-flex">
-            <card-skew className="overflow-hidden rounded-3 mb-3 mb-md-5">
-              <div className="feature-card-mktg d-md-flex rounded-3 color-bg-subtle border position-relative flex-justify-between z-1 height-full flex-column" target="card-skew.bounding">
+            <card-skew class="overflow-hidden rounded-3 mb-3 mb-md-5" data-catalyst data-perspective="700">
+              <div className="feature-card-mktg d-md-flex rounded-3 color-bg-subtle border position-relative flex-justify-between z-1 height-full flex-column" data-target="card-skew.bounding">
                 <div className="d-md-flex flex-column flex-1 p-5 p-sm-6 py-lg-8 pl-lg-8 pr-lg-12 flex-justify-start">
                   <p className="f2-mktg text-medium color-fg-muted mb-4">
                     <em>Lorem Ipsum </em>
@@ -102,16 +111,18 @@ function Projects() {
                 <div className="overflow-hidden rounded-bottom-3">
                   <picture>
                   <source srcSet={PORTAL} type='image/webp'/>
-                    <img className="width-full d-block height-auto js-build-in-item build-in-scale-up" width="1208" height="804" loading="lazy" decoding="async" alt="" aria-hidden="true" src={PORTAL}></img>
+                    <img className="width-full d-block height-auto js-build-in-item build-in-scale-up" loading="lazy" decoding="async" alt="" aria-hidden="true" src={PORTAL}></img>
                   </picture>
                 </div>
-                <div data-target="card-skew.shine" className="position-absolute bottom-0 right-0 events-none z-n1"></div>
+                <div data-target="card-skew.shine" className="position-absolute events-none z-n1"></div>
               </div>
             </card-skew>
           </div>
+
+
           {/* Right Card */}
           <div className="col-md-6 d-flex">
-            <card-skew className="overflow-hidden rounded-3 mb-3 mb-md-5" data-catalyst data-perspective="700" style={{transform: "perspective(700px) rotateX(-0.03deg) rotateY(-0.03deg)"}}>
+            <card-skew class="overflow-hidden rounded-3 mb-3 mb-md-5" data-catalyst data-perspective="700" style={{transform: "perspective(700px) rotateX(-0.03deg) rotateY(-0.03deg)"}}>
             <div className="feature-card-mktg d-md-flex rounded-3 color-bg-subtle border position-relative flex-justify-between z-1 height-full flex-column" data-target="card-skew.bounding">
               <div className="d-md-flex flex-column flex-1 p-5 p-sm-6 py-lg-8 pl-lg-8 pr-lg-12 flex-justify-start">
                 <p className="f2-mktg text-medium color-fg-muted mb-4">
@@ -128,16 +139,19 @@ function Projects() {
               <div className="overflow-hidden rounded-bottom-3">
                 <picture>
                   <source srcSet={PORTAL} type='image/webp'/>
-                  <img className="width-full d-block height-auto js-build-in-item build-in-scale-up" width="1208" height="804" loading="lazy" decoding="async" alt="" aria-hidden="true" src={PORTAL}></img>
+                  <img className="width-full d-block height-auto js-build-in-item build-in-scale-up" loading="lazy" decoding="async" alt="" aria-hidden="true" src={PORTAL}></img>
                 </picture>
               </div>
-              <div data-target="card-skew.shine" className="position-absolute bottom-0 right-0 events-none z-n1" style={{transform: "translate(291.93px, -99.87px)"}}></div>
+              <div data-target="card-skew.shine" className="position-absolute events-none z-n1"></div>
             </div>
             </card-skew>
           </div>
         </div>
+
+
         {/* Horizontal Card */}
-        <card-skew className="overflow-hidden rounded-3 mb-3 mb-md-5" data-catalyst data-perspective="700" style={{transform: "perspective(700px) rotateX(-0.03deg) rotateY(0.03deg)"}}>
+        <card-skew class="overflow-hidden rounded-3 mb-3 mb-md-5" data-catalyst data-perspective="700" style={{transform: "perspective(700px) rotateX(-0.03deg) rotateY(0.03deg)"}}>
+
           <div className="feature-card-mktg d-md-flex rounded-3 color-bg-subtle border position-relative flex-justify-between z-1 height-full flex-row" data-target="card-skew.bounding">
             <div className="d-md-flex flex-column flex-1 p-5 p-sm-6 py-lg-8 pl-lg-8 pr-lg-12 col-md-6 flex-justify-between">
               <p className="f2-mktg text-medium color-fg-muted mb-4">
@@ -152,15 +166,15 @@ function Projects() {
               </div>
             </div>
             <div className="overflow-hidden col-md-6 rounded-right-3">
-              <div className="d-flex flex-wrap position-relative top-n12 mt-n4 right-n4 p-4 js-build-in-trigger" style={{maxHeight: "480px"}}>
+              <div className="d-flex flex-wrap position-relative top-n12 mt-n4 right-n4 p-4 js-build-in-trigger">
                 {/* [ ] IMAGE */}
                 <picture>
                   <source srcSet={PORTAL} type='image/webp'/>
-                  <img className="width-full d-block height-auto js-build-in-item build-in-scale-fade" width="1288" height="992" loading="lazy" decoding="async" alt="" aria-hidden="true"src={PORTAL}/>
+                  <img className="width-full d-block height-auto js-build-in-item build-in-scale-fade" loading="lazy" decoding="async" alt="" aria-hidden="true" src={PORTAL}/>
                 </picture>
               </div>
             </div>
-            <div data-target="card-skew.shine" className="position-absolute bottom-0 right-0 events-none z-n1" style={{transform: "translate(312.75px, -18.905px)"}}></div>
+            <div data-target="card-skew.shine" className="position-absolute events-none z-n1"></div>
           </div>
         </card-skew>
       </div>

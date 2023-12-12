@@ -68,11 +68,6 @@
   transform: scale(1);
 }
 
-/* Animation for hovering on card-skew */
-card-skew:hover [data-target="card-skew.shine"] {
-  opacity: .85;
-}
-
 /* Animation for card-skew shine effect */
 [data-target="card-skew.shine"] {
   width: 650px;
@@ -84,16 +79,29 @@ card-skew:hover [data-target="card-skew.shine"] {
   transition: opacity 1.2s cubic-bezier(0.16, 1, 0.3, 1);
   mix-blend-mode: soft-light;
   will-change: transform;
+  /* transform: translate(var(--mouse-x), var(--mouse-y)); */
+  transform: translate(calc(var(--mouse-x) - 325px), calc(var(--mouse-y) - 325px));
 }
 
-.card{
-  background-color: var(--mktg-accent-primary);
+
+/* Animation for hovering on card-skew */
+card-skew:hover [data-target="card-skew.shine"] {
+  opacity: .85;
+}
+
+
+/* .card{
+  background-color: var(--color-bg-primary);
   border: var(--border-width-default) solid var(--mktg-accent-primary);
   border-radius: var(--border-radius-default);
   cursor: pointer;
-  height: 260px;
+  height: inherit;
   position: relative;
-  width: 300px;
+  width: inherit;
+}
+
+.card:hover::before{
+  opacity: 1;
 }
 
 .card::before{
@@ -101,9 +109,11 @@ card-skew:hover [data-target="card-skew.shine"] {
   border-radius: inherit;
   content: "";
   height: 100%;
+  opacity: 0;
   left: 0px;
   position: absolute;
   top: 0px;
+  transition: opacity 500ms;
   width: 100%;
   z-index: 2;
-}
+} */

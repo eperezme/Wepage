@@ -33,8 +33,8 @@ function Experience() {
           <img alt="" aria-hidden="true" width="595" height="595" className="animation-reverse-rotate position-absolute height-auto d-none d-md-block col-8 events-none" style={{top: "-10%", right: "-25%",}} loading="lazy" decoding="async" src="https://github.githubassets.com/assets/shape-2-f30dcc9bd35c.svg"></img>
         </div>
         {/* MAIN CARD */}
-        <card-skew className="overflow-hidden rounded-3 mb-3 mb-md-5 position-relative z-1">
-          <div className="color-bg-subtle border rounded-3 p-2 p-lg-6 js-build-in-trigger feature-card-mktg z-1 position-relative">
+        <card-skew class="overflow-hidden rounded-3 mb-3 mb-md-5 position-relative z-1" data-catalyst data-perspective="700">
+          <div className="color-bg-subtle border rounded-3 p-2 p-lg-6 js-build-in-trigger feature-card-mktg z-1 position-relative" data-target="card-skew.bounding">
             <div className="position-relative d-flex flex-column flex-md-row gutter-spacious col-lg-10 mx-auto my-lg-6">
               {/* column 1 */}
               <div className="col-md-6 js-build-in-item build-in-scale-right" style={{transitionDelay: "600ms"}}></div>
@@ -68,7 +68,7 @@ function Experience() {
                     <div className="js-build-in-item build-in-slideX-right border overflow-hidden rounded-2 position-relative left-6 z-1" style={{maxWidth: "541px", marginTop: "-30%", transitionDelay: "100ms"}}>
                     <picture>
                       <source srcSet={IMG7} type='image/webp'/>
-                      <img src={IMG7_fall} alt="" loading="lazy" decoding="async" width="1084" height="600" className="rounded-2 width-full height-auto d-block"/>
+                      <img src={IMG7_fall} alt="" loading="lazy" decoding="async" className="rounded-2 width-full height-auto d-block"/>
                     </picture>
                     </div>
                     <img alt="" aria-hidden="true" width="1000" height="1000" className="position-absolute d-none d-md-block events-none js-build-in-item build-in-fade" style={{bottom: "-160px", right: "-220px", transitionDelay: "200ms"}} loading="lazy" decoding="async" src="https://github.githubassets.com/assets/bg-glow-blue-036b8dc2d1ce.png"></img>
@@ -89,8 +89,8 @@ function Experience() {
         </div>
         {/* Horizontal Card */}
         <div className="position-relative z-1 js-build-in-trigger mb-3 mb-md-5">
-          <card-skew className="overflow-hidden rounded-3 mb-3 mb-md-5" style={{transform: "perspective(700px) rotateX(-0.03deg) rotateY(-0.03deg)"}}>
-            <div className="feature-card-mktg d-md-flex rounded-3 color-bg-subtle border position-relative flex-justify-between z-1 height-full flex-row">
+          <card-skew class="overflow-hidden rounded-3 mb-3 mb-md-5" data-catalyst data-perspective="700" style={{transform: "perspective(700px) rotateX(-0.03deg) rotateY(-0.03deg)"}}>
+            <div className="feature-card-mktg d-md-flex rounded-3 color-bg-subtle border position-relative flex-justify-between z-1 height-full flex-row" data-target="card-skew.bounding">
               <div className="d-md-flex flex-column flex-1 p-5 p-sm-6 py-lg-8 pl-lg-8 pr-lg-12 col-md-6 flex-justify-between">
                 <p className="f2-mktg text-medium color-fg-muted mb-4">
                   <em>Lorem Ipsum </em>
@@ -107,10 +107,10 @@ function Experience() {
                 <picture>
                 <source srcSet={PORTAL} type='image/webp'/>
                 {/* Image */}
-                <img className="width-full d-block height-auto js-build-in-item build-in-scale-fade" width="1288" height="992" loading="lazy" decoding="async" alt="" aria-hidden="true" src={PORTAL}></img>
+                <img className="width-full d-block height-auto js-build-in-item build-in-scale-fade" loading="lazy" decoding="async" alt="" aria-hidden="true" src={PORTAL}></img>
                 </picture>
               </div>
-              <div className="position-absolute bottom-0 right-0 events-none z-n1" style={{transform: "translate(324.78px, 121.285px)"}}></div>
+              <div data-target="card-skew.shine" className="position-absolute events-none z-n1"></div>
             </div>
           </card-skew>
         </div>
@@ -118,8 +118,8 @@ function Experience() {
         <div className="d-flex flex-column flex-md-row gutter js-build-in-trigger">
           {/* Left Card */}
           <div className="col-md-6 d-flex">
-            <card-skew className="overflow-hidden rounded-3 mb-3 mb-md-5" style={{transform: "perspective(700px) rotateX(-0.03deg) rotateY(-0.03deg)"}}>
-              <div className="feature-card-mktg d-md-flex rounded-3 color-bg-subtle border position-relative flex-justify-between z-1 height-full flex-column">
+            <card-skew class="overflow-hidden rounded-3 mb-3 mb-md-5" data-catalyst data-perspective="700" style={{transform: "perspective(700px) rotateX(-0.03deg) rotateY(-0.03deg)"}}>
+              <div className="feature-card-mktg d-md-flex rounded-3 color-bg-subtle border position-relative flex-justify-between z-1 height-full flex-column" data-target="card-skew.bounding">
                 <div className="d-md-flex flex-column flex-1 p-5 p-sm-6 py-lg-8 pl-lg-8 pr-lg-12 flex-justify-start">
                   <p className="f2-mktg text-medium color-fg-muted mb-4">
                     <em>Lorem </em>
@@ -134,16 +134,16 @@ function Experience() {
                 <div className="overflow-hidden rounded-bottom-3">
                   <picture>
                   <source srcSet={PORTAL} type='image/webp'/>
-                  <img className="rounded-3 width-full d-block height-auto js-build-in-item build-in-scale-fade" width="1208" height="764" loading="lazy" decoding="async" alt="" aria-hidden="true" src={PORTAL}/>
+                  <img className="rounded-3 width-full d-block height-auto js-build-in-item build-in-scale-fade" loading="lazy" decoding="async" alt="" aria-hidden="true" src={PORTAL}/>
                   </picture>
                 </div>
-                <div data-target="card-skew.shine" className="position-absolute bottom-0 right-0 events-none z-n1" style={{transform: "translate(324.41px, -78.27px)"}}></div>
+                <div data-target="card-skew.shine" className="position-absolute bottom-0 right-0 events-none z-n1"></div>
               </div>
             </card-skew>
           </div>
           {/* Right Card */}
           <div className="col-md-6 d-flex">
-        <card-skew className="overflow-hidden rounded-3 mb-3 mb-md-5" data-catalyst="" data-perspective="700" style={{transform: "perspective(700px) rotateX(-0.81deg) rotateY(0.23deg)"}}>
+        <card-skew class="overflow-hidden rounded-3 mb-3 mb-md-5" data-catalyst data-perspective="700" style={{transform: "perspective(700px) rotateX(-0.81deg) rotateY(0.23deg)"}}>
     <div className="feature-card-mktg d-md-flex rounded-3 color-bg-subtle border position-relative flex-justify-between z-1 height-full flex-column" data-target="card-skew.bounding">
       <div className="d-md-flex flex-column flex-1 p-5 p-sm-6 py-lg-8 pl-lg-8 pr-lg-12 flex-justify-start">
         <p className="f2-mktg text-medium color-fg-muted mb-4"><em>Lore Ipsum </em> 
@@ -159,11 +159,11 @@ function Experience() {
       <div className="overflow-hidden rounded-bottom-3">
         <picture>
         <source srcSet={PORTAL} type='image/webp'/>
-          <img className="rounded-3 width-full d-block height-auto js-build-in-item build-in-scale-fade" width="1208" height="804" loading="lazy" decoding="async" alt="" aria-hidden="true" src={PORTAL}/>
+          <img className="rounded-3 width-full d-block height-auto js-build-in-item build-in-scale-fade" loading="lazy" decoding="async" alt="" aria-hidden="true" src={PORTAL}/>
           </picture></div>
       
 
-      <div data-target="card-skew.shine" className="position-absolute bottom-0 right-0 events-none z-n1" style={{transform: "translate(58.91px, -92.27px)"}}></div>
+      <div data-target="card-skew.shine" className="position-absolute bottom-0 right-0 events-none z-n1"></div>
     </div> 
   </card-skew>
 

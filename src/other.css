@@ -107,3 +107,47 @@ img {
 .box-shadow-mktg-xl {
   box-shadow: 0 2.74416px 2.74416px rgba(0,0,0,.0274351),0 5.48831px 5.48831px rgba(0,0,0,.0400741),0 13.7208px 10.9766px rgba(0,0,0,.0499982),0 20.5812px 20.5812px rgba(0,0,0,.0596004),0 41.1623px 41.1623px rgba(0,0,0,.0709366),0 96.0454px 89.1851px rgba(0,0,0,.09);
 }
+
+auto-complete, details-dialog, details-menu, file-attachment, filter-input, remote-input, tab-container, text-expander, turbo-frame, [data-catalyst] {
+  display: block;
+}
+
+/* .mb-3 {
+  margin-bottom: var(--base-size-16, 16px) !important;
+} */
+
+/* @media (min-width:768px) {
+  .mb-md-5 {
+    margin-bottom: var(--base-size-32, 32px) !important;
+  }
+} */
+
+.z-1{
+  z-index: 1 !important;
+}
+
+.z-n1{
+  z-index: -1 !important;
+}
+
+.events-none {
+  pointer-events: none;
+}
+
+.feature-card-mktg .color-fg-muted{
+  color:#ebf5ff80!important
+}
+
+
+/*
+.flex-1{
+  flex: 1 !important;
+}
+
+.flex-justify-between{
+  justify-content: space-between !important;
+}
+
+.flex-column{
+  flex-direction: column !important;
+} */

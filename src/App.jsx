@@ -20,32 +20,31 @@ import Skills from './sources/skills/Skills.jsx'
 import Experience from './sources/experience/Experience.jsx'
 import Projects from './sources/projects/Projects.jsx'
 import Contact from './sources/contact/Contact.jsx'
-
+// import Test from './sources/test/Test.jsx'
 
 // import IntersectionObserverComponent from './functions/observer_old.jsx'
 import BuildInAnimation from './functions/observer.jsx'
 // import "./functions/mouse-hover.js"
-import MouseTracker from './functions/mouse-hover.jsx'
+import MouseTracker from './functions/mouse-hover2.jsx'
 
 function App() {
 
   return (
     <>
-      <source defer src="./functions/mouse-hover.js"></source>
       <div className="overflow-x-clip page-responsive header-overlay home-campaign env-production logged-in color-bg-default">
         <div className='font-mktg'>
 
         {/* <IntersectionObserverComponent> */}
           <BuildInAnimation/>
           <MouseTracker/>
+
           <Header/>
           <Skills/>
           <Experience/>
           <Projects/>
           <Contact/>
+          {/* <Test/> */}
 
-
-        {/* </IntersectionObserverComponent> */}
         </div>
       </div>
     </>
