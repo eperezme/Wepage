@@ -12,3 +12,9 @@ body{
     width: 74.99999997%;
 }
 }
+
+@media (min-width: 1012px) {
+.sub-head{
+  max-width: 70%;
+}
+}
