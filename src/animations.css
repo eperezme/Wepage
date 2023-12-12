@@ -11,6 +11,18 @@
   transform: scaleY(1);
 }
 
+/* Animation for scaling from top */
+.build-in-scale-left {
+  transition: transform .7s cubic-bezier(0.16, 1, 0.3, 1);
+  transform: scaleX(0);
+  transform-origin: 0 0;
+}
+
+.build-in-scale-left.build-in-animate {
+  transform: scaleX(1);
+}
+
+
 /* Animation for sliding from left */
 .build-in-slideX-left {
   opacity: 0;
@@ -46,6 +58,17 @@
   transform: translateY(0);
 }
 
+.build-in-slideY-top {
+  opacity: 0;
+  transition: opacity .6s cubic-bezier(0.16, 1, 0.3, 1),transform .6s cubic-bezier(0.16, 1, 0.3, 1);
+  transform: translateY(-15px);
+}
+
+.build-in-slideY-top.build-in-animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 /* Animation for fading in */
 .build-in-fade {
   opacity: 0;
@@ -55,6 +78,7 @@
 .build-in-fade.build-in-animate {
   opacity: 1;
 }
+
 
 /* Animation for scaling and fading in */
 .build-in-scale-fade {
