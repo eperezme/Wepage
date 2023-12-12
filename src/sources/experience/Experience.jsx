@@ -143,7 +143,7 @@ function Experience() {
                     <img className="rounded-3 width-full d-block height-auto js-build-in-item build-in-scale-fade" loading="lazy" decoding="async" alt="" aria-hidden="true" src={PORTAL}/>
                     </picture>
                   </div>
-                  <div data-target="card-skew.shine" className="position-absolute bottom-0 right-0 events-none z-n1"></div>
+                  <div data-target="card-skew.shine" className="position-absolute events-none z-n1"></div>
                 </div>
               </card-skew>
             </Tilt>
@@ -171,7 +171,7 @@ function Experience() {
             </picture></div>
                 
           
-                <div data-target="card-skew.shine" className="position-absolute bottom-0 right-0 events-none z-n1"></div>
+                <div data-target="card-skew.shine" className="position-absolute events-none z-n1"></div>
               </div> 
             </card-skew>
         </Tilt>

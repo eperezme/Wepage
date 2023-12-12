@@ -33,7 +33,7 @@ function App() {
   return (
     <>
       <div className="overflow-x-clip page-responsive header-overlay home-campaign env-production logged-in color-bg-default">
-        <div className='font-mktg'>
+        <div className='font-mktg overflow-x-hidden'>
 
 
           <BuildInAnimation/>

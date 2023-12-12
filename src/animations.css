@@ -74,13 +74,12 @@
   width: 650px;
   height: 650px;
   background-color: var(--mktg-accent-primary);
-  filter: blur(180px);
+  filter: blur(200px);
   border-radius: 300px;
   opacity: 0;
   transition: opacity 1.2s cubic-bezier(0.16, 1, 0.3, 1);
   mix-blend-mode: soft-light;
   will-change: transform;
-  /* transform: translate(var(--mouse-x), var(--mouse-y)); */
   transform: translate(calc(var(--mouse-x) - 325px), calc(var(--mouse-y) - 325px));
 }
 

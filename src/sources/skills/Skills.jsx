@@ -49,7 +49,7 @@ function Skills() {
       </picture>
   </div>
   <div className='d-flex js-build-in-trigger position-relative'>
-  <img alt="" aria-hidden="true" width="584" height="584" className="animation-rotate position-absolute height-auto d-none d-md-block col-7 events-none home-shape-rotate" style={{bottom: "-50%", right: "-20%", animationDuration: "300s"}} loading="lazy" decoding="async" src="https://github.githubassets.com/assets/shape-1-c219318e479a.svg"/>
+  <img alt="" aria-hidden="true" width="584" height="584" className="animation-rotate position-absolute height-auto d-none d-md-block events-none home-shape-rotate" style={{bottom: "-50%", right: "-20%", animationDuration: "300s"}} loading="lazy" decoding="async" src="https://github.githubassets.com/assets/shape-1-c219318e479a.svg"/>
   <div className="col-1 d-flex flex-column flex-items-center position-relative">
     <div className="home-campaign-git-line height-full position-relative z-1 js-build-in-item build-in-scale-top" style={{transitionDuration: "900ms", background: "linear-gradient(transparent, rgb(63, 185, 80), rgb(63, 185, 80), transparent)", transitionDelay: "0ms",}}></div>
     <img alt="" aria-hidden="true" width="81" height="485" style={{left: "calc(50% - 2px)", height: "auto", maxWidth: "9vw", transitionDelay: "100ms",}} className="d-none d-md-block position-absolute bottom-4 js-build-in-item build-in-scale-fade" loading="lazy" decoding="async" src="https://github.githubassets.com/assets/git-branch-productivity-c304b83d09c7.svg"></img>
@@ -144,7 +144,7 @@ function Skills() {
               <img className="width-full d-block height-auto rounded-3 js-build-in-item build-in-scale-fade" loading="lazy" decoding="async" alt="" aria-hidden="true" src={IMG5_fall}/>
               </picture>
             </div>
-            <div data-target="card-skew.shine" className="position-absolute bottom-0 right-0 events-none z-n1"></div>
+            <div data-target="card-skew.shine" className="position-absolute events-none z-n1"></div>
           </div>
         </card-skew>
       </Tilt>
@@ -170,7 +170,7 @@ function Skills() {
               <img className="width-full d-block height-auto js-build-in-item build-in-scale-fade rounded-3" loading="lazy" decoding="async" alt="" aria-hidden="true" src={IMG6_fall}/>
               </picture>
             </div>
-            <div data-target="card-skew.shine" className="position-absolute bottom-0 right-0 events-none z-n1"></div>
+            <div data-target="card-skew.shine" className="position-absolute events-none z-n1"></div>
           </div>
         </card-skew>
     </Tilt>

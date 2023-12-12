@@ -22,9 +22,9 @@ const Header = () => {
           {/* [x] Fix image */}
           <picture>
             <source srcSet={IMG1} type='image/webp'/>
-            <img alt="" aria-hidden="true" className="image-fade top-0 position-absolute height-auto events-none d-none d-sm-block" style={{left: "40%", overflowX: "hidden", overflowY: "visible"}} src={IMG1_fall}/></picture>
+            <img alt="" aria-hidden="true" height={1000} className="image-fade top-0 position-absolute events-none d-none d-sm-block" style={{left: "40%", overflowX: "hidden", overflowY: "visible"}} src={IMG1_fall}/></picture>
         </div>
-        <div className="overflow-hidden color-header home-campaign-hero">
+        <div className="color-header home-campaign-hero">
           <div className="position-relative pt-3 pt-sm-8 pt-lg-12 container-xl js-build-in-trigger">
             <div className="d-flex pt-sm-9">
               <div className='col-1 d-flex flex-column events-none position-relative'>

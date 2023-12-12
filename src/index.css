@@ -6,3 +6,9 @@ body{
   overflow-x: hidden;
   overflow-y: visible;
 }
+
+@media (min-width: 1012px) {
+.col-lg-9 {
+    width: 74.99999997%;
+}
+}
