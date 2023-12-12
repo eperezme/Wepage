@@ -52,7 +52,7 @@ function Skills() {
   <img alt="" aria-hidden="true" width="584" height="584" className="animation-rotate position-absolute height-auto d-none d-md-block events-none home-shape-rotate" style={{bottom: "-50%", right: "-20%", animationDuration: "300s"}} loading="lazy" decoding="async" src="https://github.githubassets.com/assets/shape-1-c219318e479a.svg"/>
   <div className="col-1 d-flex flex-column flex-items-center position-relative">
     <div className="home-campaign-git-line height-full position-relative z-1 js-build-in-item build-in-scale-top" style={{transitionDuration: "900ms", background: "linear-gradient(transparent, rgb(63, 185, 80), rgb(63, 185, 80), transparent)", transitionDelay: "0ms",}}></div>
-    <img alt="" aria-hidden="true" width="81" height="485" style={{left: "calc(50% - 2px)", height: "auto", maxWidth: "9vw", transitionDelay: "100ms",}} className="d-none d-md-block position-absolute bottom-4 js-build-in-item build-in-scale-fade" loading="lazy" decoding="async" src="https://github.githubassets.com/assets/git-branch-productivity-c304b83d09c7.svg"></img>
+    <img alt="" aria-hidden="true" width="81" height="485" style={{left: "calc(50% - 2px)", height: "auto", maxWidth: "9vw", transitionDelay: "100ms",}} className="d-none d-md-block position-absolute bottom-0 js-build-in-item build-in-scale-fade" loading="lazy" decoding="async" src="https://github.githubassets.com/assets/git-branch-productivity-c304b83d09c7.svg"></img>
   </div>
   <div className="col-11 ml-2 ml-md-6">
     <div className="river-mktg js-build-in-trigger d-flex gutter gutter-spacious my-5 my-sm-7 my-md-8 position-relative flex-column-reverse flex-md-items-center flex-md-row flex-column pb-4 pb-md-7">
