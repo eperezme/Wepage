@@ -49,7 +49,7 @@ function Experience() {
         <div className="d-flex js-build-in-trigger position-relative">
           <div className="col-1 d-flex flex-column flex-items-center position-relative">
             <div className="home-campaign-git-line height-full position-relative z-1 js-build-in-item build-in-scale-top" style={{background: "linear-gradient(transparent, rgb(51, 179, 174), rgb(51, 179, 174), transparent)", transitionDelay: "0ms",}}></div>
-            <img alt="" aria-hidden="true" width="81" height="612" style={{left: "calc(50% - 2px)", height: "auto", maxWidth: "9vw", transitionDelay: "100ms"}} className="d-none d-md-block position-absolute bottom-4 js-build-in-item build-in-scale-fade" loading="lazy" decoding="async" src="https://github.githubassets.com/assets/git-branch-security-2-f6a799957581.svg"></img>
+            <img alt="" aria-hidden="true" width="81" height="612" style={{left: "calc(50% - 2px)", height: "auto", maxWidth: "9vw", transitionDelay: "100ms"}} className="d-none d-md-block position-absolute bottom-0 js-build-in-item build-in-scale-fade" loading="lazy" decoding="async" src="https://github.githubassets.com/assets/git-branch-security-2-f6a799957581.svg"></img>
           </div>
           <div className="col-11 ml-2 ml-md-6">
             <div className="river-mktg js-build-in-trigger d-flex gutter gutter-spacious my-5 my-sm-7 my-md-8 position-relative flex-column-reverse flex-md-items-center flex-md-row flex-column pb-4 pb-md-7">
