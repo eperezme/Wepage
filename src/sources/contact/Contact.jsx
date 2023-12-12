@@ -3,7 +3,7 @@ import Form from './Form.jsx'
 
 function Contact() {
   return (
-    <div id="contact" className='color-header home-campaign-footer position-relative js-section mb-10 overflow-visible'>
+    <div id="contact" className='color-header home-campaign-hero position-relative js-section mb-10 overflow-visible'>
       <div className="container-xl position-relative z-2 px-3">
         <div className="d-flex js-build-in-trigger" data-build-in-stagger='100'>
           <div className="col-1 d-flex flex-column flex-items-center js-build-in-trigger">
@@ -17,18 +17,19 @@ function Contact() {
               </div>
             </div>
           </div>
-          <div className="col-11 ml-2 ml-md-0">
-            <div className="col-md-11 col-lg-9 pt-8">
-              <h1 className="h2-mktg mb-5">
+          <div className="col-11 ml-2 ml-md-0 js-build-in-trigger"  data-build-in-stagger='125'>
+            <div className="col-md-11 col-lg-9 pt-8 js-build-in-item">
+              <h1 className="h2-mktg mb-5 h1-mktg text-accent-primary text-medium js-build-in-item build-in-slideX-left">
                 Contact Me
               </h1>
-              <p className="f3-mktg color-fg-muted">
+              <p className="f3-mktg color-fg-muted js-build-in-item build-in-slideX-left">
                 If you want to get in touch with me, please fill out the form below and I will get back to you as soon as possible.
               </p>
+
+              <Form/>
             </div>
             <div>
               
-              <Form/>
             </div>
             {/* <div className="pb-2">
               <div className="d-flex flex-column flex-md-row">
