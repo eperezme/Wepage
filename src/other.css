@@ -138,6 +138,15 @@ auto-complete, details-dialog, details-menu, file-attachment, filter-input, remo
   color:#ebf5ff80!important
 }
 
+.rounded-bottom-img{
+  border-bottom-left-radius: 1rem !important;
+  border-bottom-right-radius: 1rem !important;
+}
+
+.rounded-right-img{
+  border-top-right-radius: 1rem !important;
+  border-bottom-right-radius: 1rem !important;
+}
 
 /*
 .flex-1{

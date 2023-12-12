@@ -115,7 +115,7 @@ function Projects() {
                   <div className="overflow-hidden rounded-bottom-3">
                     <picture>
                     <source srcSet={PORTAL} type='image/webp'/>
-                      <img className="width-full d-block height-auto js-build-in-item build-in-scale-up" loading="lazy" decoding="async" alt="" aria-hidden="true" src={PORTAL}></img>
+                      <img className="width-full d-block height-auto js-build-in-item build-in-scale-up rounded-bottom-img" loading="lazy" decoding="async" alt="" aria-hidden="true" src={PORTAL}></img>
                     </picture>
                   </div>
                   <div data-target="card-skew.shine" className="position-absolute events-none z-n1"></div>
@@ -144,7 +144,7 @@ function Projects() {
                 <div className="overflow-hidden rounded-bottom-3">
                   <picture>
                     <source srcSet={PORTAL} type='image/webp'/>
-                    <img className="width-full d-block height-auto js-build-in-item build-in-scale-up" loading="lazy" decoding="async" alt="" aria-hidden="true" src={PORTAL}></img>
+                    <img className="width-full d-block height-auto js-build-in-item build-in-scale-up rounded-bottom-img" loading="lazy" decoding="async" alt="" aria-hidden="true" src={PORTAL}></img>
                   </picture>
                 </div>
                 <div data-target="card-skew.shine" className="position-absolute events-none z-n1"></div>
@@ -172,11 +172,11 @@ function Projects() {
                 </div>
               </div>
               <div className="overflow-hidden col-md-6 rounded-right-3">
-                <div className="d-flex flex-wrap position-relative top-n12 mt-n4 right-n4 p-4 js-build-in-trigger">
+                <div className="">
                   {/* [ ] IMAGE */}
                   <picture>
                     <source srcSet={PORTAL} type='image/webp'/>
-                    <img className="width-full d-block height-auto js-build-in-item build-in-scale-fade" loading="lazy" decoding="async" alt="" aria-hidden="true" src={PORTAL}/>
+                    <img className="width-full d-block height-auto js-build-in-item build-in-scale-fade rounded-right-img" loading="lazy" decoding="async" alt="" aria-hidden="true" src={PORTAL}/>
                   </picture>
                 </div>
               </div>
