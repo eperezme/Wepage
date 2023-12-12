@@ -1,4 +1,5 @@
 import React from 'react'
+import Tilt from '../../functions/tilt'
 
 // CSS
 import './Experience.css'
@@ -33,16 +34,18 @@ function Experience() {
           <img alt="" aria-hidden="true" width="595" height="595" className="animation-reverse-rotate position-absolute height-auto d-none d-md-block col-8 events-none" style={{top: "-10%", right: "-25%",}} loading="lazy" decoding="async" src="https://github.githubassets.com/assets/shape-2-f30dcc9bd35c.svg"></img>
         </div>
         {/* MAIN CARD */}
-        <card-skew class="overflow-hidden rounded-3 mb-3 mb-md-5 position-relative z-1" data-catalyst data-perspective="700">
-          <div className="color-bg-subtle border rounded-3 p-2 p-lg-6 js-build-in-trigger feature-card-mktg z-1 position-relative" data-target="card-skew.bounding">
-            <div className="position-relative d-flex flex-column flex-md-row gutter-spacious col-lg-10 mx-auto my-lg-6">
-              {/* column 1 */}
-              <div className="col-md-6 js-build-in-item build-in-scale-right" style={{transitionDelay: "600ms"}}></div>
-              {/* column 2 */}
-              <div className="col-md-6 js-build-in-item build-in-scale-right" style={{transitionDelay: "600ms"}}></div>
+        <Tilt>
+          <card-skew class="overflow-hidden rounded-3 mb-3 mb-md-5 position-relative z-1" data-catalyst data-perspective="700">
+            <div className="color-bg-subtle border rounded-3 p-2 p-lg-6 js-build-in-trigger feature-card-mktg z-1 position-relative" data-target="card-skew.bounding">
+              <div className="position-relative d-flex flex-column flex-md-row gutter-spacious col-lg-10 mx-auto my-lg-6">
+                {/* column 1 */}
+                <div className="col-md-6 js-build-in-item build-in-scale-right" style={{transitionDelay: "600ms"}}></div>
+                {/* column 2 */}
+                <div className="col-md-6 js-build-in-item build-in-scale-right" style={{transitionDelay: "600ms"}}></div>
+              </div>
             </div>
-          </div>
-        </card-skew>
+          </card-skew>
+        </Tilt>
         <div className="d-flex js-build-in-trigger position-relative">
           <div className="col-1 d-flex flex-column flex-items-center position-relative">
             <div className="home-campaign-git-line height-full position-relative z-1 js-build-in-item build-in-scale-top" style={{background: "linear-gradient(transparent, rgb(51, 179, 174), rgb(51, 179, 174), transparent)", transitionDelay: "0ms",}}></div>
@@ -89,83 +92,89 @@ function Experience() {
         </div>
         {/* Horizontal Card */}
         <div className="position-relative z-1 js-build-in-trigger mb-3 mb-md-5">
-          <card-skew class="overflow-hidden rounded-3 mb-3 mb-md-5" data-catalyst data-perspective="700" style={{transform: "perspective(700px) rotateX(-0.03deg) rotateY(-0.03deg)"}}>
-            <div className="feature-card-mktg d-md-flex rounded-3 color-bg-subtle border position-relative flex-justify-between z-1 height-full flex-row" data-target="card-skew.bounding">
-              <div className="d-md-flex flex-column flex-1 p-5 p-sm-6 py-lg-8 pl-lg-8 pr-lg-12 col-md-6 flex-justify-between">
-                <p className="f2-mktg text-medium color-fg-muted mb-4">
-                  <em>Lorem Ipsum </em>
-                  dolor sit amet consectetur adipisicing elit. Quia, quibusdam.
-                </p>
-                <div className="">
-                  {/* [ ] Link */}
-                  <a className="link-mktg text-semibold color-fg-default py-1 f3-mktg" href="">
-                    Lorem Link <svg xmlns="http://www.w3.org/2000/svg" className="octicon arrow-symbol-mktg" width="16" height="16" viewBox="0 0 16 16" fill="none"><path fill="currentColor" d="M7.28033 3.21967C6.98744 2.92678 6.51256 2.92678 6.21967 3.21967C5.92678 3.51256 5.92678 3.98744 6.21967 4.28033L7.28033 3.21967ZM11 8L11.5303 8.53033C11.8232 8.23744 11.8232 7.76256 11.5303 7.46967L11 8ZM6.21967 11.7197C5.92678 12.0126 5.92678 12.4874 6.21967 12.7803C6.51256 13.0732 6.98744 13.0732 7.28033 12.7803L6.21967 11.7197ZM6.21967 4.28033L10.4697 8.53033L11.5303 7.46967L7.28033 3.21967L6.21967 4.28033ZM10.4697 7.46967L6.21967 11.7197L7.28033 12.7803L11.5303 8.53033L10.4697 7.46967Z"></path><path className="octicon-chevrow-stem" stroke="currentColor" d="M1.75 8H11" strokeWidth="1.5" strokeLinecap="round"></path></svg>
-                      </a>
+          <Tilt>
+            <card-skew class="overflow-hidden rounded-3 mb-3 mb-md-5" data-catalyst data-perspective="700" style={{transform: "perspective(700px) rotateX(-0.03deg) rotateY(-0.03deg)"}}>
+              <div className="feature-card-mktg d-md-flex rounded-3 color-bg-subtle border position-relative flex-justify-between z-1 height-full flex-row" data-target="card-skew.bounding">
+                <div className="d-md-flex flex-column flex-1 p-5 p-sm-6 py-lg-8 pl-lg-8 pr-lg-12 col-md-6 flex-justify-between">
+                  <p className="f2-mktg text-medium color-fg-muted mb-4">
+                    <em>Lorem Ipsum </em>
+                    dolor sit amet consectetur adipisicing elit. Quia, quibusdam.
+                  </p>
+                  <div className="">
+                    {/* [ ] Link */}
+                    <a className="link-mktg text-semibold color-fg-default py-1 f3-mktg" href="">
+                      Lorem Link <svg xmlns="http://www.w3.org/2000/svg" className="octicon arrow-symbol-mktg" width="16" height="16" viewBox="0 0 16 16" fill="none"><path fill="currentColor" d="M7.28033 3.21967C6.98744 2.92678 6.51256 2.92678 6.21967 3.21967C5.92678 3.51256 5.92678 3.98744 6.21967 4.28033L7.28033 3.21967ZM11 8L11.5303 8.53033C11.8232 8.23744 11.8232 7.76256 11.5303 7.46967L11 8ZM6.21967 11.7197C5.92678 12.0126 5.92678 12.4874 6.21967 12.7803C6.51256 13.0732 6.98744 13.0732 7.28033 12.7803L6.21967 11.7197ZM6.21967 4.28033L10.4697 8.53033L11.5303 7.46967L7.28033 3.21967L6.21967 4.28033ZM10.4697 7.46967L6.21967 11.7197L7.28033 12.7803L11.5303 8.53033L10.4697 7.46967Z"></path><path className="octicon-chevrow-stem" stroke="currentColor" d="M1.75 8H11" strokeWidth="1.5" strokeLinecap="round"></path></svg>
+                        </a>
+                  </div>
                 </div>
+                <div className="overflow-hidden col-md-6 rounded-right-3">
+                  <picture>
+                  <source srcSet={PORTAL} type='image/webp'/>
+                  {/* Image */}
+                  <img className="width-full d-block height-auto js-build-in-item build-in-scale-fade" loading="lazy" decoding="async" alt="" aria-hidden="true" src={PORTAL}></img>
+                  </picture>
+                </div>
+                <div data-target="card-skew.shine" className="position-absolute events-none z-n1"></div>
               </div>
-              <div className="overflow-hidden col-md-6 rounded-right-3">
-                <picture>
-                <source srcSet={PORTAL} type='image/webp'/>
-                {/* Image */}
-                <img className="width-full d-block height-auto js-build-in-item build-in-scale-fade" loading="lazy" decoding="async" alt="" aria-hidden="true" src={PORTAL}></img>
-                </picture>
-              </div>
-              <div data-target="card-skew.shine" className="position-absolute events-none z-n1"></div>
-            </div>
-          </card-skew>
+            </card-skew>
+          </Tilt>
         </div>
         {/* Verical Cards */}
         <div className="d-flex flex-column flex-md-row gutter js-build-in-trigger">
           {/* Left Card */}
           <div className="col-md-6 d-flex">
-            <card-skew class="overflow-hidden rounded-3 mb-3 mb-md-5" data-catalyst data-perspective="700" style={{transform: "perspective(700px) rotateX(-0.03deg) rotateY(-0.03deg)"}}>
-              <div className="feature-card-mktg d-md-flex rounded-3 color-bg-subtle border position-relative flex-justify-between z-1 height-full flex-column" data-target="card-skew.bounding">
-                <div className="d-md-flex flex-column flex-1 p-5 p-sm-6 py-lg-8 pl-lg-8 pr-lg-12 flex-justify-start">
-                  <p className="f2-mktg text-medium color-fg-muted mb-4">
-                    <em>Lorem </em>
-                    dolor sit amet consectetur adipisicing elit. Quia, quibusdam. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  </p>
-                  <div>
-                  <a className="link-mktg text-semibold color-fg-default py-1 f3-mktg" href="">
-                    Lorem Link <svg xmlns="http://www.w3.org/2000/svg" className="octicon arrow-symbol-mktg" width="16" height="16" viewBox="0 0 16 16" fill="none"><path fill="currentColor" d="M7.28033 3.21967C6.98744 2.92678 6.51256 2.92678 6.21967 3.21967C5.92678 3.51256 5.92678 3.98744 6.21967 4.28033L7.28033 3.21967ZM11 8L11.5303 8.53033C11.8232 8.23744 11.8232 7.76256 11.5303 7.46967L11 8ZM6.21967 11.7197C5.92678 12.0126 5.92678 12.4874 6.21967 12.7803C6.51256 13.0732 6.98744 13.0732 7.28033 12.7803L6.21967 11.7197ZM6.21967 4.28033L10.4697 8.53033L11.5303 7.46967L7.28033 3.21967L6.21967 4.28033ZM10.4697 7.46967L6.21967 11.7197L7.28033 12.7803L11.5303 8.53033L10.4697 7.46967Z"></path><path className="octicon-chevrow-stem" stroke="currentColor" d="M1.75 8H11" strokeWidth="1.5" strokeLinecap="round"></path></svg>
-                  </a>
+            <Tilt>
+              <card-skew class="overflow-hidden rounded-3 mb-3 mb-md-5" data-catalyst data-perspective="700" style={{transform: "perspective(700px) rotateX(-0.03deg) rotateY(-0.03deg)"}}>
+                <div className="feature-card-mktg d-md-flex rounded-3 color-bg-subtle border position-relative flex-justify-between z-1 height-full flex-column" data-target="card-skew.bounding">
+                  <div className="d-md-flex flex-column flex-1 p-5 p-sm-6 py-lg-8 pl-lg-8 pr-lg-12 flex-justify-start">
+                    <p className="f2-mktg text-medium color-fg-muted mb-4">
+                      <em>Lorem </em>
+                      dolor sit amet consectetur adipisicing elit. Quia, quibusdam. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                    <div>
+                    <a className="link-mktg text-semibold color-fg-default py-1 f3-mktg" href="">
+                      Lorem Link <svg xmlns="http://www.w3.org/2000/svg" className="octicon arrow-symbol-mktg" width="16" height="16" viewBox="0 0 16 16" fill="none"><path fill="currentColor" d="M7.28033 3.21967C6.98744 2.92678 6.51256 2.92678 6.21967 3.21967C5.92678 3.51256 5.92678 3.98744 6.21967 4.28033L7.28033 3.21967ZM11 8L11.5303 8.53033C11.8232 8.23744 11.8232 7.76256 11.5303 7.46967L11 8ZM6.21967 11.7197C5.92678 12.0126 5.92678 12.4874 6.21967 12.7803C6.51256 13.0732 6.98744 13.0732 7.28033 12.7803L6.21967 11.7197ZM6.21967 4.28033L10.4697 8.53033L11.5303 7.46967L7.28033 3.21967L6.21967 4.28033ZM10.4697 7.46967L6.21967 11.7197L7.28033 12.7803L11.5303 8.53033L10.4697 7.46967Z"></path><path className="octicon-chevrow-stem" stroke="currentColor" d="M1.75 8H11" strokeWidth="1.5" strokeLinecap="round"></path></svg>
+                    </a>
+                    </div>
                   </div>
+                  <div className="overflow-hidden rounded-bottom-3">
+                    <picture>
+                    <source srcSet={PORTAL} type='image/webp'/>
+                    <img className="rounded-3 width-full d-block height-auto js-build-in-item build-in-scale-fade" loading="lazy" decoding="async" alt="" aria-hidden="true" src={PORTAL}/>
+                    </picture>
+                  </div>
+                  <div data-target="card-skew.shine" className="position-absolute bottom-0 right-0 events-none z-n1"></div>
                 </div>
-                <div className="overflow-hidden rounded-bottom-3">
-                  <picture>
-                  <source srcSet={PORTAL} type='image/webp'/>
-                  <img className="rounded-3 width-full d-block height-auto js-build-in-item build-in-scale-fade" loading="lazy" decoding="async" alt="" aria-hidden="true" src={PORTAL}/>
-                  </picture>
-                </div>
-                <div data-target="card-skew.shine" className="position-absolute bottom-0 right-0 events-none z-n1"></div>
-              </div>
-            </card-skew>
+              </card-skew>
+            </Tilt>
           </div>
           {/* Right Card */}
           <div className="col-md-6 d-flex">
-        <card-skew class="overflow-hidden rounded-3 mb-3 mb-md-5" data-catalyst data-perspective="700" style={{transform: "perspective(700px) rotateX(-0.81deg) rotateY(0.23deg)"}}>
-    <div className="feature-card-mktg d-md-flex rounded-3 color-bg-subtle border position-relative flex-justify-between z-1 height-full flex-column" data-target="card-skew.bounding">
-      <div className="d-md-flex flex-column flex-1 p-5 p-sm-6 py-lg-8 pl-lg-8 pr-lg-12 flex-justify-start">
-        <p className="f2-mktg text-medium color-fg-muted mb-4"><em>Lore Ipsum </em> 
-          dolor sit amet consectetur adipisicing elit. Quia, quibusdam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, quibusdam.
-        </p>
-        {/* [ ] Link */}
-        <div>  
-          <a className="link-mktg text-semibold color-fg-default py-1 f3-mktg" href="">
-          Lorem Link <svg xmlns="http://www.w3.org/2000/svg" className="octicon arrow-symbol-mktg" width="16" height="16" viewBox="0 0 16 16" fill="none"><path fill="currentColor" d="M7.28033 3.21967C6.98744 2.92678 6.51256 2.92678 6.21967 3.21967C5.92678 3.51256 5.92678 3.98744 6.21967 4.28033L7.28033 3.21967ZM11 8L11.5303 8.53033C11.8232 8.23744 11.8232 7.76256 11.5303 7.46967L11 8ZM6.21967 11.7197C5.92678 12.0126 5.92678 12.4874 6.21967 12.7803C6.51256 13.0732 6.98744 13.0732 7.28033 12.7803L6.21967 11.7197ZM6.21967 4.28033L10.4697 8.53033L11.5303 7.46967L7.28033 3.21967L6.21967 4.28033ZM10.4697 7.46967L6.21967 11.7197L7.28033 12.7803L11.5303 8.53033L10.4697 7.46967Z"></path><path className="octicon-chevrow-stem" stroke="currentColor" d="M1.75 8H11" strokeWidth="1.5" strokeLinecap="round"></path></svg>
-          </a>
-        </div>
-      </div>
-      <div className="overflow-hidden rounded-bottom-3">
-        <picture>
-        <source srcSet={PORTAL} type='image/webp'/>
-          <img className="rounded-3 width-full d-block height-auto js-build-in-item build-in-scale-fade" loading="lazy" decoding="async" alt="" aria-hidden="true" src={PORTAL}/>
-          </picture></div>
-      
-
-      <div data-target="card-skew.shine" className="position-absolute bottom-0 right-0 events-none z-n1"></div>
-    </div> 
-  </card-skew>
+        <Tilt>
+          <card-skew class="overflow-hidden rounded-3 mb-3 mb-md-5" data-catalyst data-perspective="700" style={{transform: "perspective(700px) rotateX(-0.81deg) rotateY(0.23deg)"}}>
+              <div className="feature-card-mktg d-md-flex rounded-3 color-bg-subtle border position-relative flex-justify-between z-1 height-full flex-column" data-target="card-skew.bounding">
+                <div className="d-md-flex flex-column flex-1 p-5 p-sm-6 py-lg-8 pl-lg-8 pr-lg-12 flex-justify-start">
+          <p className="f2-mktg text-medium color-fg-muted mb-4"><em>Lore Ipsum </em>
+            dolor sit amet consectetur adipisicing elit. Quia, quibusdam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, quibusdam.
+          </p>
+          {/* [ ] Link */}
+          <div>
+            <a className="link-mktg text-semibold color-fg-default py-1 f3-mktg" href="">
+            Lorem Link <svg xmlns="http://www.w3.org/2000/svg" className="octicon arrow-symbol-mktg" width="16" height="16" viewBox="0 0 16 16" fill="none"><path fill="currentColor" d="M7.28033 3.21967C6.98744 2.92678 6.51256 2.92678 6.21967 3.21967C5.92678 3.51256 5.92678 3.98744 6.21967 4.28033L7.28033 3.21967ZM11 8L11.5303 8.53033C11.8232 8.23744 11.8232 7.76256 11.5303 7.46967L11 8ZM6.21967 11.7197C5.92678 12.0126 5.92678 12.4874 6.21967 12.7803C6.51256 13.0732 6.98744 13.0732 7.28033 12.7803L6.21967 11.7197ZM6.21967 4.28033L10.4697 8.53033L11.5303 7.46967L7.28033 3.21967L6.21967 4.28033ZM10.4697 7.46967L6.21967 11.7197L7.28033 12.7803L11.5303 8.53033L10.4697 7.46967Z"></path><path className="octicon-chevrow-stem" stroke="currentColor" d="M1.75 8H11" strokeWidth="1.5" strokeLinecap="round"></path></svg>
+            </a>
+          </div>
+                </div>
+                <div className="overflow-hidden rounded-bottom-3">
+          <picture>
+          <source srcSet={PORTAL} type='image/webp'/>
+            <img className="rounded-3 width-full d-block height-auto js-build-in-item build-in-scale-fade" loading="lazy" decoding="async" alt="" aria-hidden="true" src={PORTAL}/>
+            </picture></div>
+                
+          
+                <div data-target="card-skew.shine" className="position-absolute bottom-0 right-0 events-none z-n1"></div>
+              </div> 
+            </card-skew>
+        </Tilt>
 
     </div>
         </div>

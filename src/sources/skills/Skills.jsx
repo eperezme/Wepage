@@ -1,5 +1,5 @@
 import React from 'react'
-
+import Tilt from '../../functions/tilt';
 // CSS
 import './Skills.css'
 
@@ -97,77 +97,83 @@ function Skills() {
   </div>
   {/* CARD CENTRAL 1 */}
   <div className="position-relative z-1 mb-md-5">
-    <card-skew class="overflow-hidden rounded-1 mb-3 mb-md-5" data-catalyst data-perspective="700">
-      <div className="feature-card-mktg d-md-flex rounded-3 color-bg-subtle border position-relative flex-justify-between z-1 height-full flex-row" data-target="card-skew.bounding">
-        <div className="d-md-flex flex-column flex-1 p-5 p-sm-6 py-lg-8 pl-lg-8 pr-lg-12 col-md-6 flex-justify-between">
-          <p className="f2-mktg text-medium color-fg-muted mb-4">
-            <em>Lorem ipsum </em>
-            dolor sit amet consectetur adipisicing elit. Quasi, quibusdam.
-          </p>
-          <div>
-            <a href="" className="link-mktg text-semibold color-fg-default py-1 f3-mktg">Button</a>
+    <Tilt className="overflow-hidden">
+      <card-skew class="overflow-hidden rounded-3 mb-3 mb-md-5" data-catalyst data-perspective="700">
+        <div className="feature-card-mktg d-md-flex rounded-3 color-bg-subtle border position-relative flex-justify-between z-1 height-full flex-row" data-target="card-skew.bounding">
+          <div className="d-md-flex flex-column flex-1 p-5 p-sm-6 py-lg-8 pl-lg-8 pr-lg-12 col-md-6 flex-justify-between">
+            <p className="f2-mktg text-medium color-fg-muted mb-4">
+              <em>Lorem ipsum </em>
+              dolor sit amet consectetur adipisicing elit. Quasi, quibusdam.
+            </p>
+            <div>
+              <a href="" className="link-mktg text-semibold color-fg-default py-1 f3-mktg">Button</a>
+            </div>
           </div>
+          <div className="overflow-hidden col-md-6 rounded-right-3">
+            {/* IMG */}
+            <picture>
+              <source srcSet={IMG4} type='image/webp'/>
+            <img className="rounded-3 width-full d-block height-auto" loading="lazy" decoding="async" alt="" aria-hidden="true" src={IMG4_fall}/>
+            </picture>
+          </div>
+          <div data-target="card-skew.shine" className="position-absolute events-none z-n1"></div>
         </div>
-        <div className="overflow-hidden col-md-6 rounded-right-3">
-          {/* IMG */}
-          <picture>
-            <source srcSet={IMG4} type='image/webp'/>
-          <img className="rounded-3 width-full d-block height-auto" loading="lazy" decoding="async" alt="" aria-hidden="true" src={IMG4_fall}/>
-          </picture>
-        </div>
-        <div data-target="card-skew.shine" className="position-absolute events-none z-n1"></div>
-      </div>
-    </card-skew>
+      </card-skew>
+    </Tilt>
   </div>
   {/* VERTICAL CARDS */}
   <div className="d-flex flex-column flex-md-row gutter js-build-in-trigger">
     {/* C1 */}
     <div className="col-md-6 d-flex">
-      <card-skew class="overflow-hidden rounded-3 mb-3 mb-md-5" data-catalyst data-perspective="700">
-        <div className="feature-card-mktg d-md-flex rounded-3 color-bg-subtle border position-relative flex-justify-between z-1 height-full flex-column" data-target="card-skew.bounding">
-          <div className="d-md-flex flex-column flex-1 p-5 p-sm-6 py-lg-8 pl-lg-8 pr-lg-12 flex-justify-start">
-            <p className="f2-mktg text-medium color-fg-muted mb-4">
-              <em>Lorem ipsum </em>
-              dolor sit amet consectetur adipisicing elit. Quasi, quibusdam.
-            </p>
-            <div>
-              <a href="" className="link-mktg text-semibold color-fg-default py-1 f3-mktg">Button</a>
+      <Tilt>
+        <card-skew class="overflow-hidden rounded-3 mb-3 mb-md-5" data-catalyst data-perspective="700">
+          <div className="feature-card-mktg d-md-flex rounded-3 color-bg-subtle border position-relative flex-justify-between z-1 height-full flex-column" data-target="card-skew.bounding">
+            <div className="d-md-flex flex-column flex-1 p-5 p-sm-6 py-lg-8 pl-lg-8 pr-lg-12 flex-justify-start">
+              <p className="f2-mktg text-medium color-fg-muted mb-4">
+                <em>Lorem ipsum </em>
+                dolor sit amet consectetur adipisicing elit. Quasi, quibusdam.
+              </p>
+              <div>
+                <a href="" className="link-mktg text-semibold color-fg-default py-1 f3-mktg">Button</a>
+              </div>
             </div>
+            <div className="overflow-hidden rounded-bottom-3">
+              {/* IMG */}
+              <picture>
+                <source src={IMG5} type='image/webp'/>
+              <img className="width-full d-block height-auto rounded-3 js-build-in-item build-in-scale-fade" loading="lazy" decoding="async" alt="" aria-hidden="true" src={IMG5_fall}/>
+              </picture>
+            </div>
+            <div data-target="card-skew.shine" className="position-absolute bottom-0 right-0 events-none z-n1"></div>
           </div>
-          <div className="overflow-hidden rounded-bottom-3">
-            {/* IMG */}
-            <picture>
-              <source src={IMG5} type='image/webp'/>
-            <img className="width-full d-block height-auto rounded-3 js-build-in-item build-in-scale-fade" loading="lazy" decoding="async" alt="" aria-hidden="true" src={IMG5_fall}/>
-            </picture>
-          </div>
-          <div data-target="card-skew.shine" className="position-absolute bottom-0 right-0 events-none z-n1"></div>
-        </div>
-      </card-skew>
+        </card-skew>
+      </Tilt>
     </div>
     {/* C2 */}
     <div className="col-md-6 d-flex">
-    <card-skew class="overflow-hidden rounded-3 mb-3 mb-md-5" data-catalyst data-perspective="700">
-        <div className="feature-card-mktg d-md-flex rounded-3 color-bg-subtle border position-relative flex-justify-between z-1 height-full flex-column" data-target="card-skew.bounding">
-          <div className="d-md-flex flex-column flex-1 p-5 p-sm-6 py-lg-8 pl-lg-8 pr-lg-12 flex-justify-start">
-            <p className="f2-mktg text-medium color-fg-muted mb-4">
-              <em>Lorem ipsum </em>
-              dolor sit amet consectetur adipisicing elit. Quasi, quibusdam.
-            </p>
-            <div>
-              <a href="" className="link-mktg text-semibold color-fg-default py-1 f3-mktg">Button</a>
+    <Tilt>
+      <card-skew class="overflow-hidden rounded-3 mb-3 mb-md-5" data-catalyst data-perspective="700">
+          <div className="feature-card-mktg d-md-flex rounded-3 color-bg-subtle border position-relative flex-justify-between z-1 height-full flex-column" data-target="card-skew.bounding">
+            <div className="d-md-flex flex-column flex-1 p-5 p-sm-6 py-lg-8 pl-lg-8 pr-lg-12 flex-justify-start">
+              <p className="f2-mktg text-medium color-fg-muted mb-4">
+                <em>Lorem ipsum </em>
+                dolor sit amet consectetur adipisicing elit. Quasi, quibusdam.
+              </p>
+              <div>
+                <a href="" className="link-mktg text-semibold color-fg-default py-1 f3-mktg">Button</a>
+              </div>
             </div>
+            <div className="overflow-hidden rounded-bottom-3">
+              {/* IMG */}
+              <picture>
+                <source src={IMG6} type='image/webp'/>
+              <img className="width-full d-block height-auto js-build-in-item build-in-scale-fade rounded-3" loading="lazy" decoding="async" alt="" aria-hidden="true" src={IMG6_fall}/>
+              </picture>
+            </div>
+            <div data-target="card-skew.shine" className="position-absolute bottom-0 right-0 events-none z-n1"></div>
           </div>
-          <div className="overflow-hidden rounded-bottom-3">
-            {/* IMG */}
-            <picture>
-              <source src={IMG6} type='image/webp'/>
-            <img className="width-full d-block height-auto js-build-in-item build-in-scale-fade rounded-3" loading="lazy" decoding="async" alt="" aria-hidden="true" src={IMG6_fall}/>
-            </picture>
-          </div>
-          <div data-target="card-skew.shine" className="position-absolute bottom-0 right-0 events-none z-n1"></div>
-        </div>
-      </card-skew>
+        </card-skew>
+    </Tilt>
     </div>
   </div>
   <div className="col-1 d-flex flex-column flex-items-center js-build-in-trigger">

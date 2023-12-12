@@ -1,5 +1,6 @@
 import React from 'react'
 import Typewriter from '../../functions/typewrite.jsx'
+import Tilt from '../../functions/tilt.jsx'
 
 
 // IMAGES
