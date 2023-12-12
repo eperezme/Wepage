@@ -6,13 +6,14 @@
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
-    "dev" : "vite",
+    "dev": "vite",
     "devh": "vite --host",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
   "dependencies": {
+    "@emailjs/browser": "^3.11.0",
     "@primer/css": "^21.1.0",
     "@primer/react": "^36.3.1",
     "flowbite": "^2.2.0",
@@ -20,7 +21,8 @@
     "imagetools-core": "^6.0.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "sharp": "^0.33.0"
+    "sharp": "^0.33.0",
+    "vanilla-tilt": "^1.8.1"
   },
   "devDependencies": {
     "@types/react": "^18.2.37",

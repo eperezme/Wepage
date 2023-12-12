@@ -20,29 +20,32 @@ import Skills from './sources/skills/Skills.jsx'
 import Experience from './sources/experience/Experience.jsx'
 import Projects from './sources/projects/Projects.jsx'
 import Contact from './sources/contact/Contact.jsx'
-
+// import Test from './sources/test/Test.jsx'
 
 // import IntersectionObserverComponent from './functions/observer_old.jsx'
 import BuildInAnimation from './functions/observer.jsx'
+import MouseTracker from './functions/mouse-hover.jsx'
 
+import Tilt from './functions/tilt.jsx'
 
 function App() {
 
   return (
     <>
       <div className="overflow-x-clip page-responsive header-overlay home-campaign env-production logged-in color-bg-default">
-        <div className='font-mktg'>
+        <div className='font-mktg overflow-x-hidden'>
 
-        {/* <IntersectionObserverComponent> */}
+
           <BuildInAnimation/>
+          <MouseTracker/>
+
           <Header/>
           <Skills/>
           <Experience/>
           <Projects/>
           <Contact/>
+          {/* <Test/> */}
 
-
-        {/* </IntersectionObserverComponent> */}
         </div>
       </div>
     </>
