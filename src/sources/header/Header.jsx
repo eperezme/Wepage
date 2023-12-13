@@ -49,7 +49,9 @@ const Header = () => {
                     <h3 className="h3-mktg color-fg-muted mb-5">
                       Bioinformatics Data <span className='typewriter_text'><Typewriter text={textArray} typingDelay={100} deletingDelay={100} /></span>
                     </h3>
-                    <p className="f2-mktg text-normal color-fg-muted mb-3 mb-md-10 position-relative z-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio optio nisi fugiat recusandae incidunt aut ullam corrupti atque numquam ut tempore nihil unde quibusdam sit iusto, consequatur aspernatur voluptas eos!</p>
+                    <p className="f2-mktg text-normal color-fg-muted mb-3 mb-md-10 position-relative z-1 sub-head" style={{}}>
+                    Hello, I'm a passionate bioinformatics master's student with a strong foundation in programming, specializing in R and Python. Committed to continuous learning, I aspire to further develop my skills in these languages. Explore my portfolio to witness the intersection of my love for bioinformatics and programming through efficient, readable code accompanied by clear and concise comments.
+                      </p>
                   <div className="d-flex flex-column flex-md-row">
                     <a href={CV} className="btn-mktg download">Download CV</a>
                     <div className="border-top border-md-left mx-md-3 mb-3 mb-md-0"></div>
