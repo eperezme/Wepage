@@ -1,0 +1,100 @@
+/* .lang {
+    align-items: center;
+    border-radius: 0px 6px 6px 0px;
+    display: flex;
+    justify-content: space-between;
+    padding: 68px 30px;
+    position: relative;
+}
+
+.lang .col {
+    align-items: center;
+    display: inline-flex;
+    flex: 0 0 auto;
+    gap: 10px;
+    position: relative;
+}
+
+.lang .frame {
+    align-items: flex-start;
+    align-self: stretch;
+    display: inline-flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    gap: 120px;
+    justify-content: center;
+    padding: 0px 5px;
+    position: relative;
+}
+
+.lang .icon-instance-node {
+    height: 35px !important;
+    position: relative !important;
+    width: 35px !important;
+}
+
+.lang .div {
+    align-items: flex-start;
+    align-self: stretch;
+    display: inline-flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+
+.lang .text-wrapper {
+    color: var(--githubcomraven);
+    font-family: "Inter-Medium", Helvetica;
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 32px;
+    margin-top: -1px;
+    position: relative;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.lang .text-wrapper-2 {
+    align-self: stretch;
+    color: var(--githubcomraven);
+    font-family: "Inter-Medium", Helvetica;
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 32px;
+    position: relative;
+}
+
+.lang .col-2 {
+    align-items: center;
+    align-self: stretch;
+    display: inline-flex;
+    flex: 0 0 auto;
+    gap: 10px;
+    position: relative;
+}
+
+.lang .frame-2 {
+    align-items: flex-start;
+    align-self: stretch;
+    display: inline-flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    gap: 120px;
+    justify-content: center;
+    position: relative;
+}
+
+.lang .text-wrapper-3 {
+    color: var(--githubcomraven);
+    font-family: "Inter-Medium", Helvetica;
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 32px;
+    position: relative;
+    white-space: nowrap;
+    width: fit-content;
+} */
