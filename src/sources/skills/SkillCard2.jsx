@@ -19,7 +19,7 @@ function SkillCard2() {
       <FaRProject size={32}/>
       <FaHtml5 size={32}/>
    </div>
-   <div class="flex-items">
+   <div class="flex-items mr-5">
       <p className="f2-mktg color-fg-muted">Python</p>
       <p className="f2-mktg color-fg-muted">R</p>
       <p className="f2-mktg color-fg-muted">HTML</p>
