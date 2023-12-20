@@ -9,6 +9,8 @@ import IMG7 from '../../assets/graphs/box.png?w=300;400;500;600;700;800;900;1000
 import IMG7_fall from '../../assets/graphs/box.png'
 import PORTAL from '../../assets/portal.png?w=300;400;500;600;700;800;900;1000;1200;1500;1800;2000&format=webp&as=srcset'
 import PORTAL_fall from '../../assets/portal.png'
+import ICO_SVG from '../../assets/svg/ICO_white.svg'
+// import ICO_BUILDING from ''
 
 function Experience() {
   return (
@@ -28,24 +30,36 @@ function Experience() {
             <h3 className="h5-mktg mb-4 text-medium js-build-in-item build-in-slideX-left" style={{transitionDelay: "200ms"}}>Work</h3>
             <h2 className="h4-mktg mb-4 text-medium js-build-in-item build-in-slideX-left" style={{transitionDelay: "300ms"}}>
               <span className="h3-mktg text-accent-primary d-block">Experience </span>
-                Appart from unpaid intern not really.
+                Were I've worked
             </h2>
           </div>
           <img alt="" aria-hidden="true" width="595" height="595" className="animation-reverse-rotate position-absolute height-auto d-none d-md-block col-8 events-none" style={{top: "-10%", right: "-25%",}} loading="lazy" decoding="async" src="https://github.githubassets.com/assets/shape-2-f30dcc9bd35c.svg"></img>
         </div>
         {/* MAIN CARD */}
-        <Tilt>
+        {/* <Tilt>
           <card-skew class="overflow-hidden rounded-3 mb-3 mb-md-5 position-relative z-1" data-catalyst data-perspective="700">
             <div className="color-bg-subtle border rounded-3 p-2 p-lg-6 js-build-in-trigger feature-card-mktg z-1 position-relative" data-target="card-skew.bounding">
               <div className="position-relative d-flex flex-column flex-md-row gutter-spacious col-lg-10 mx-auto my-lg-6">
-                {/* column 1 */}
+                column 1
                 <div className="col-md-6 js-build-in-item build-in-scale-right" style={{transitionDelay: "600ms"}}></div>
-                {/* column 2 */}
+                column 2
                 <div className="col-md-6 js-build-in-item build-in-scale-right" style={{transitionDelay: "600ms"}}></div>
               </div>
             </div>
           </card-skew>
-        </Tilt>
+        </Tilt> */}
+        <div className="d-flex js-build-in-trigger position-relative">
+          <div className="col-11 ml-2 ml-md-6">
+            <div className="river-mktg js-build-in-trigger d-flex gutter gutter-spacious my-5 my-sm-7 my-md-8 position-relative flex-column-reverse flex-md-items-center flex-md-row flex-column pb-4 pb-md-7">
+              <div className="col-12 py-3 mb-2 js-build-in-item col-sm-10 col-md-6 text-left col-lg-6 build-in-slideX-right" style={{TransitionDelay: "0ms"}}>
+                <div className="pr-md-4 ml-4">
+                <img alt="" aria-hidden="true" width="100" height="100" className="ml-sm-9 mb-sm-1 position-absolute d-md-block events-none js-build-in-item build-in-fade" style={{height: "300px", width: "300px", bottom: "-150px", left: "-10px", transitionDelay: "200ms", marginLeft: "20px", zIndex: "5"}} loading="lazy" decoding="async" src={ICO_SVG}></img>
+                {/* <img src='https://cdn.eperezme.com/upload/w_500,o_webp/https://cms.eperezme.com/uploads/ICO_scalia_gallery_fullwidth_c0828b6920.jpg' alt="" loading="lazy" decoding="async" className="rounded-2 width-full height-auto d-none d-lg-block" style={{marginLeft: "400px"}}/> */}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         <div className="d-flex js-build-in-trigger position-relative">
           <div className="col-1 d-flex flex-column flex-items-center position-relative">
             <div className="home-campaign-git-line height-full position-relative z-1 js-build-in-item build-in-scale-top" style={{background: "linear-gradient(transparent, rgb(51, 179, 174), rgb(51, 179, 174), transparent)", transitionDelay: "0ms",}}></div>
@@ -56,23 +70,24 @@ function Experience() {
               <div className="col-12 py-3 mb-2 js-build-in-item col-sm-10 col-md-6 text-left col-lg-6 build-in-slideX-right" style={{TransitionDelay: "0ms"}}>
                 <div className="pr-md-4">
                   <h2 className="color-fg-default mb-3 f2-mktg color-fg-muted">
-                    <em>Lorem Ipsum </em>
-                    dolor sit amet consectetur adipisicing elit. Quia, quibusdam.
+                    <em>Institut Catalá d'Oncologia </em>
+                    Where I made an internship as a data Analyst in the Cancer Epidemiology Research Program 
                   </h2>
                   {/* [ ] Add link */}
-                  <a className="link-mktg text-semibold color-fg-default py-1 f3-mktg" href="">
-    Lorem Ipsum Link <svg xmlns="http://www.w3.org/2000/svg" className="octicon arrow-symbol-mktg" width="16" height="16" viewBox="0 0 16 16" fill="none"><path fill="currentColor" d="M7.28033 3.21967C6.98744 2.92678 6.51256 2.92678 6.21967 3.21967C5.92678 3.51256 5.92678 3.98744 6.21967 4.28033L7.28033 3.21967ZM11 8L11.5303 8.53033C11.8232 8.23744 11.8232 7.76256 11.5303 7.46967L11 8ZM6.21967 11.7197C5.92678 12.0126 5.92678 12.4874 6.21967 12.7803C6.51256 13.0732 6.98744 13.0732 7.28033 12.7803L6.21967 11.7197ZM6.21967 4.28033L10.4697 8.53033L11.5303 7.46967L7.28033 3.21967L6.21967 4.28033ZM10.4697 7.46967L6.21967 11.7197L7.28033 12.7803L11.5303 8.53033L10.4697 7.46967Z"></path><path className="octicon-chevrow-stem" stroke="currentColor" d="M1.75 8H11" strokeWidth="1.5" strokeLinecap="round"></path></svg>
+                  <a className="link-mktg text-semibold color-fg-default py-1 f3-mktg" href="https://ico.gencat.cat/ca/inici">
+    Go to page <svg xmlns="http://www.w3.org/2000/svg" className="octicon arrow-symbol-mktg" width="16" height="16" viewBox="0 0 16 16" fill="none"><path fill="currentColor" d="M7.28033 3.21967C6.98744 2.92678 6.51256 2.92678 6.21967 3.21967C5.92678 3.51256 5.92678 3.98744 6.21967 4.28033L7.28033 3.21967ZM11 8L11.5303 8.53033C11.8232 8.23744 11.8232 7.76256 11.5303 7.46967L11 8ZM6.21967 11.7197C5.92678 12.0126 5.92678 12.4874 6.21967 12.7803C6.51256 13.0732 6.98744 13.0732 7.28033 12.7803L6.21967 11.7197ZM6.21967 4.28033L10.4697 8.53033L11.5303 7.46967L7.28033 3.21967L6.21967 4.28033ZM10.4697 7.46967L6.21967 11.7197L7.28033 12.7803L11.5303 8.53033L10.4697 7.46967Z"></path><path className="octicon-chevrow-stem" stroke="currentColor" d="M1.75 8H11" strokeWidth="1.5" strokeLinecap="round"></path></svg>
                 </a>
                 </div>
               </div>
-              <div className="col-12 py-3 col-md-6 col-lg-6">
+              <div className="col-12 py-3 col-md-6 col-lg-6 img-ico">
                 <div className="position-relative">
                   <div className="d-flex flex-column position-relative">
-                    <div className="js-build-in-item build-in-slideX-right border overflow-hidden rounded-2 position-relative left-6 z-1" style={{maxWidth: "541px", marginTop: "-30%", transitionDelay: "100ms"}}>
-                    <picture>
-                      <source srcSet={IMG7} type='image/webp'/>
-                      <img src={IMG7_fall} alt="" loading="lazy" decoding="async" className="rounded-2 width-full height-auto d-block"/>
-                    </picture>
+                    <div className="js-build-in-item build-in-slideX-right border overflow-hidden rounded-2 position-relative left-6 z-1" style={{maxWidth: "541px", marginTop: "-10%", transitionDelay: "100ms"}}>
+                    {/* <picture> */}
+                      {/* <source srcSet={IMG7} type='image/webp'/> */}
+                      {/* <img src={ICO_BUILDING} alt="" loading="lazy" decoding="async" className="rounded-2 width-full height-auto d-block"/> */}
+                      <img src='https://cdn.eperezme.com/upload/w_500,h_320,o_webp/https://cms.eperezme.com/uploads/ICO_scalia_gallery_fullwidth_c0828b6920.jpg' alt="" loading="lazy" decoding="async" className="rounded-2 width-full height-auto d-block"/>
+                    {/* </picture> */}
                     </div>
                     <img alt="" aria-hidden="true" width="1000" height="1000" className="position-absolute d-none d-md-block events-none js-build-in-item build-in-fade" style={{bottom: "-160px", right: "-220px", transitionDelay: "200ms"}} loading="lazy" decoding="async" src="https://github.githubassets.com/assets/bg-glow-blue-036b8dc2d1ce.png"></img>
                   </div>

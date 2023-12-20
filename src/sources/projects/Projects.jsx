@@ -6,6 +6,7 @@ import PORTAL from '../../assets/portal.png?w=300;400;500;600;700;800;900;1000;1
 import PORTAL_fall from '../../assets/portal.png'
 
 
+
 function Projects() {
 
 
@@ -103,8 +104,9 @@ function Projects() {
                 <div className="feature-card-mktg d-md-flex rounded-3 color-bg-subtle border position-relative flex-justify-between z-1 height-full flex-column" data-target="card-skew.bounding">
                   <div className="d-md-flex flex-column flex-1 p-5 p-sm-6 py-lg-8 pl-lg-8 pr-lg-12 flex-justify-start">
                     <p className="f2-mktg text-medium color-fg-muted mb-4">
-                      <em>Lorem Ipsum </em>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.
+                    🪐<em>Keplerian Orbits calculator </em> 
+                      <br/>
+                      A Java application for simulating Keplerian orbits.
                     </p>
                     <div>
                     <a className="link-mktg text-semibold color-fg-default py-1 f3-mktg" href="/features/discussions">

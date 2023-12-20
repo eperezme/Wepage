@@ -3,3 +3,11 @@
   background: var(--github-com-linear-keppel-black, linear-gradient(180deg, #33B3AE 40%, rgba(0, 0, 0, 0.00) 100%));
   
 }
+
+
+@media screen and (min-width: 768px){
+  .img-ico{
+    bottom: -100px;
+  }
+  
+}
