@@ -1,6 +1,6 @@
 
 import React from "react";
-import { AiFillBoxPlot } from "react-icons/ai";
+import { AiFillBoxPlot, AiFillDatabase } from "react-icons/ai";
 import { DiGoogleAnalytics } from "react-icons/di";
 import { FaDatabase } from "react-icons/fa";
 import { MdDesignServices } from "react-icons/md";
@@ -12,32 +12,28 @@ import "./card.css";
 
 function SkillCard() {
   return (
-    <div className="flex flex-row flex-wrap justify-center items-center content-normal">
-      {/* column 1 */}
-      {/* Column 2 */}
-      <div className="lang">
-        <div className="col">
-          <div className="frame">
-            <FaPython className="react-icons-fa" color="white" />
-            <FaRProject className="react-icons-fa" />
-          </div>
-          <div className="frame">
-            <div className="text-wrapper">Python</div>
-            <div className="text-wrapper">R language</div>
-          </div>
-        </div>
-        <div className="col-2">
-          <div className="frame">
-            <FaDocker className="react-icons-fa" color="white" />
-            <FaJava className="react-icons-fa" />
-          </div>
-          <div className="frame">
-            <div className="text-wrapper">Docker</div>
-            <div className="text-wrapper">Java</div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <div class="flex-container">
+   <div class="flex-items mt-5 mb-5">
+      <AiFillBoxPlot size={32} style={{transform: "rotate(90deg)"}}/>
+      <DiGoogleAnalytics size={32}/>
+      <AiFillDatabase size={32}/>
+   </div>
+   <div class="flex-items">
+      <p className="f2-mktg color-fg-muted">Data Visualization</p>
+      <p className="f2-mktg color-fg-muted">Data Analytics</p>
+      <p className="f2-mktg color-fg-muted">Big Data</p>
+   </div>
+   <div class="flex-items">
+      <SiTensorflow size={32}/>
+      <MdSyncProblem size={32}/>
+      <MdDesignServices size={32}/>
+   </div>
+   <div class="flex-items">
+      <p className="f2-mktg color-fg-muted">Machine Learning</p>
+      <p className="f2-mktg color-fg-muted">Problem-Solving</p>
+      <p className="f2-mktg color-fg-muted">Experimental Design</p>
+   </div>
+</div>
   );
 }
 

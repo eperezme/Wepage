@@ -3,6 +3,7 @@ import Tilt from '../../functions/tilt';
 
 //Skillcard
 import SkillCard from './SkillCard';
+import SkillCard2 from './SkillCard2';
 
 // CSS
 import './Skills.css'
@@ -109,9 +110,12 @@ function Skills() {
           <div className="d-md-flex flex-row flex-1 p-5 p-sm-6 py-lg-8 pl-lg-8 pr-lg-12 col-md-6 flex-justify-between">
             {/* for the text f2-mktg text-medium color-fg-muted mb-4 */}
             {/* [ ] Make it a component */}
-            <h1>a</h1>
-            <h1>B</h1>
-            {/* <SkillCard/> */}
+            {/* <h1>a</h1>
+            <h1>B</h1> */}
+            
+            <SkillCard/>
+            
+            <SkillCard2 />
           </div>
           <div data-target="card-skew.shine" className="position-absolute events-none z-n1"></div>
         </div>
