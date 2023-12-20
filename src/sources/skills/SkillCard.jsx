@@ -18,7 +18,7 @@ function SkillCard() {
       <DiGoogleAnalytics size={32}/>
       <AiFillDatabase size={32}/>
    </div>
-   <div class="flex-items mr-5">
+   <div class="flex-items mr-lg-5">
       <p className="f2-mktg color-fg-muted">Data Visualization</p>
       <p className="f2-mktg color-fg-muted">Data Analytics</p>
       <p className="f2-mktg color-fg-muted">Big Data</p>
