@@ -155,6 +155,16 @@ auto-complete, details-dialog, details-menu, file-attachment, filter-input, remo
   border-bottom-right-radius: 1rem !important;
 }
 
+@media screen and (max-width: 768px){
+  
+  .rounded-right-img{
+    border-top-right-radius: 0 !important;
+    border-bottom-left-radius: 1rem !important;
+    border-bottom-right-radius: 1rem !important;
+  }
+  
+}
+
 /*
 .flex-1{
   flex: 1 !important;
