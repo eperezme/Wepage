@@ -12,6 +12,8 @@
 /build
 /dist
 dist/
+/public
+public/
 
 
 # misc
@@ -26,3 +28,4 @@ yarn-debug.log*
 yarn-error.log*
 
 dist/index.html
+

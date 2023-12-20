@@ -41,11 +41,13 @@ function Skills() {
       <h2 className="h5-mktg mb-4 text-medium js-build-in-item build-in-slideX-left" style={{transitionDelay: "200ms"}}>About Me</h2>
       <h3 className='h3-mktg mb-4 text-medium js-build-in-item build-in-slideX-left' style={{transitionDelay: "300ms"}}>
         <span className='text-accent-primary d-block'>Education</span>
-        <ul className='list'>
-          <li className='item'>Master in Bioinformatics & Biostatistics</li>
-          <li className='item'>Biology Degree</li>
-        </ul>
-      </h3>
+        </h3>
+        <h1>
+          <ul className='list'>
+            <li className='item color-fg-muted'>Master in Bioinformatics & Biostatistics</li>
+            <li className='item color-fg-muted '>Biology Degree</li>
+          </ul>
+        </h1>
     </div>
     <img alt="" aria-hidden="true" width="626" height="626" className="animation-reverse-rotate position-absolute height-auto d-none d-md-block col-6 events-none js-build-in-item build-in-fade home-shape-rotate" style={{top: "0px", right: "-25%", transitionDelay: "400ms"}} loading="lazy" decoding="async" src="https://github.githubassets.com/assets/shape-0-df97fa6b0c27.svg"/>
   </div>
@@ -69,7 +71,7 @@ function Skills() {
           <h2 className="color-fg-default mb-3 f2-mktg color-fg-muted">
             As a dedicated <em>bioinformatics</em> master's student with a passion for programming, I possess knowledge and fluency in both R and Python. Apart from that, I have experience with other programming languages and tools such as <em>C++, Java, Docker, SQL, Git, HTML, CSS, JavaScript</em> and <em>Bash</em>.
           </h2>
-          <a href="" className="link-mktg text-semibold color-fg-default py-1 f3-mktg">Lorem ipsum</a>
+          {/* <a href="" className="link-mktg text-semibold color-fg-default py-1 f3-mktg">Lorem ipsum</a> */}
         </div>
       </div>
       <div className="col-12 py-3 col-md-6 col-lg-6">
@@ -93,11 +95,11 @@ function Skills() {
     <div className="mb-6 mb-md-7 pb-4 js-build-in-trigger">
         <div className="py-3 text-left col-sm-8 col-md-7 col-lg-6 col-xl-5 js-build-in-item build-in-slideX-left" style={{transitionDelay: "600ms"}}>
           <div className="gradient-border-mktg d-inline-block z-1 position-relative px-2 lh-condensed f6-mktg" style={{top: "-1px"}}>
-          <span className="text-gradient-mktg text-semibold">What do I have?</span>
+          <span className="text-gradient-mktg text-semibold">What do I know?</span>
           </div>
           <h3 className="text-accent-primary mb-2 mt-3 h1-mktg text-medium">Skills</h3>
-          <p className="mb-3 f2-mktg text-medium col-6-max">Proficient with multiple programming languages and skills</p>
-          <a href="" className="link-mktg text-semibold color-fg-default py-1 f3-mktg">Button</a>
+          <p className="mb-3 f2-mktg text-medium col-6-max">I am proficient with multiple programming languages and skills</p>
+          {/* <a href="" className="link-mktg text-semibold color-fg-default py-1 f3-mktg">Button</a> */}
         </div>
       </div>
   </div>
@@ -131,11 +133,17 @@ function Skills() {
           <div className="feature-card-mktg d-md-flex rounded-3 color-bg-subtle border position-relative flex-justify-between z-1 height-full flex-column" data-target="card-skew.bounding">
             <div className="d-md-flex flex-column flex-1 p-5 p-sm-6 py-lg-8 pl-lg-8 pr-lg-12 flex-justify-start">
               <p className="f2-mktg text-medium color-fg-muted mb-4">
-                <em>Lorem ipsum </em>
-                dolor sit amet consectetur adipisicing elit. Quasi, quibusdam.
+              <em>Data Visualization and analysis</em>
+                <br />
+                <br />
+                I've cultivated <em> strong skills in data visualization </em>
+                using R and Python. Proficient in libraries such as <em>ggplot2</em> and <em>Matplotlib</em>, I can create beautiful and informative plots that help to convey the message of the data.
+                <br />
+                <br />
+                I am dedicated to delivering results that contribute to a <em>comprehensive understanding of biological phenomena</em>.
               </p>
               <div>
-                <a href="" className="link-mktg text-semibold color-fg-default py-1 f3-mktg">Button</a>
+                {/* <a href="" className="link-mktg text-semibold color-fg-default py-1 f3-mktg">Button</a> */}
               </div>
             </div>
             <div className="overflow-hidden rounded-bottom-3">
@@ -157,15 +165,22 @@ function Skills() {
           <div className="feature-card-mktg d-md-flex rounded-3 color-bg-subtle border position-relative flex-justify-between z-1 height-full flex-column" data-target="card-skew.bounding">
             <div className="d-md-flex flex-column flex-1 p-5 p-sm-6 py-lg-8 pl-lg-8 pr-lg-12 flex-justify-start">
               <p className="f2-mktg text-medium color-fg-muted mb-4">
-                <em>Lorem ipsum </em>
-                dolor sit amet consectetur adipisicing elit. Quasi, quibusdam.
+              <em>Machine learning and AI</em>
+                <br />
+                <br />
+              Actively expanding my skill set in <em>AI and Machine learning</em> due to the <em>transformative potential</em> of machine learning in extracting patterns from large datasets.
+              <br />
+              <br />
+              I've delved into machine learning frameworks such as <em>scikit-learn</em> and <em>TensorFlow</em>, equipping myself to tackle complex biological problems.
               </p>
               <div>
-                <a href="" className="link-mktg text-semibold color-fg-default py-1 f3-mktg">Button</a>
+                {/* <a href="" className="link-mktg text-semibold color-fg-default py-1 f3-mktg">Button</a> */}
               </div>
             </div>
             <div className="overflow-hidden rounded-bottom-3">
               {/* IMG */}
+              {/* TODO: make cards have the same height */}
+              {/* TODO: make the img transparent */}
               <picture>
                 <source src={IMG6} type='image/webp'/>
               <img className="width-full d-block height-auto js-build-in-item build-in-scale-fade rounded-3" loading="lazy" decoding="async" alt="" aria-hidden="true" src={IMG6_fall}/>
