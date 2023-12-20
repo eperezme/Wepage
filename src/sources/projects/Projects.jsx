@@ -80,11 +80,11 @@ function Projects() {
             <div className="mb-6 mb-md-9 pb-4 js-build-in-trigger">
               <div className="py-3 text-left col-sm-10 col-md-6 col-lg-3 js-build-in-item build-in-slideX-left">
                 <div className="gradient-border-mktg d-inline-block z-1 position-relative px-2 lh-condensed f6-mktg" style={{top: "-1px"}}>
-                  <span className="text-gradient-mktg text-semibold">Lorem Ipsum</span>
+                  <span className="text-gradient-mktg text-semibold">What more?</span>
                 </div>
-                <h3 className="text-accent-primary mb-2 mt-3 h1-mktg text-medium">Lorem Ipsum</h3>
+                <h3 className="text-accent-primary mb-2 mt-3 h1-mktg text-medium">Other Projects</h3>
                 <p className="mb-3 f2-mktg text-medium col-6-max">
-                  Lorem ipsum dolor sit amet consectetur adipisicing.
+                  Here you can view and browse other non biology projects I have worked on.
                 </p>
               </div>
             </div>
@@ -103,22 +103,22 @@ function Projects() {
               <card-skew class="overflow-hidden rounded-3 mb-3 mb-md-5" data-catalyst data-perspective="700">
                 <div className="feature-card-mktg d-md-flex rounded-3 color-bg-subtle border position-relative flex-justify-between z-1 height-full flex-column" data-target="card-skew.bounding">
                   <div className="d-md-flex flex-column flex-1 p-5 p-sm-6 py-lg-8 pl-lg-8 pr-lg-12 flex-justify-start">
+                    <h3 className='h3-mktg'>🪐<em>Keplerian Orbits </em></h3>
                     <p className="f2-mktg text-medium color-fg-muted mb-4">
-                    🪐<em>Keplerian Orbits calculator </em> 
                       <br/>
                       A Java application for simulating Keplerian orbits.
                     </p>
                     <div>
-                    <a className="link-mktg text-semibold color-fg-default py-1 f3-mktg" href="/features/discussions">
-                      Lorem Link <svg xmlns="http://www.w3.org/2000/svg" className="octicon arrow-symbol-mktg" width="16" height="16" viewBox="0 0 16 16" fill="none"><path fill="currentColor" d="M7.28033 3.21967C6.98744 2.92678 6.51256 2.92678 6.21967 3.21967C5.92678 3.51256 5.92678 3.98744 6.21967 4.28033L7.28033 3.21967ZM11 8L11.5303 8.53033C11.8232 8.23744 11.8232 7.76256 11.5303 7.46967L11 8ZM6.21967 11.7197C5.92678 12.0126 5.92678 12.4874 6.21967 12.7803C6.51256 13.0732 6.98744 13.0732 7.28033 12.7803L6.21967 11.7197ZM6.21967 4.28033L10.4697 8.53033L11.5303 7.46967L7.28033 3.21967L6.21967 4.28033ZM10.4697 7.46967L6.21967 11.7197L7.28033 12.7803L11.5303 8.53033L10.4697 7.46967Z"></path><path className="octicon-chevrow-stem" stroke="currentColor" d="M1.75 8H11" strokeWidth="1.5" strokeLinecap="round"></path></svg>
+                    <a className="link-mktg text-semibold color-fg-default py-1 f3-mktg" href="https://github.com/eperezme/KeplerianOrbits">
+                      Source Code <svg xmlns="http://www.w3.org/2000/svg" className="octicon arrow-symbol-mktg" width="16" height="16" viewBox="0 0 16 16" fill="none"><path fill="currentColor" d="M7.28033 3.21967C6.98744 2.92678 6.51256 2.92678 6.21967 3.21967C5.92678 3.51256 5.92678 3.98744 6.21967 4.28033L7.28033 3.21967ZM11 8L11.5303 8.53033C11.8232 8.23744 11.8232 7.76256 11.5303 7.46967L11 8ZM6.21967 11.7197C5.92678 12.0126 5.92678 12.4874 6.21967 12.7803C6.51256 13.0732 6.98744 13.0732 7.28033 12.7803L6.21967 11.7197ZM6.21967 4.28033L10.4697 8.53033L11.5303 7.46967L7.28033 3.21967L6.21967 4.28033ZM10.4697 7.46967L6.21967 11.7197L7.28033 12.7803L11.5303 8.53033L10.4697 7.46967Z"></path><path className="octicon-chevrow-stem" stroke="currentColor" d="M1.75 8H11" strokeWidth="1.5" strokeLinecap="round"></path></svg>
                       </a>
                     </div>
                   </div>
                   <div className="overflow-hidden rounded-bottom-3">
-                    <picture>
-                    <source srcSet={PORTAL} type='image/webp'/>
-                      <img className="width-full d-block height-auto js-build-in-item build-in-scale-up rounded-bottom-img" loading="lazy" decoding="async" alt="" aria-hidden="true" src={PORTAL}></img>
-                    </picture>
+                    {/* <picture> */}
+                    {/* <source srcSet={PORTAL} type='image/webp'/> */}
+                      <img className="width-full d-block height-auto js-build-in-item build-in-scale-up rounded-bottom-img" loading="lazy" decoding="async" alt="" aria-hidden="true" src="https://cdn.eperezme.com/upload/h_600,o_webp/https://cms.eperezme.com/uploads/orbit_e10_az90_9941f0473b.png"></img>
+                    {/* </picture> */}
                   </div>
                   <div data-target="card-skew.shine" className="position-absolute events-none z-n1"></div>
                 </div>
@@ -133,21 +133,26 @@ function Projects() {
               <card-skew class="overflow-hidden rounded-3 mb-3 mb-md-5" data-catalyst data-perspective="700" style={{transform: "perspective(700px) rotateX(-0.03deg) rotateY(-0.03deg)"}}>
               <div className="feature-card-mktg d-md-flex rounded-3 color-bg-subtle border position-relative flex-justify-between z-1 height-full flex-column" data-target="card-skew.bounding">
                 <div className="d-md-flex flex-column flex-1 p-5 p-sm-6 py-lg-8 pl-lg-8 pr-lg-12 flex-justify-start">
+                <h3 className='h3-mktg'>📄<em>CodeBlog </em></h3>
                   <p className="f2-mktg text-medium color-fg-muted mb-4">
-                    <em>Lorem Ipsum </em>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.
+                    <br/>
+                    <em>My personal blog </em>
+                    where I write about things I do and learn related to coding.
                   </p>
-                  <div>
-                  <a className="link-mktg text-semibold color-fg-default py-1 f3-mktg" href="/features/code-review">
-                    Lorem Link <svg xmlns="http://www.w3.org/2000/svg" className="octicon arrow-symbol-mktg" width="16" height="16" viewBox="0 0 16 16" fill="none"><path fill="currentColor" d="M7.28033 3.21967C6.98744 2.92678 6.51256 2.92678 6.21967 3.21967C5.92678 3.51256 5.92678 3.98744 6.21967 4.28033L7.28033 3.21967ZM11 8L11.5303 8.53033C11.8232 8.23744 11.8232 7.76256 11.5303 7.46967L11 8ZM6.21967 11.7197C5.92678 12.0126 5.92678 12.4874 6.21967 12.7803C6.51256 13.0732 6.98744 13.0732 7.28033 12.7803L6.21967 11.7197ZM6.21967 4.28033L10.4697 8.53033L11.5303 7.46967L7.28033 3.21967L6.21967 4.28033ZM10.4697 7.46967L6.21967 11.7197L7.28033 12.7803L11.5303 8.53033L10.4697 7.46967Z"></path><path className="octicon-chevrow-stem" stroke="currentColor" d="M1.75 8H11" strokeWidth="1.5" strokeLinecap="round"></path></svg>
+                  <div className='d-flex flex-row'>
+                  <a className="link-mktg text-semibold color-fg-default py-1 f3-mktg" href="https://github.com/eperezme/CodeBlog">
+                    Source Code <svg xmlns="http://www.w3.org/2000/svg" className="octicon arrow-symbol-mktg" width="16" height="16" viewBox="0 0 16 16" fill="none"><path fill="currentColor" d="M7.28033 3.21967C6.98744 2.92678 6.51256 2.92678 6.21967 3.21967C5.92678 3.51256 5.92678 3.98744 6.21967 4.28033L7.28033 3.21967ZM11 8L11.5303 8.53033C11.8232 8.23744 11.8232 7.76256 11.5303 7.46967L11 8ZM6.21967 11.7197C5.92678 12.0126 5.92678 12.4874 6.21967 12.7803C6.51256 13.0732 6.98744 13.0732 7.28033 12.7803L6.21967 11.7197ZM6.21967 4.28033L10.4697 8.53033L11.5303 7.46967L7.28033 3.21967L6.21967 4.28033ZM10.4697 7.46967L6.21967 11.7197L7.28033 12.7803L11.5303 8.53033L10.4697 7.46967Z"></path><path className="octicon-chevrow-stem" stroke="currentColor" d="M1.75 8H11" strokeWidth="1.5" strokeLinecap="round"></path></svg>
+                    </a>
+                    <a className="ml-6 link-mktg text-semibold color-fg-default py-1 f3-mktg" href="https://blog.eperezme.com/">
+                    Blog <svg xmlns="http://www.w3.org/2000/svg" className="octicon arrow-symbol-mktg" width="16" height="16" viewBox="0 0 16 16" fill="none"><path fill="currentColor" d="M7.28033 3.21967C6.98744 2.92678 6.51256 2.92678 6.21967 3.21967C5.92678 3.51256 5.92678 3.98744 6.21967 4.28033L7.28033 3.21967ZM11 8L11.5303 8.53033C11.8232 8.23744 11.8232 7.76256 11.5303 7.46967L11 8ZM6.21967 11.7197C5.92678 12.0126 5.92678 12.4874 6.21967 12.7803C6.51256 13.0732 6.98744 13.0732 7.28033 12.7803L6.21967 11.7197ZM6.21967 4.28033L10.4697 8.53033L11.5303 7.46967L7.28033 3.21967L6.21967 4.28033ZM10.4697 7.46967L6.21967 11.7197L7.28033 12.7803L11.5303 8.53033L10.4697 7.46967Z"></path><path className="octicon-chevrow-stem" stroke="currentColor" d="M1.75 8H11" strokeWidth="1.5" strokeLinecap="round"></path></svg>
                     </a>
                   </div>
                 </div>
                 <div className="overflow-hidden rounded-bottom-3">
-                  <picture>
-                    <source srcSet={PORTAL} type='image/webp'/>
-                    <img className="width-full d-block height-auto js-build-in-item build-in-scale-up rounded-bottom-img" loading="lazy" decoding="async" alt="" aria-hidden="true" src={PORTAL}></img>
-                  </picture>
+                  {/* <picture> */}
+                    {/* <source srcSet={PORTAL} type='image/webp'/> */}
+                    <img className="width-full d-block height-auto js-build-in-item build-in-scale-up rounded-bottom-img" loading="lazy" decoding="async" alt="" aria-hidden="true" src="https://cdn.eperezme.com/upload/o_webp/https://i.imgur.com/71aIpTd.png"></img>
+                  {/* </picture> */}
                 </div>
                 <div data-target="card-skew.shine" className="position-absolute events-none z-n1"></div>
               </div>
@@ -162,24 +167,25 @@ function Projects() {
           <card-skew class="overflow-hidden rounded-3 mb-3 mb-md-5" data-catalyst data-perspective="700" data-tilt data-tilt-max="1.5" data-tilt-perspective="500">
             <div className="feature-card-mktg d-md-flex rounded-3 color-bg-subtle border position-relative flex-justify-between z-1 height-full flex-row" data-target="card-skew.bounding">
               <div className="d-md-flex flex-column flex-1 p-5 p-sm-6 py-lg-8 pl-lg-8 pr-lg-12 col-md-6 flex-justify-between">
+              <h3 className='h3-mktg'>💻<em>My portfolio </em></h3>
                 <p className="f2-mktg text-medium color-fg-muted mb-4">
-                  <em>Lorem Ipsum </em>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.
+                  <em>This portfolio </em>
+                  that you are watching was made from scratch, without knowing HTML, CSS or JS.
                 </p>
                 <div>
                   {/* [ ] Link */}
-                <a className="link-mktg text-semibold color-fg-default py-1 f3-mktg" href="">
-                  Lorem Link <svg xmlns="http://www.w3.org/2000/svg" className="octicon arrow-symbol-mktg" width="16" height="16" viewBox="0 0 16 16" fill="none"><path fill="currentColor" d="M7.28033 3.21967C6.98744 2.92678 6.51256 2.92678 6.21967 3.21967C5.92678 3.51256 5.92678 3.98744 6.21967 4.28033L7.28033 3.21967ZM11 8L11.5303 8.53033C11.8232 8.23744 11.8232 7.76256 11.5303 7.46967L11 8ZM6.21967 11.7197C5.92678 12.0126 5.92678 12.4874 6.21967 12.7803C6.51256 13.0732 6.98744 13.0732 7.28033 12.7803L6.21967 11.7197ZM6.21967 4.28033L10.4697 8.53033L11.5303 7.46967L7.28033 3.21967L6.21967 4.28033ZM10.4697 7.46967L6.21967 11.7197L7.28033 12.7803L11.5303 8.53033L10.4697 7.46967Z"></path><path className="octicon-chevrow-stem" stroke="currentColor" d="M1.75 8H11" strokeWidth="1.5" strokeLinecap="round"></path></svg>
+                <a className="link-mktg text-semibold color-fg-default py-1 f3-mktg" href="https://github.com/eperezme/eperezme.github.io">
+                  Source Code <svg xmlns="http://www.w3.org/2000/svg" className="octicon arrow-symbol-mktg" width="16" height="16" viewBox="0 0 16 16" fill="none"><path fill="currentColor" d="M7.28033 3.21967C6.98744 2.92678 6.51256 2.92678 6.21967 3.21967C5.92678 3.51256 5.92678 3.98744 6.21967 4.28033L7.28033 3.21967ZM11 8L11.5303 8.53033C11.8232 8.23744 11.8232 7.76256 11.5303 7.46967L11 8ZM6.21967 11.7197C5.92678 12.0126 5.92678 12.4874 6.21967 12.7803C6.51256 13.0732 6.98744 13.0732 7.28033 12.7803L6.21967 11.7197ZM6.21967 4.28033L10.4697 8.53033L11.5303 7.46967L7.28033 3.21967L6.21967 4.28033ZM10.4697 7.46967L6.21967 11.7197L7.28033 12.7803L11.5303 8.53033L10.4697 7.46967Z"></path><path className="octicon-chevrow-stem" stroke="currentColor" d="M1.75 8H11" strokeWidth="1.5" strokeLinecap="round"></path></svg>
                   </a>
                 </div>
               </div>
               <div className="overflow-hidden col-md-6 rounded-right-3">
                 <div className="">
                   {/* [ ] IMAGE */}
-                  <picture>
-                    <source srcSet={PORTAL} type='image/webp'/>
-                    <img className="width-full d-block height-auto js-build-in-item build-in-scale-fade rounded-right-img" loading="lazy" decoding="async" alt="" aria-hidden="true" src={PORTAL}/>
-                  </picture>
+                  {/* <picture> */}
+                    {/* <source srcSet={PORTAL} type='image/webp'/> */}
+                    <img className="width-full d-block height-auto js-build-in-item build-in-scale-fade rounded-right-img" loading="lazy" decoding="async" alt="" aria-hidden="true" src="https://cdn.eperezme.com/upload/w_600,o_webp/https://cms.eperezme.com/uploads/principal_f404945add.png"/>
+                  {/* </picture> */}
                 </div>
               </div>
               <div data-target="card-skew.shine" className="position-absolute events-none z-n1"></div>
