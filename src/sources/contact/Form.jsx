@@ -22,7 +22,7 @@ const Form = () => {
     // Replace with your own emailjs service ID, template ID, and public key
     const serviceId = 'service_5shgyrp';
     const templateId = 'template_06nu5j3';
-    const publicKey = 'DQAugBa3VxR7ks47b';
+    const publicKey = `${env.emailjs_public_key}`;
 
     emailjs.send(serviceId, templateId, {
       from_name: name,

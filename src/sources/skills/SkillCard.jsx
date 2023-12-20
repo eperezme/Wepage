@@ -11,8 +11,8 @@ import { FaDocker, FaJava, FaPython, FaRProject } from "react-icons/fa";
 import "./card.css";
 
 function SkillCard() {
-  return (
-    <div class="flex-container">
+   return (
+   <div class="flex-container">
    <div class="flex-items mt-5 mb-5">
       <AiFillBoxPlot size={32} style={{transform: "rotate(90deg)"}}/>
       <DiGoogleAnalytics size={32}/>
@@ -34,7 +34,7 @@ function SkillCard() {
       <p className="f2-mktg color-fg-muted">Experimental Design</p>
    </div>
 </div>
-  );
+   );
 }
 
 export default SkillCard;
