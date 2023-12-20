@@ -112,8 +112,8 @@ function Experience() {
               <div className="feature-card-mktg d-md-flex rounded-3 color-bg-subtle border position-relative flex-justify-between z-1 height-full flex-row" data-target="card-skew.bounding">
                 <div className="d-md-flex flex-column flex-1 p-5 p-sm-6 py-lg-8 pl-lg-8 pr-lg-12 col-md-6 flex-justify-between">
                   <p className="f2-mktg text-medium color-fg-muted mb-4">
-                    <em>Lorem Ipsum </em>
-                    dolor sit amet consectetur adipisicing elit. Quia, quibusdam.
+                    <em>Phylogenetics and evolution </em>
+                    work as my final degree project about the spieces complex of the genus <em>Salmo trutta</em>
                   </p>
                   <div className="">
                     {/* [ ] Link */}
@@ -123,11 +123,11 @@ function Experience() {
                   </div>
                 </div>
                 <div className="overflow-hidden col-md-6 rounded-right-3">
-                  <picture>
-                  <source srcSet={PORTAL} type='image/webp'/>
+                  {/* <picture> */}
+                  {/* <source srcSet={PORTAL} type='image/webp'/> */}
                   {/* Image */}
-                  <img className="width-full d-block height-auto js-build-in-item build-in-scale-fade" loading="lazy" decoding="async" alt="" aria-hidden="true" src={PORTAL}></img>
-                  </picture>
+                  <img className="width-full d-block height-auto js-build-in-item build-in-scale-fade" loading="lazy" decoding="async" alt="" aria-hidden="true" src="https://cms.eperezme.com/uploads/BENRETALLAT_0019fa9677.svg"></img>
+                  {/* </picture> */}
                 </div>
                 <div data-target="card-skew.shine" className="position-absolute events-none z-n1"></div>
               </div>
