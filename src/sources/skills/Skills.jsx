@@ -1,5 +1,10 @@
 import React from 'react'
 import Tilt from '../../functions/tilt';
+
+//Skillcard
+import SkillCard from './SkillCard';
+import SkillCard2 from './SkillCard2';
+
 // CSS
 import './Skills.css'
 
@@ -32,11 +37,14 @@ function Skills() {
       </div>
       <div className='home-campaign-git-line height-full rounded js-build-in-item build-in-scale-top' style={{background: "linear-gradient(rgb(63, 185, 80), rgb(46, 160, 67), transparent)", transitionDelay: "500ms"}}></div>
     </div>
-    <div className="col-11 col-lg-8 ml-2 ml-md-0 mb-6 mb-md-10">
+    <div className="col-11 col-lg-8 ml-2 ml-md-0 mb-4 mb-md-4">
       <h2 className="h5-mktg mb-4 text-medium js-build-in-item build-in-slideX-left" style={{transitionDelay: "200ms"}}>About Me</h2>
       <h3 className='h3-mktg mb-4 text-medium js-build-in-item build-in-slideX-left' style={{transitionDelay: "300ms"}}>
-        <span className='text-accent-primary d-block'>Master in Bioinformatics & Biostatistics</span>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, iste fugiat officia.
+        <span className='text-accent-primary d-block'>Education</span>
+        <ul className='list'>
+          <li className='item'>Master in Bioinformatics & Biostatistics</li>
+          <li className='item'>Biology Degree</li>
+        </ul>
       </h3>
     </div>
     <img alt="" aria-hidden="true" width="626" height="626" className="animation-reverse-rotate position-absolute height-auto d-none d-md-block col-6 events-none js-build-in-item build-in-fade home-shape-rotate" style={{top: "0px", right: "-25%", transitionDelay: "400ms"}} loading="lazy" decoding="async" src="https://github.githubassets.com/assets/shape-0-df97fa6b0c27.svg"/>
@@ -59,8 +67,7 @@ function Skills() {
       <div className="col-12 py-3 mb-2 js-build-in-item col-sm-10 col-md-6 text-left col-lg-6 build-in-slideX-right" style={{transitionDelay: "0ms"}}>
         <div className="pr-md-4">
           <h2 className="color-fg-default mb-3 f2-mktg color-fg-muted">
-            <em>Lorem Ipsum </em>
-            dolor sit amet consectetur adipisicing elit. Totam voluptas quae ab architecto, tempore excepturi nulla corporis laudantium eaque? Harum quia officia, qui tempore neque aut saepe esse earum assumenda!
+            As a dedicated <em>bioinformatics</em> master's student with a passion for programming, I possess knowledge and fluency in both R and Python. Apart from that, I have experience with other programming languages and tools such as <em>C++, Java, Docker, SQL, Git, HTML, CSS, JavaScript</em> and <em>Bash</em>.
           </h2>
           <a href="" className="link-mktg text-semibold color-fg-default py-1 f3-mktg">Lorem ipsum</a>
         </div>
@@ -96,25 +103,19 @@ function Skills() {
   </div>
   </div>
   {/* CARD CENTRAL 1 */}
-  <div className="position-relative z-1 mb-md-5">
+  <div className="position-relative z-1 mb-md-5"> 
     <Tilt className="overflow-hidden">
       <card-skew class="overflow-hidden rounded-3 mb-3 mb-md-5" data-catalyst data-perspective="700">
         <div className="feature-card-mktg d-md-flex rounded-3 color-bg-subtle border position-relative flex-justify-between z-1 height-full flex-row" data-target="card-skew.bounding">
-          <div className="d-md-flex flex-column flex-1 p-5 p-sm-6 py-lg-8 pl-lg-8 pr-lg-12 col-md-6 flex-justify-between">
-            <p className="f2-mktg text-medium color-fg-muted mb-4">
-              <em>Lorem ipsum </em>
-              dolor sit amet consectetur adipisicing elit. Quasi, quibusdam.
-            </p>
-            <div>
-              <a href="" className="link-mktg text-semibold color-fg-default py-1 f3-mktg">Button</a>
-            </div>
-          </div>
-          <div className="overflow-hidden col-md-6 rounded-right-3">
-            {/* IMG */}
-            <picture>
-              <source srcSet={IMG4} type='image/webp'/>
-            <img className="rounded-3 width-full d-block height-auto" loading="lazy" decoding="async" alt="" aria-hidden="true" src={IMG4_fall}/>
-            </picture>
+          <div className="d-md-flex flex-row flex-1 p-5 p-sm-6 py-lg-8 pl-lg-8 pr-lg-12 col-md-6 flex-justify-between">
+            {/* for the text f2-mktg text-medium color-fg-muted mb-4 */}
+            {/* [ ] Make it a component */}
+            {/* <h1>a</h1>
+            <h1>B</h1> */}
+            
+            <SkillCard/>
+            
+            <SkillCard2 />
           </div>
           <div data-target="card-skew.shine" className="position-absolute events-none z-n1"></div>
         </div>
