@@ -131,8 +131,14 @@ function Skills() {
           <div className="feature-card-mktg d-md-flex rounded-3 color-bg-subtle border position-relative flex-justify-between z-1 height-full flex-column" data-target="card-skew.bounding">
             <div className="d-md-flex flex-column flex-1 p-5 p-sm-6 py-lg-8 pl-lg-8 pr-lg-12 flex-justify-start">
               <p className="f2-mktg text-medium color-fg-muted mb-4">
-                <em>Lorem ipsum </em>
-                dolor sit amet consectetur adipisicing elit. Quasi, quibusdam.
+              <em>Data Visualization and analysis</em>
+                <br />
+                <br />
+                I've cultivated <em> strong skills in data visualization </em>
+                using R and Python. Proficient in libraries such as <em>ggplot2</em> and <em>Matplotlib</em>, I can create beautiful and informative plots that help to convey the message of the data.
+                <br />
+                <br />
+                I am dedicated to delivering results that contribute to a <em>comprehensive understanding of biological phenomena</em>.
               </p>
               <div>
                 <a href="" className="link-mktg text-semibold color-fg-default py-1 f3-mktg">Button</a>
@@ -157,8 +163,13 @@ function Skills() {
           <div className="feature-card-mktg d-md-flex rounded-3 color-bg-subtle border position-relative flex-justify-between z-1 height-full flex-column" data-target="card-skew.bounding">
             <div className="d-md-flex flex-column flex-1 p-5 p-sm-6 py-lg-8 pl-lg-8 pr-lg-12 flex-justify-start">
               <p className="f2-mktg text-medium color-fg-muted mb-4">
-                <em>Lorem ipsum </em>
-                dolor sit amet consectetur adipisicing elit. Quasi, quibusdam.
+              <em>Machine learning and AI</em>
+                <br />
+                <br />
+              Actively expanding my skill set in <em>AI and Machine learning</em> due to the <em>transformative potential</em> of machine learning in extracting patterns from large datasets.
+              <br />
+              <br />
+              I've delved into machine learning frameworks such as <em>scikit-learn</em> and <em>TensorFlow</em>, equipping myself to tackle complex biological problems.
               </p>
               <div>
                 <a href="" className="link-mktg text-semibold color-fg-default py-1 f3-mktg">Button</a>
@@ -166,6 +177,8 @@ function Skills() {
             </div>
             <div className="overflow-hidden rounded-bottom-3">
               {/* IMG */}
+              {/* TODO: make cards have the same height */}
+              {/* TODO: make the img transparent */}
               <picture>
                 <source src={IMG6} type='image/webp'/>
               <img className="width-full d-block height-auto js-build-in-item build-in-scale-fade rounded-3" loading="lazy" decoding="async" alt="" aria-hidden="true" src={IMG6_fall}/>
