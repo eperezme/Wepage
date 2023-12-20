@@ -11,7 +11,7 @@ function Projects() {
 
 
   return (
-    <div className='color-projects home-campaign-collaboration js-section pt-5 px-3 overflow-hidden'>
+    <div className='color-projects home-campaign-collaboration js-section pt-5 px-3'>
       <div className="container-xl">
         <div className="d-flex js-build-in-trigger position-relative">
           <div className="col-1 d-flex flex-column flex-items-center">
