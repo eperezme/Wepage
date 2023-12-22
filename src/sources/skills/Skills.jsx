@@ -8,6 +8,9 @@ import SkillCard2 from './SkillCard2';
 // CSS
 import './Skills.css'
 
+// SVG
+import Surv from '../../assets/graphs/lambda.svg?react'
+
 // Images
 import IMG2 from '../../assets/wood.jpg?w=300;400;500;600;700;800;900;1000;1200;1500&format=webp&as=srcset';
 import IMG2_fall from '../../assets/wood.jpg'
@@ -148,10 +151,11 @@ function Skills() {
             </div>
             <div className="overflow-hidden rounded-bottom-3">
               {/* IMG */}
-              <picture>
+              <img src="https://cms.eperezme.com/uploads/surv_da31d59ca4.svg" alt="" className='width-full d-block height-auto js-build-in-item build-in-scale-fade'/>
+              {/* <picture>
                 <source src={IMG5} type='image/webp'/>
               <img className="width-full d-block height-auto rounded-3 js-build-in-item build-in-scale-fade" loading="lazy" decoding="async" alt="" aria-hidden="true" src={IMG5_fall}/>
-              </picture>
+              </picture> */}
             </div>
             <div data-target="card-skew.shine" className="position-absolute events-none z-n1"></div>
           </div>
@@ -181,10 +185,11 @@ function Skills() {
               {/* IMG */}
               {/* TODO: make cards have the same height */}
               {/* TODO: make the img transparent */}
-              <picture>
+              <img src="https://cms.eperezme.com/uploads/Neural_Network_f1c82026ef.svg" alt="" className='width-full d-block height-auto js-build-in-item build-in-scale-fade' />
+              {/* <picture>
                 <source src={IMG6} type='image/webp'/>
               <img className="width-full d-block height-auto js-build-in-item build-in-scale-fade rounded-3" loading="lazy" decoding="async" alt="" aria-hidden="true" src={IMG6_fall}/>
-              </picture>
+              </picture> */}
             </div>
             <div data-target="card-skew.shine" className="position-absolute events-none z-n1"></div>
           </div>

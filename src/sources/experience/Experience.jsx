@@ -99,7 +99,7 @@ function Experience() {
                 <div className="gradient-border-mktg d-inline-block z-1 position-relative px-2 lh-condensed f6-mktg" style={{top: "-1px"}}>
                   <span className='text-gradient-mktg text-semibold'> Examples?</span>
                 </div>
-                <h3 className="text-accent-primary mb-2 mt-3 h1-mktg text-medium">What I've worked on</h3>
+                <h3 className="text-accent-primary mb-2 mt-3 h1-mktg text-medium">Where I've worked on</h3>
                 <p className="mb-3 f2-mktg text-medium col-6-max">Here you can view projects and other things I've worked on as a student</p>
               </div>
             </div>
@@ -126,7 +126,8 @@ function Experience() {
                   {/* <picture> */}
                   {/* <source srcSet={PORTAL} type='image/webp'/> */}
                   {/* Image */}
-                  <img className="width-full d-block height-auto js-build-in-item build-in-scale-fade" loading="lazy" decoding="async" alt="" aria-hidden="true" src="https://cms.eperezme.com/uploads/BENRETALLAT_0019fa9677.svg"></img>
+                  {/* <img className="width-full d-block height-auto js-build-in-item build-in-scale-fade" loading="lazy" decoding="async" alt="" aria-hidden="true" src="https://cms.eperezme.com/uploads/BENRETALLAT_0019fa9677.svg"></img> */}
+                  <img className="width-full d-block height-auto js-build-in-item build-in-scale-fade" loading="lazy" decoding="async" alt="" aria-hidden="true" src="https://cms.eperezme.com/uploads/Circular_Tree_5fc6a8d9ab.svg"></img>
                   {/* </picture> */}
                 </div>
                 <div data-target="card-skew.shine" className="position-absolute events-none z-n1"></div>
@@ -142,21 +143,27 @@ function Experience() {
               <card-skew class="height-full overflow-hidden rounded-3 mb-3 mb-md-5" data-catalyst data-perspective="700" style={{transform: "perspective(700px) rotateX(-0.03deg) rotateY(-0.03deg)"}}>
                 <div className="feature-card-mktg d-md-flex rounded-3 color-bg-subtle border position-relative flex-justify-between z-1 height-full flex-column" data-target="card-skew.bounding">
                   <div className="d-md-flex flex-column flex-1 p-5 p-sm-6 py-lg-8 pl-lg-8 pr-lg-12 flex-justify-start">
-                    <p className="f2-mktg text-medium color-fg-muted mb-4">
-                      <em>Lorem </em>
-                      dolor sit amet consectetur adipisicing elit. Quia, quibusdam. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    <p className="f2-mktg text-medium color-fg-muted mb-4"> I started creating <em>Latex reports </em>
+                      for my university projects because I though they were more pretty and I ended up learning and enjoying LaTeX a lot.
+                      <br />
+                      Here you can find some of the reports I've made using LaTeX. 
                     </p>
-                    <div>
-                    <a className="link-mktg text-semibold color-fg-default py-1 f3-mktg" href="">
-                      Lorem Link <svg xmlns="http://www.w3.org/2000/svg" className="octicon arrow-symbol-mktg" width="16" height="16" viewBox="0 0 16 16" fill="none"><path fill="currentColor" d="M7.28033 3.21967C6.98744 2.92678 6.51256 2.92678 6.21967 3.21967C5.92678 3.51256 5.92678 3.98744 6.21967 4.28033L7.28033 3.21967ZM11 8L11.5303 8.53033C11.8232 8.23744 11.8232 7.76256 11.5303 7.46967L11 8ZM6.21967 11.7197C5.92678 12.0126 5.92678 12.4874 6.21967 12.7803C6.51256 13.0732 6.98744 13.0732 7.28033 12.7803L6.21967 11.7197ZM6.21967 4.28033L10.4697 8.53033L11.5303 7.46967L7.28033 3.21967L6.21967 4.28033ZM10.4697 7.46967L6.21967 11.7197L7.28033 12.7803L11.5303 8.53033L10.4697 7.46967Z"></path><path className="octicon-chevrow-stem" stroke="currentColor" d="M1.75 8H11" strokeWidth="1.5" strokeLinecap="round"></path></svg>
-                    </a>
-                    </div>
-                  </div>
+          {/* [ ] Link */}
+          <div>
+            <a className="link-mktg text-semibold py-1 f3-mktg btn-mktg" href="https://cms.eperezme.com/uploads/Statistics_inference_report_60ff5a9e69.pdf">
+            Statistics Inference Report</a>
+                    <br />
+                    <br />
+            <a className="link-mktg text-semibold py-1 f3-mktg btn-mktg" href="https://cms.eperezme.com/uploads/Regression_report_2e39a5284e.pdf">
+            Regression Models report</a>
+          </div>
+                </div>
                   <div className="overflow-hidden rounded-bottom-3">
-                    <picture>
+                    {/* <picture>
                     <source srcSet={PORTAL} type='image/webp'/>
                     <img className="rounded-3 width-full d-block height-auto js-build-in-item build-in-scale-fade" loading="lazy" decoding="async" alt="" aria-hidden="true" src={PORTAL}/>
-                    </picture>
+                    </picture> */}
+                    <img className="rounded-3 width-full d-block height-auto js-build-in-item build-in-scale-fade" loading="lazy" decoding="async" alt="" aria-hidden="true" src="https://cms.eperezme.com/uploads/Latex_d17c2aea84.png"/>
                   </div>
                   <div data-target="card-skew.shine" className="position-absolute events-none z-n1"></div>
                 </div>
@@ -169,13 +176,15 @@ function Experience() {
           <card-skew class="height-full overflow-hidden rounded-3 mb-3 mb-md-5" data-catalyst data-perspective="700" style={{transform: "perspective(700px) rotateX(-0.81deg) rotateY(0.23deg)"}}>
               <div className="feature-card-mktg d-md-flex rounded-3 color-bg-subtle border position-relative flex-justify-between z-1 height-full flex-column" data-target="card-skew.bounding">
                 <div className="d-md-flex flex-column flex-1 p-5 p-sm-6 py-lg-8 pl-lg-8 pr-lg-12 flex-justify-start">
-          <p className="f2-mktg text-medium color-fg-muted mb-4"><em>Lore Ipsum </em>
-            dolor sit amet consectetur adipisicing elit. Quia, quibusdam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, quibusdam.
+          <p className="f2-mktg text-medium color-fg-muted mb-4"> I started creating <em>Latex reports </em>
+            for my university projects because I though they were more pretty and I ended up learning and enjoying LaTeX a lot.
+            \<br />
+            Here you can find some of the reports I've made using LaTeX. 
           </p>
           {/* [ ] Link */}
           <div>
             <a className="link-mktg text-semibold color-fg-default py-1 f3-mktg" href="">
-            Lorem Link <svg xmlns="http://www.w3.org/2000/svg" className="octicon arrow-symbol-mktg" width="16" height="16" viewBox="0 0 16 16" fill="none"><path fill="currentColor" d="M7.28033 3.21967C6.98744 2.92678 6.51256 2.92678 6.21967 3.21967C5.92678 3.51256 5.92678 3.98744 6.21967 4.28033L7.28033 3.21967ZM11 8L11.5303 8.53033C11.8232 8.23744 11.8232 7.76256 11.5303 7.46967L11 8ZM6.21967 11.7197C5.92678 12.0126 5.92678 12.4874 6.21967 12.7803C6.51256 13.0732 6.98744 13.0732 7.28033 12.7803L6.21967 11.7197ZM6.21967 4.28033L10.4697 8.53033L11.5303 7.46967L7.28033 3.21967L6.21967 4.28033ZM10.4697 7.46967L6.21967 11.7197L7.28033 12.7803L11.5303 8.53033L10.4697 7.46967Z"></path><path className="octicon-chevrow-stem" stroke="currentColor" d="M1.75 8H11" strokeWidth="1.5" strokeLinecap="round"></path></svg>
+            Report <svg xmlns="http://www.w3.org/2000/svg" className="octicon arrow-symbol-mktg" width="16" height="16" viewBox="0 0 16 16" fill="none"><path fill="currentColor" d="M7.28033 3.21967C6.98744 2.92678 6.51256 2.92678 6.21967 3.21967C5.92678 3.51256 5.92678 3.98744 6.21967 4.28033L7.28033 3.21967ZM11 8L11.5303 8.53033C11.8232 8.23744 11.8232 7.76256 11.5303 7.46967L11 8ZM6.21967 11.7197C5.92678 12.0126 5.92678 12.4874 6.21967 12.7803C6.51256 13.0732 6.98744 13.0732 7.28033 12.7803L6.21967 11.7197ZM6.21967 4.28033L10.4697 8.53033L11.5303 7.46967L7.28033 3.21967L6.21967 4.28033ZM10.4697 7.46967L6.21967 11.7197L7.28033 12.7803L11.5303 8.53033L10.4697 7.46967Z"></path><path className="octicon-chevrow-stem" stroke="currentColor" d="M1.75 8H11" strokeWidth="1.5" strokeLinecap="round"></path></svg>
             </a>
           </div>
                 </div>

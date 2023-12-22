@@ -1,12 +1,7 @@
 
 import React from "react";
-import { AiFillBoxPlot } from "react-icons/ai";
-import { DiGoogleAnalytics } from "react-icons/di";
-import { FaDatabase } from "react-icons/fa";
-import { MdDesignServices } from "react-icons/md";
-import { MdSyncProblem } from "react-icons/md";
-import { SiTensorflow } from "react-icons/si";
-import { FaDocker, FaJava, FaPython, FaRProject, FaHtml5  } from "react-icons/fa";
+import { FaDocker, FaJava, FaPython, FaRProject, FaDatabase } from "react-icons/fa";
+import { SiLatex } from "react-icons/si";
 
 
 import "./card.css";
@@ -15,14 +10,14 @@ function SkillCard2() {
   return (
     <div class="flex-container">
    <div class="flex-items">
-      <FaPython size={32} style={{}}/>
+      <FaPython size={32}/>
       <FaRProject size={32}/>
-      <FaHtml5 size={32}/>
-   </div>
+      <SiLatex size={32}/>
+      </div>
    <div class="flex-items mr-lg-5">
       <p className="f2-mktg color-fg-muted">Python</p>
       <p className="f2-mktg color-fg-muted">R</p>
-      <p className="f2-mktg color-fg-muted">HTML</p>
+      <p className="f2-mktg color-fg-muted">LaTeX</p>
    </div>
    <div class="flex-items">
       <FaDocker size={32}/>
