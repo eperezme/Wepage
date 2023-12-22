@@ -34,17 +34,20 @@ function Projects() {
           </div>
           {/* Rotating image */}
           {/* [ ] FIX OVERFLOW */}
-          <img alt="" aria-hidden="true" width="502" height="735" className="overflow animation-rotate position-absolute height-auto d-none d-md-block col-5 events-none js-build-in-item build-in-fade" style={{top: "-9%", right: "-12%", transitionDelay: "400ms",}} loading="lazy" decoding="async" src="https://github.githubassets.com/assets/shape-3-9e542b5c31b8.svg"></img>
+          <img alt="" aria-hidden="true" width="502" height="735" className="overflow animation-rotate position-absolute height-auto d-none d-md-block col-5 events-none js-build-in-item build-in-fade" style={{top: "-9%", right: "-12%", transitionDelay: "1000ms!",}} loading="lazy" decoding="async" src="https://github.githubassets.com/assets/shape-3-9e542b5c31b8.svg"></img>
         </div>
         
         
         {/* IMAGEN CENTRAL */}
 
 
-        <picture>
+        {/* <picture>
         <source srcSet={PORTAL} type='image/webp'/>
         <img className="position-relative z-1 width-full height-auto d-block rounded-3 border box-shadow-card-dark-mktg" loading="lazy" decoding="async" alt="Illustration of project table view with cards grouped by 'Feature planning' phase." src={PORTAL}></img>
-        </picture>
+        </picture> */}
+        {/* <img className="position-relative z-1 width-full height-auto d-block rounded-3 js-build-in-item build-in-fade" loading="lazy" decoding="async" alt="" aria-hidden="true" src='https://cms.eperezme.com/uploads/Circular_Tree_5fc6a8d9ab.svg'></img> */}
+        <img className="position-relative z-1 width-full height-auto d-block rounded-3 js-build-in-item build-in-fade" loading="lazy" decoding="async" alt="" aria-hidden="true" src='https://cms.eperezme.com/uploads/BENRETALLAT_0019fa9677.svg'></img>
+
         <div className="d-flex position-relative">
           <div className="col-1 d-flex flex-column flex-items-center position-relative js-build-in-trigger">
             <div className="home-campaign-git-line height-full position-relative z-1 js-build-in-item build-in-scale-top" style={{transitionDuration: "1100ms", background: "linear-gradient(transparent, #F778BA, #F778BA, transparent)"}}></div>
@@ -67,10 +70,11 @@ function Projects() {
               <div className="col-12 py-3 col-md-6 col-lg-6">
                 <div className="position-relative">
                   <div className="d-flex flex-column position-relative">
-                    <div className="js-build-in-item build-in-slideY border box-shadow-mktg-xl overflow-hidden rounded-2 position-relative left-4 z-1" style={{maxWidth: "595px", marginTop: "-50%", transitionDelay: "100ms"}}>
-                    <picture>
-                    <source srcSet={PORTAL} type='image/webp'/>
-                    <img src={PORTAL} alt="" loading="lazy" decoding="async" className="width-full height-auto d-block"/></picture>
+                    <div className="js-build-in-item build-in-slideY overflow-hidden rounded-2 position-relative left-4 z-1" style={{maxWidth: "700px", marginTop: "-50%", transitionDelay: "100ms"}}>
+                    {/* <picture>
+                      <source srcSet={PORTAL} type='image/webp'/>
+                      <img src={PORTAL} alt="" loading="lazy" decoding="async" className="width-full height-auto d-block"/></picture> */}
+                      <img src="https://cms.eperezme.com/uploads/BBML_black_5c4f561b3b.svg" className='width-full height-auto d-block' alt="" />
                     </div>
                     <img alt="" aria-hidden="true" width="1000" height="1000" className="position-absolute d-none d-md-block events-none js-build-in-item build-in-fade" style={{bottom: "var(--mouse-y)", right: "var(--mouse-x)", transitionDelay: "200ms",}} loading="lazy" decoding="async" src="https://github.githubassets.com/assets/bg-glow-purple-6e9a6a96cb04.png"></img>
                   </div>
