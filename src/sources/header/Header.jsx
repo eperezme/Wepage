@@ -53,7 +53,7 @@ const Header = () => {
                     Hello, I'm a passionate bioinformatics master's student with a strong foundation in programming, specializing in R and Python. Committed to continuous learning, I aspire to further develop my skills in these languages. Explore my portfolio to witness the intersection of my love for bioinformatics and programming through efficient, readable code accompanied by clear and concise comments.
                       </p>
                   <div className="d-flex flex-column flex-md-row">
-                    <a href={CV} className="btn-mktg download">Download CV</a>
+                    <a href='https://cms.eperezme.com/uploads/CV_9343c06e83.pdf' className="btn-mktg download">Download CV</a>
                     <div className="border-top border-md-left mx-md-3 mb-3 mb-md-0"></div>
                     {/* [x] href to contact me section*/}
                     <a href="#contact" className="btn-mktg home-campaing-enterprise btn-muted-mktg" data-test-selector="start-trial-button">Contact Me</a>

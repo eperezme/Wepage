@@ -5,11 +5,8 @@ import Tilt from '../../functions/tilt'
 import './Experience.css'
 
 // IMG
-import IMG7 from '../../assets/graphs/box.png?w=300;400;500;600;700;800;900;1000;1200;1500;1800;2000&format=webp&as=srcset'
-import IMG7_fall from '../../assets/graphs/box.png'
 import PORTAL from '../../assets/portal.png?w=300;400;500;600;700;800;900;1000;1200;1500;1800;2000&format=webp&as=srcset'
-import PORTAL_fall from '../../assets/portal.png'
-import ICO_SVG from '../../assets/svg/ICO_white.svg'
+
 // import ICO_BUILDING from ''
 
 function Experience() {
@@ -53,7 +50,7 @@ function Experience() {
             <div className="river-mktg js-build-in-trigger d-flex gutter gutter-spacious my-5 my-sm-7 my-md-8 position-relative flex-column-reverse flex-md-items-center flex-md-row flex-column pb-4 pb-md-7">
               <div className="col-12 py-3 mb-2 js-build-in-item col-sm-10 col-md-6 text-left col-lg-6 build-in-slideX-right" style={{TransitionDelay: "0ms"}}>
                 <div className="pr-md-4 ml-4">
-                <img alt="" aria-hidden="true" width="100" height="100" className="ml-sm-9 mb-sm-1 position-absolute d-md-block events-none js-build-in-item build-in-fade" style={{height: "300px", width: "300px", bottom: "-150px", left: "-10px", transitionDelay: "200ms", marginLeft: "20px", zIndex: "5"}} loading="lazy" decoding="async" src={ICO_SVG}></img>
+                <img alt="" aria-hidden="true" width="100" height="100" className="ml-sm-9 mb-sm-1 position-absolute d-md-block events-none js-build-in-item build-in-fade" style={{height: "300px", width: "300px", bottom: "-150px", left: "-10px", transitionDelay: "200ms", marginLeft: "20px", zIndex: "5"}} loading="lazy" decoding="async" src='https://cms.eperezme.com/uploads/ICO_white_4225785f66.svg'></img>
                 {/* <img src='https://cdn.eperezme.com/upload/w_500,o_webp/https://cms.eperezme.com/uploads/ICO_scalia_gallery_fullwidth_c0828b6920.jpg' alt="" loading="lazy" decoding="async" className="rounded-2 width-full height-auto d-none d-lg-block" style={{marginLeft: "400px"}}/> */}
                 </div>
               </div>
@@ -117,8 +114,12 @@ function Experience() {
                   </p>
                   <div className="">
                     {/* [ ] Link */}
-                    <a className="link-mktg text-semibold color-fg-default py-1 f3-mktg" href="">
-                      Lorem Link <svg xmlns="http://www.w3.org/2000/svg" className="octicon arrow-symbol-mktg" width="16" height="16" viewBox="0 0 16 16" fill="none"><path fill="currentColor" d="M7.28033 3.21967C6.98744 2.92678 6.51256 2.92678 6.21967 3.21967C5.92678 3.51256 5.92678 3.98744 6.21967 4.28033L7.28033 3.21967ZM11 8L11.5303 8.53033C11.8232 8.23744 11.8232 7.76256 11.5303 7.46967L11 8ZM6.21967 11.7197C5.92678 12.0126 5.92678 12.4874 6.21967 12.7803C6.51256 13.0732 6.98744 13.0732 7.28033 12.7803L6.21967 11.7197ZM6.21967 4.28033L10.4697 8.53033L11.5303 7.46967L7.28033 3.21967L6.21967 4.28033ZM10.4697 7.46967L6.21967 11.7197L7.28033 12.7803L11.5303 8.53033L10.4697 7.46967Z"></path><path className="octicon-chevrow-stem" stroke="currentColor" d="M1.75 8H11" strokeWidth="1.5" strokeLinecap="round"></path></svg>
+                    <a className="link-mktg btn-mktg text-semibold py-1 f3-mktg" href="https://cms.eperezme.com/uploads/Final_Degree_Project_cded54a918.pdf">
+                      View Project</a>
+                    <br />
+                    <br />
+                    <a className="link-mktg text-semibold color-fg-default py-1 f3-mktg" href="https://github.com/eperezme/TFG-trees">
+                      Go to Repo<svg xmlns="http://www.w3.org/2000/svg" className="octicon arrow-symbol-mktg" width="16" height="16" viewBox="0 0 16 16" fill="none"><path fill="currentColor" d="M7.28033 3.21967C6.98744 2.92678 6.51256 2.92678 6.21967 3.21967C5.92678 3.51256 5.92678 3.98744 6.21967 4.28033L7.28033 3.21967ZM11 8L11.5303 8.53033C11.8232 8.23744 11.8232 7.76256 11.5303 7.46967L11 8ZM6.21967 11.7197C5.92678 12.0126 5.92678 12.4874 6.21967 12.7803C6.51256 13.0732 6.98744 13.0732 7.28033 12.7803L6.21967 11.7197ZM6.21967 4.28033L10.4697 8.53033L11.5303 7.46967L7.28033 3.21967L6.21967 4.28033ZM10.4697 7.46967L6.21967 11.7197L7.28033 12.7803L11.5303 8.53033L10.4697 7.46967Z"></path><path className="octicon-chevrow-stem" stroke="currentColor" d="M1.75 8H11" strokeWidth="1.5" strokeLinecap="round"></path></svg>
                         </a>
                   </div>
                 </div>
@@ -155,7 +156,7 @@ function Experience() {
                     <br />
                     <br />
             <a className="link-mktg text-semibold py-1 f3-mktg btn-mktg" href="https://cms.eperezme.com/uploads/Regression_report_2e39a5284e.pdf">
-            Regression Models report</a>
+            Regression Models Report</a>
           </div>
                 </div>
                   <div className="overflow-hidden rounded-bottom-3">
