@@ -5,11 +5,8 @@ import Tilt from '../../functions/tilt'
 import './Experience.css'
 
 // IMG
-import IMG7 from '../../assets/graphs/box.png?w=300;400;500;600;700;800;900;1000;1200;1500;1800;2000&format=webp&as=srcset'
-import IMG7_fall from '../../assets/graphs/box.png'
 import PORTAL from '../../assets/portal.png?w=300;400;500;600;700;800;900;1000;1200;1500;1800;2000&format=webp&as=srcset'
-import PORTAL_fall from '../../assets/portal.png'
-import ICO_SVG from '../../assets/svg/ICO_white.svg'
+
 // import ICO_BUILDING from ''
 
 function Experience() {
@@ -53,7 +50,7 @@ function Experience() {
             <div className="river-mktg js-build-in-trigger d-flex gutter gutter-spacious my-5 my-sm-7 my-md-8 position-relative flex-column-reverse flex-md-items-center flex-md-row flex-column pb-4 pb-md-7">
               <div className="col-12 py-3 mb-2 js-build-in-item col-sm-10 col-md-6 text-left col-lg-6 build-in-slideX-right" style={{TransitionDelay: "0ms"}}>
                 <div className="pr-md-4 ml-4">
-                <img alt="" aria-hidden="true" width="100" height="100" className="ml-sm-9 mb-sm-1 position-absolute d-md-block events-none js-build-in-item build-in-fade" style={{height: "300px", width: "300px", bottom: "-150px", left: "-10px", transitionDelay: "200ms", marginLeft: "20px", zIndex: "5"}} loading="lazy" decoding="async" src={ICO_SVG}></img>
+                <img alt="" aria-hidden="true" width="100" height="100" className="ml-sm-9 mb-sm-1 position-absolute d-md-block events-none js-build-in-item build-in-fade" style={{height: "300px", width: "300px", bottom: "-150px", left: "-10px", transitionDelay: "200ms", marginLeft: "20px", zIndex: "5"}} loading="lazy" decoding="async" src='https://cms.eperezme.com/uploads/ICO_white_4225785f66.svg'></img>
                 {/* <img src='https://cdn.eperezme.com/upload/w_500,o_webp/https://cms.eperezme.com/uploads/ICO_scalia_gallery_fullwidth_c0828b6920.jpg' alt="" loading="lazy" decoding="async" className="rounded-2 width-full height-auto d-none d-lg-block" style={{marginLeft: "400px"}}/> */}
                 </div>
               </div>
@@ -155,7 +152,7 @@ function Experience() {
                     <br />
                     <br />
             <a className="link-mktg text-semibold py-1 f3-mktg btn-mktg" href="https://cms.eperezme.com/uploads/Regression_report_2e39a5284e.pdf">
-            Regression Models report</a>
+            Regression Models Report</a>
           </div>
                 </div>
                   <div className="overflow-hidden rounded-bottom-3">

@@ -2,8 +2,7 @@ import React from 'react'
 import Tilt from '../../functions/tilt.jsx'
 
 // IMG
-import PORTAL from '../../assets/portal.png?w=300;400;500;600;700;800;900;1000;1200;1500;1800;2000&format=webp&as=srcset'
-import PORTAL_fall from '../../assets/portal.png'
+
 
 
 
@@ -144,12 +143,12 @@ function Projects() {
                     where I write about things I do and learn related to coding.
                   </p>
                   <div className='d-flex flex-row'>
-                  <a className="link-mktg text-semibold color-fg-default py-1 f3-mktg" href="https://github.com/eperezme/CodeBlog">
+                  <a className="text-semibold btn-mktg py-1 f3-mktg" href="https://blog.eperezme.com/">
+                    Blog 
+                    </a>
+                  <a className="ml-6 link-mktg text-semibold color-fg-default py-1 f3-mktg" href="https://github.com/eperezme/CodeBlog">
                     Source Code <svg xmlns="http://www.w3.org/2000/svg" className="octicon arrow-symbol-mktg" width="16" height="16" viewBox="0 0 16 16" fill="none"><path fill="currentColor" d="M7.28033 3.21967C6.98744 2.92678 6.51256 2.92678 6.21967 3.21967C5.92678 3.51256 5.92678 3.98744 6.21967 4.28033L7.28033 3.21967ZM11 8L11.5303 8.53033C11.8232 8.23744 11.8232 7.76256 11.5303 7.46967L11 8ZM6.21967 11.7197C5.92678 12.0126 5.92678 12.4874 6.21967 12.7803C6.51256 13.0732 6.98744 13.0732 7.28033 12.7803L6.21967 11.7197ZM6.21967 4.28033L10.4697 8.53033L11.5303 7.46967L7.28033 3.21967L6.21967 4.28033ZM10.4697 7.46967L6.21967 11.7197L7.28033 12.7803L11.5303 8.53033L10.4697 7.46967Z"></path><path className="octicon-chevrow-stem" stroke="currentColor" d="M1.75 8H11" strokeWidth="1.5" strokeLinecap="round"></path></svg>
-                    </a>
-                    <a className="ml-6 link-mktg text-semibold color-fg-default py-1 f3-mktg" href="https://blog.eperezme.com/">
-                    Blog <svg xmlns="http://www.w3.org/2000/svg" className="octicon arrow-symbol-mktg" width="16" height="16" viewBox="0 0 16 16" fill="none"><path fill="currentColor" d="M7.28033 3.21967C6.98744 2.92678 6.51256 2.92678 6.21967 3.21967C5.92678 3.51256 5.92678 3.98744 6.21967 4.28033L7.28033 3.21967ZM11 8L11.5303 8.53033C11.8232 8.23744 11.8232 7.76256 11.5303 7.46967L11 8ZM6.21967 11.7197C5.92678 12.0126 5.92678 12.4874 6.21967 12.7803C6.51256 13.0732 6.98744 13.0732 7.28033 12.7803L6.21967 11.7197ZM6.21967 4.28033L10.4697 8.53033L11.5303 7.46967L7.28033 3.21967L6.21967 4.28033ZM10.4697 7.46967L6.21967 11.7197L7.28033 12.7803L11.5303 8.53033L10.4697 7.46967Z"></path><path className="octicon-chevrow-stem" stroke="currentColor" d="M1.75 8H11" strokeWidth="1.5" strokeLinecap="round"></path></svg>
-                    </a>
+                  </a>
                   </div>
                 </div>
                 <div className="overflow-hidden rounded-bottom-3">

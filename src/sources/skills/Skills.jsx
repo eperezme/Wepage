@@ -8,20 +8,7 @@ import SkillCard2 from './SkillCard2';
 // CSS
 import './Skills.css'
 
-// SVG
-import Surv from '../../assets/graphs/lambda.svg?react'
-
 // Images
-import IMG2 from '../../assets/wood.jpg?w=300;400;500;600;700;800;900;1000;1200;1500&format=webp&as=srcset';
-import IMG2_fall from '../../assets/wood.jpg'
-import IMG3 from '../../assets/mev.jpg?w=300;400;500;600;700;800;900;1000;1200;1500;1800;2000&format=webp&as=srcset';
-import IMG3_fall from '../../assets/mev.jpg'
-import IMG4 from '../../assets/graphs/diabplot.png?w=300;400;500;600;700;800;900;1000;1200;1500;1800;2000&format=webp&as=srcset'
-import IMG4_fall from '../../assets/graphs/diabplot.png'
-import IMG5 from '../../assets/graphs/surv2.png?w=300;400;500;600;700;800;900;1000;1200;1500;1800;2000&format=webp&as=srcset'
-import IMG5_fall from '../../assets/graphs/surv2.png'
-import IMG6 from '../../assets/graphs/lambda.png?w=300;400;500;600;700;800;900;1000;1200;1500;1800;2000&format=webp&as=srcset'
-import IMG6_fall from '../../assets/graphs/lambda.png'
 
 
 function Skills() {
@@ -56,10 +43,10 @@ function Skills() {
   </div>
   {/* 1st Image center */}
   <div className="js-build-in-trigger">
-    <picture>
-      <source srcSet={IMG2} type='image/webp' sizes=''/>
-      <img aria-hidden="true" loading='lazy' decoding='async' className='width-full d-block height-auto position-relative z-1 rounded-3 border js-build-in-item build-in-slideX-right' src={IMG2_fall} alt="" />
-      </picture>
+    {/* <picture>
+      <source srcSet={IMG2} type='image/webp' sizes=''/> */}
+      <img aria-hidden="true" loading='lazy' decoding='async' className='width-full d-block height-auto position-relative z-1 rounded-3 border js-build-in-item build-in-slideX-right' src="https://cms.eperezme.com/uploads/wood_bf5c3edd61.jpg" alt="" />
+      {/* </picture> */}
   </div>
   <div className='d-flex js-build-in-trigger position-relative'>
   <img alt="" aria-hidden="true" width="584" height="584" className="animation-rotate position-absolute height-auto d-none d-md-block events-none home-shape-rotate" style={{bottom: "-50%", right: "-20%", animationDuration: "300s"}} loading="lazy" decoding="async" src="https://github.githubassets.com/assets/shape-1-c219318e479a.svg"/>
@@ -82,10 +69,11 @@ function Skills() {
           <div className="d-flex flex-column position-relative">
           <div className="js-build-in-item build-in-slideX-right overflow-hidden rounded-3 position-relative z-1 d-none d-md-block" style={{maxWidth: "480px", marginTop: "-100%", transitionDelay: "100ms",}}>
             {/* Lateral image */}
-            {/* [ ] REPLACE IMAGE */}
-            <picture>
-              <source srcSet={IMG3} type='image/webp'/>
-              <img src={IMG3_fall} loading="lazy" alt="" decoding="async" className="rounded-3 width-full d-block height-auto"/></picture>
+            {/* [x] REPLACE IMAGE */}
+            {/* <picture>
+              <source srcSet={IMG3} type='image/webp'/> */}
+              <img src="https://cms.eperezme.com/uploads/mev_8760b89521.jpg" loading="lazy" alt="" decoding="async" className="rounded-3 width-full d-block height-auto"/>
+              {/* </picture> */}
           </div>
           <div className='js-build-in-item build-in-slideX-right overflow-hidden rounded-3 position-absolute right-3 bottom-3 bottom-sm-0 z-1 d-md-none style={{bottom: "-300px", right: "-200px", transitionDelay: "300ms",}} '>
           <img alt="" aria-hidden="true" width="1000" height="1000" className="width-full d-block height-auto" loading="lazy" decoding="async" src="https://github.githubassets.com/assets/bg-glow-purple-6e9a6a96cb04.png"></img>
