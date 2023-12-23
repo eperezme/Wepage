@@ -8,6 +8,9 @@ import SkillCard2 from './SkillCard2';
 // CSS
 import './Skills.css'
 
+// SVG
+import Surv from '../../assets/graphs/lambda.svg?react'
+
 // Images
 
 
