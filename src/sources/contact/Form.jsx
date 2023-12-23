@@ -1,9 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import emailjs from '@emailjs/browser';
-import { FaCheck } from 'react-icons/fa';
 
-// CSS
-import './Form.css'
 
 
 const Form = () => {
@@ -84,11 +81,7 @@ const Form = () => {
       </div>
 
       <div className="d-flex flex-column flex-md-row mt-3 pb-2 js-build-in-item build-in-fade">
-        <button type="submit" className="btn-mktg">Submit
-        <i>
-        <FaCheck/>
-        </i>
-        </button>
+        <button type="submit" className="btn-mktg">Submit</button>
       </div>
     </form>
   );
