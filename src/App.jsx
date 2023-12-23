@@ -20,6 +20,7 @@ import Skills from './sources/skills/Skills.jsx'
 import Experience from './sources/experience/Experience.jsx'
 import Projects from './sources/projects/Projects.jsx'
 import Contact from './sources/contact/Contact.jsx'
+import Footer from './sources/footer/Footer.jsx'
 // import Test from './sources/test/Test.jsx'
 
 // import IntersectionObserverComponent from './functions/observer_old.jsx'
@@ -44,6 +45,7 @@ function App() {
           <Experience/>
           <Projects/>
           <Contact/>
+          {/* <Footer/> */}
           {/* <Test/> */}
 
         </div>
