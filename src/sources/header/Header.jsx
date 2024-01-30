@@ -9,9 +9,6 @@ import IMG1_fall from '../../assets/principal.png'
 
 
 
-// OTHERS
-import CV from '../../assets/CV.pdf'
-
 
 
 const Header = () => {
