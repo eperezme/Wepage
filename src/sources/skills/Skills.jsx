@@ -11,6 +11,7 @@ import './Skills.css'
 
 
 
+
 function Skills() {
   return (
     <div className='color-skills js-section overflow-hidden px-3 pb-8 pt-5'>
