@@ -177,10 +177,13 @@ function Experience() {
           <card-skew class="height-full overflow-hidden rounded-3 mb-3 mb-md-5" data-catalyst data-perspective="700" style={{transform: "perspective(700px) rotateX(-0.81deg) rotateY(0.23deg)"}}>
               <div className="feature-card-mktg d-md-flex rounded-3 color-bg-subtle border position-relative flex-justify-between z-1 height-full flex-column" data-target="card-skew.bounding">
                 <div className="d-md-flex flex-column flex-1 p-5 p-sm-6 py-lg-8 pl-lg-8 pr-lg-12 flex-justify-start">
-          <p className="f2-mktg text-medium color-fg-muted mb-4"> I started creating <em>Latex reports </em>
-            for my university projects because I though they were more pretty and I ended up learning and enjoying LaTeX a lot.
-            \<br />
-            Here you can find some of the reports I've made using LaTeX. 
+          <p className="f2-mktg text-medium color-fg-muted mb-4"> 
+          <em>Data Visualization and analysis</em>
+                <br />
+                I've cultivated <em> strong skills in data visualization </em>
+                using R and Python. Proficient in libraries such as <em>ggplot2</em> and <em>Matplotlib</em>, I can create beautiful and informative plots that help to convey the message of the data.
+                <br />
+                I am dedicated to delivering results that contribute to a <em>comprehensive understanding of biological phenomena</em>.
           </p>
           {/* [ ] Link */}
           <div>
