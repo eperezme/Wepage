@@ -125,26 +125,15 @@ function Skills() {
           <div className="feature-card-mktg d-md-flex rounded-3 color-bg-subtle border position-relative flex-justify-between z-1 height-full flex-column" data-target="card-skew.bounding">
             <div className="d-md-flex flex-column flex-1 p-5 p-sm-6 py-lg-8 pl-lg-8 pr-lg-12 flex-justify-start">
               <p className="f2-mktg text-medium color-fg-muted mb-4">
-              <em>Data Visualization and analysis</em>
-                <br />
-                <br />
-                I've cultivated <em> strong skills in data visualization </em>
-                using R and Python. Proficient in libraries such as <em>ggplot2</em> and <em>Matplotlib</em>, I can create beautiful and informative plots that help to convey the message of the data.
-                <br />
-                <br />
-                I am dedicated to delivering results that contribute to a <em>comprehensive understanding of biological phenomena</em>.
+              I earned my Bachelor's degree in <em>Biology</em> at the <em>University of Girona</em>, acquiring a strong foundation in life sciences. 
+              <br />
+              <br />
+              Currently pursuing a <em>Master's in Bioinformatics and Biostatistics</em> at <em>Universitat Oberta de Catalunya</em>, I integrate computational skills with biological knowledge, fostering a holistic approach to research and problem-solving in my academic journey.
               </p>
-              <div>
-                {/* <a href="" className="link-mktg text-semibold color-fg-default py-1 f3-mktg">Button</a> */}
-              </div>
             </div>
             <div className="overflow-hidden rounded-bottom-3">
               {/* IMG */}
-              <img src="https://cms.eperezme.com/uploads/surv_da31d59ca4.svg" alt="" className='width-full d-block height-auto js-build-in-item build-in-scale-fade'/>
-              {/* <picture>
-                <source src={IMG5} type='image/webp'/>
-              <img className="width-full d-block height-auto rounded-3 js-build-in-item build-in-scale-fade" loading="lazy" decoding="async" alt="" aria-hidden="true" src={IMG5_fall}/>
-              </picture> */}
+              <img src="https://cms.eperezme.com/uploads/Biology_Degree_and_Master_1f35b56e9b.png" alt="" className='width-full d-block height-auto js-build-in-item build-in-scale-fade'/>
             </div>
             <div data-target="card-skew.shine" className="position-absolute events-none z-n1"></div>
           </div>
