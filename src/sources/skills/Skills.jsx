@@ -31,14 +31,14 @@ function Skills() {
     <div className="col-11 col-lg-8 ml-2 ml-md-0 mb-4 mb-md-4">
       <h2 className="h5-mktg mb-4 text-medium js-build-in-item build-in-slideX-left" style={{transitionDelay: "200ms"}}>About Me</h2>
       <h3 className='h3-mktg mb-4 text-medium js-build-in-item build-in-slideX-left' style={{transitionDelay: "300ms"}}>
-        <span className='text-accent-primary d-block'>Education</span>
+        <span className='text-accent-primary d-block'>Hello</span>
         </h3>
-        <h1>
+        {/* <h1>
           <ul className='list'>
             <li className='item color-fg-muted'>Master in Bioinformatics & Biostatistics</li>
             <li className='item color-fg-muted '>Biology Degree</li>
           </ul>
-        </h1>
+        </h1> */}
     </div>
     <img alt="" aria-hidden="true" width="626" height="626" className="animation-reverse-rotate position-absolute height-auto d-none d-md-block col-6 events-none js-build-in-item build-in-fade home-shape-rotate" style={{top: "0px", right: "-25%", transitionDelay: "400ms"}} loading="lazy" decoding="async" src="https://github.githubassets.com/assets/shape-0-df97fa6b0c27.svg"/>
   </div>
@@ -89,8 +89,8 @@ function Skills() {
           <div className="gradient-border-mktg d-inline-block z-1 position-relative px-2 lh-condensed f6-mktg" style={{top: "-1px"}}>
           <span className="text-gradient-mktg text-semibold">What do I know?</span>
           </div>
-          <h3 className="text-accent-primary mb-2 mt-3 h1-mktg text-medium">Skills</h3>
-          <p className="mb-3 f2-mktg text-medium col-6-max">I am proficient with multiple programming languages and skills</p>
+          <h3 className="text-accent-primary mb-2 mt-3 h1-mktg text-medium">Education and Skills</h3>
+          <p className="mb-3 f2-mktg text-medium col-6-max">I am proficient with multiple programming languages and if not, I'm a fast learner</p>
           {/* <a href="" className="link-mktg text-semibold color-fg-default py-1 f3-mktg">Button</a> */}
         </div>
       </div>
