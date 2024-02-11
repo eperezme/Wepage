@@ -13,6 +13,7 @@
   word-wrap: break-word;
   word-break: keep-all;
 	background: var(--color-bg);
+  will-change: transform;
 }
 
 

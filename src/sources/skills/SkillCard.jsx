@@ -12,7 +12,7 @@ import "./card.css";
 
 function SkillCard() {
    return (
-   <div class="flex-container">
+   <div class="flex-container card">
    <div class="flex-items mt-5 mb-5">
       <AiFillBoxPlot size={32} style={{transform: "rotate(90deg)"}}/>
       <DiGoogleAnalytics size={32}/>

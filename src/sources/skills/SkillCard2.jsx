@@ -8,7 +8,7 @@ import "./card.css";
 
 function SkillCard2() {
   return (
-    <div class="flex-container">
+    <div class="flex-container card">
    <div class="flex-items">
       <FaPython size={32}/>
       <FaRProject size={32}/>
