@@ -22,6 +22,9 @@ function Contact() {
               <h1 className="h2-mktg mb-5 h1-mktg text-accent-primary text-medium js-build-in-item build-in-slideX-left">
                 Contact Me
               </h1>
+
+              <a rel="me" href="https://social.eperezme.com/@eperezme" className="btn-mktg home-campaing-enterprise btn-muted-mktg">Mastodon</a>
+
               <p className="f3-mktg color-fg-muted js-build-in-item build-in-slideX-left">
                 If you want to get in touch with me, please fill out the form below and I will get back to you as soon as possible.
               </p>
